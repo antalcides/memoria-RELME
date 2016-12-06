@@ -1,0 +1,411 @@
+\documentclass[landscape]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8,latin9]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[usenames,table]{xcolor}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{array, booktabs, tabularx,makecell}
+\usepackage[most]{tcolorbox}
+%\usepackage{tabularx}
+%\usepackage{booktabs}
+%\usepackage{environ}
+\usepackage{times}
+%\usepackage{tikz}
+%\usetikzlibrary{shapes,calc}
+%\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage[absolute]{textpos}
+%
+%\usepackage{geometry}
+\usepackage[paperheight=27.9cm,%
+paperwidth=20.6cm,%
+%centering,%
+%textheight=26.9cm,
+left=2.5cm,%
+right=2.5cm,%
+top=2.5cm,%
+bottom=2cm,%
+headheight=1cm,%
+headsep=20pt,%
+footskip=1cm,%
+marginparsep=20pt,%
+pdftex=false,%
+letterpaper%
+]{geometry}
+\renewcommand{\rmdefault}{phv} % Arial
+\renewcommand{\sfdefault}{phv} % Arial
+
+\usepackage{textcomp} % necesario para el símbolo ?
+
+
+%\usepackage[pdftex]{graphicx}
+\usepackage{caption,subcaption}
+\setlength\textfloatsep{1.7\baselineskip plus 0.2\baselineskip minus 0.5\baselineskip}
+\setlength\intextsep{2\baselineskip plus 0.2\baselineskip minus 0.2\baselineskip}
+
+\usepackage{environ} %lo usaré para crear el environ de tabla colorida
+
+\usepackage{tabularx}
+\usepackage{booktabs} % Contiene el comando \midrule
+\usepackage{colortbl}
+\usepackage{tikz}
+\usetikzlibrary{patterns}
+\usetikzlibrary{backgrounds,fit,calc}
+%% Define style of page number colour box
+\newlength\pagenumwidth
+\settowidth{\pagenumwidth}{99}
+\tikzset{pagefooter/.style={
+anchor=base,font=\sffamily\bfseries\small,
+text=white,fill=ptctitle,text centered,
+text depth=17mm,text width=\pagenumwidth}}
+
+%% Concoct some colours of our own
+\definecolor[named]{GreenTea}{HTML}{CAE8A2}
+\definecolor[named]{MilkTea}{HTML}{C5A16F}
+%%%%%%%%%%%%%%% Encabezado y pie de pagina
+%%%%%%%%%%
+%%% Re-define running headers on non-chapter pages
+%%%%%%%%%%
+\fancypagestyle{headings}{%
+  \fancyhf{}   % Clear all headers and footers first
+  %% Right headers on odd pages
+  \fancyhead[RO]{%
+    %% First draw the background rectangles
+    \begin{tikzpicture}[remember picture,overlay]
+    \fill[ptcbackground] (current page.north east) rectangle (current page.south west);
+    \fill[white, rounded corners] ([xshift=-10mm,yshift=-20mm]current page.north east) rectangle ([xshift=15mm,yshift=17mm]current page.south west);
+    \begin{pgfonlayer}{background}
+    %          \path (-1.4cm,2.8cm) node (tl) {};
+    %          \path (2.3cm, -8.4cm) node (br) {};
+              \path[fill=brown!20] (current page.north west) rectangle (current page.south east);
+          \end{pgfonlayer}
+    \end{tikzpicture}
+    %% Then the decorative line and the right mark
+    \begin{tikzpicture}[xshift=-.75\baselineskip,yshift=.25\baselineskip,remember picture,    overlay,fill=ptctitle,draw=ptctitle]\fill circle(3pt);
+    \draw[semithick](0,0) -- (current page.west |- 0,0);
+        \end{tikzpicture} \sffamily\itshape\small\protect\nouppercase{Vig\'esima Octava Reuni\'on Latinoamericana de Matem\'aticas Educativa}
+  }
+
+  %% Left headers on even pages
+  \fancyhead[LE]{%
+    %% Background rectangles first
+    \begin{tikzpicture}[remember picture,overlay]
+     \fill[brown!20] (current page.north east) rectangle (current page.south west);
+    \fill[ptcbackground] (current page.north east) rectangle (current page.south west);
+    \fill[white, rounded corners] ([xshift=-15mm,yshift=-20mm]current page.north east) rectangle ([xshift=10mm,yshift=17mm]current page.south west);
+           \end{tikzpicture}
+    %% Then the right mark and the decorative line
+    \sffamily\itshape\small\protect\nouppercase{Vig\'esima Octava Reuni\'on Latinoamericana de Matem\'aticas Educativa}\ 
+    \begin{tikzpicture}[xshift=.5\baselineskip,yshift=.25\baselineskip,remember picture, overlay,fill=ptctitle,draw=ptctitle]
+    \fill (0,0) circle (3pt); \draw[semithick](0,0) -- (current page.east |- 0,0 );
+       \end{tikzpicture}
+  }
+
+  %% Right footers on odd pages and left footers on even pages,
+  %% display the page number in a colour box
+  \fancyfoot[RO,LE]{\tikz[baseline]\node[pagefooter]{\thepage};}
+   \fancyfoot[CO,CE]{\tikz\node{\color{ptctitle}Barranquilla - Colombia};}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+\usetikzlibrary{%
+   decorations.fractals%
+  ,decorations.pathmorphing%
+  ,shadows%
+}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{decorations.text}
+\usetikzlibrary{decorations.shapes} %para curvar texto
+\usetikzlibrary{shapes,positioning} %para los flow charts
+\usetikzlibrary{shapes,arrows,chains}
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{foreground}
+\pgfsetlayers{background,main,foreground}
+\usetikzlibrary{intersections}
+
+
+\newcommand{\helv}{\fontfamily{phv}\fontsize{8}{9}\selectfont}
+\definecolor{ptcbackground}{RGB}{150,189,61}
+\definecolor{ptctitle}{RGB}{37,92,0}
+\colorlet{TablaBordeSuperior}{ptctitle!5!black} %\definecolor{TablaBordeSuperior}{cmyk}{0,0.51,1,0} % BurntOrange
+\colorlet{TablaBordeInferior}{ptcbackground} %\definecolor{TablaBordeInferior}{cmyk}{0,0.75,1,0.24} % Bittersweet
+\colorlet{TablaCentroSuperior}{ptctitle!10}
+\colorlet{TablaCentroInferior}{ptctitle!20}
+\colorlet{FuenteCabeceraTabla}{white}
+\newcolumntype{M}[1]{>{\raggedright\arraybackslash}m{#1}}
+\newcolumntype{L}[1]{>{\raggedleft\arraybackslash}m{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+\newcommand{\fuentecabecera}[1]{\textcolor{FuenteCabeceraTabla}{\helv\textbf{#1}}}
+
+\newcommand{\encabezadoUnaLineaSuperior}{0.9}
+\newcommand{\encabezadoUnaLineaInferior}{0.9}
+\newcommand{\espaciadoCabeceraCuerpoUnaLinea}{1.0 em}
+\newcommand{\encabezadoDosLineasSuperior}{1.3}
+\newcommand{\encabezadoDosLineasInferior}{1.2}
+%\newcommand{\espaciadoCabeceraCuerpoDosLineas}{1.5em} %hay que aumentar el valor de 0.5 a 1.5 puesto que la cabecera ocupa dos líneas
+\newcommand{\espaciadoCabeceraCuerpoDosLineas}{2em}
+\newcommand{\encabezadoTresLineasSuperior}{1.8}
+\newcommand{\encabezadoTresLineasInferior}{1.8}
+\newcommand{\espaciadoCabeceraCuerpoTresLineas}{0.5em}
+\newcommand{\encabezadoSuperior}{\encabezadoUnaLineaSuperior} %por defecto una línea
+\newcommand{\encabezadoInferior}{\encabezadoUnaLineaInferior} %por defecto una línea
+\newcommand{\espaciadoCabeceraCuerpo}{\espaciadoCabeceraCuerpoUnaLinea} %por defecto el de una línea
+
+\newcommand{\encabezadoUnaLinea}{
+    \renewcommand{\encabezadoSuperior}{\encabezadoUnaLineaSuperior}
+    \renewcommand{\encabezadoInferior}{\encabezadoUnaLineaInferior}
+    \renewcommand{\espaciadoCabeceraCuerpo}{\espaciadoCabeceraCuerpoUnaLinea}}
+\newcommand{\encabezadoDosLineas}{
+    \renewcommand{\encabezadoSuperior}{\encabezadoDosLineasSuperior}
+    \renewcommand{\encabezadoUnaLineaInferior}{\encabezadoDosLineasInferior}
+    \renewcommand{\espaciadoCabeceraCuerpo}{\espaciadoCabeceraCuerpoDosLineas}}
+\newcommand{\encabezadoTresLineas}{
+    \renewcommand{\encabezadoSuperior}{\encabezadoTresLineasSuperior}
+    \renewcommand{\encabezadoUnaLineaInferior}{\encabezadoTresLineasInferior}
+    \renewcommand{\espaciadoCabeceraCuerpo}{\espaciadoCabeceraCuerpoTresLineas}}
+%estos tres últimos comandos gestionan si el encabezado será de una línea, de dos o de tres
+
+\newif\iflineaResaltado
+\lineaResaltadofalse
+\newcommand{\pieInferiorUno}{-5.2}
+\newcommand{\pieInferiorDos}{3.45}
+\newcommand{\resaltarPie}[2]{\lineaResaltadotrue\renewcommand{\pieInferiorUno}{#1}\renewcommand{\pieInferiorDos}{#2}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\captionsetup[table]{labelformat = empty,labelfont=it,textfont={bf,it}}
+\NewEnviron{tablacolorida}[2]{%
+%  \vspace*{-2em}
+    \begin{center}
+        \captionsetup{type=table} %para que no me de error el posterior comando \captionof
+         \captionof{table}{#1} \label{tab:#2} 
+        \begin{tikzpicture}
+            \node (tbl) {
+
+            \BODY
+
+            };
+            \begin{pgfonlayer}{background}
+                \draw[rounded corners,top color=TablaBordeSuperior,bottom color=TablaBordeInferior, draw=white] ($(tbl.north west)+(0.14,0)$)
+                    rectangle ($(tbl.north east)-(0.13,\encabezadoSuperior)$); %el top color indica el color principal de la línea de cabecera %para tener encabezado de dos líneas (0.13,1.3)
+                \draw[rounded corners,top color=white,bottom color=TablaBordeInferior,
+                    middle color=TablaBordeSuperior,draw=white!20] ($(tbl.south west)
+                    +(0.13,0.5)$) rectangle ($(tbl.south east)-(0.13,0)$);
+               \draw[top color=TablaCentroSuperior,bottom color=TablaCentroInferior,draw=white] %el top color indica el color de inicio de las filas del medio, el "white" hace que el borde externo de las filas no se pinte
+                    ($(tbl.north east)-(0.13,\encabezadoInferior)$) %con el parámetro 0.8 controlamos la altura de la línea de cabecera  %para tener encabezado de dos líneas (0.13,1.2)
+                    rectangle ($(tbl.south west)+(0.13,0.2)$); %el 0.2 controla el grosor de la línea decorativa inferior
+
+%                \iflineaResaltado
+%                \draw[top color=TablaBordeSuperior,bottom color=TablaBordeSuperior, draw=white] ($(0,\pieInferiorUno)+(7.5,2)$)
+%                    rectangle ($(-0.5,1)-(7,\pieInferiorDos)$); 
+%                % ($(0,-4.8)+(7.5,2)$) ($(-0.5,1)-(7,3.1)$)
+%                % ($(0,-5.2)+(7.5,2)$) ($(-0.5,1)-(7,3.45)$) %una fila más abajo
+%                \fi
+            \end{pgfonlayer}
+        \end{tikzpicture}
+       
+    \end{center}
+    %\vspace*{-1em}
+}
+\newcolumntype{W}{!{\color{ptctitle}\vline}}
+
+\begin{document}
+
+\pagestyle{headings}
+\renewcommand{\multirowsetup}{\centering}  
+\resaltarPie{-9.7}{7.95}
+\newcounter{paqueteTrabajo}
+\newcounter{tarea}
+\setcounter{paqueteTrabajo}{-1}
+\newcommand{\filaRHpt}[7]{ \fuentecabecera{#1} & \centering \bfseries{#2} & \centering \bfseries{#3}   & \centering \bfseries{#4} & \centering \bfseries{#5}  & \centering \bfseries{#6} & \centering \bfseries{#7} \\ \midrule}
+\newcommand{\filaRHt}[7]{#1  & \centering #2 & \centering #3   & \centering #4 & \centering #5   & \centering #6 & \centering #7   \\ \midrule}
+\newcommand{\filaRHTOTAL}[7]{\centering \fuentecabecera{#1}   & \centering \fuentecabecera{#2} & \centering \fuentecabecera{#3 } & \centering \fuentecabecera{#4} & \centering \fuentecabecera{#5 }  & \centering \fuentecabecera{#6} & \centering \fuentecabecera{#7 }   \\}
+\vfill\vspace*{2cm}
+%\encabezadoUnaLinea
+%\encabezadoDosLineas
+\noindent
+\begin{tablacolorida}{\color{ptctitle}Horario General de RELME 28}{horario}
+\helv
+
+   {\footnotesize }%
+\begin{tabularx}{0.952\textwidth}{>{\centering}m{4cm}W>{\centering}p{3.2cm}W>{\centering}p{3cm}W>{\centering}p{3cm}|>{\centering}p{3cm}W>{\centering}p{3cm}}
+\\
+    \arrayrulecolor{ptctitle}
+\multicolumn{1}{>{\centering}m{3cm}}{ \textbf{\scriptsize Domingo}} & \multicolumn{1}{>{\centering}m{3cm}}{ \textbf{\scriptsize Lunes}} & \multicolumn{1}{>{\centering}m{3cm}}{ \textbf{\scriptsize Martes}} & \multicolumn{1}{>{\centering}m{3cm}}{ \textbf{\scriptsize Miércoles}} & \multicolumn{1}{>{\centering}m{3cm}}{ \textbf{\scriptsize Jueves}} & \multicolumn{1}{>{\centering}m{3cm}}{ \textbf{\scriptsize Viernes}}\tabularnewline
+ 
+\multirow{10}{4cm}{\textbf{\scriptsize Inscripciones definitivas de los participantes:
+Desde las 9:00 hasta las 4:00 pm }} & \multirow{1}{3.2cm}{\textbf{\scriptsize Acto de apertura \hspace{1cm}8:30 am - 10:30
+am}} & \multicolumn{1}{>{\centering}p{3cm}|}{\textbf{\scriptsize }%
+\parbox[c][25pt][c]{1\columnwidth}{%
+\textbf{\scriptsize Cursos cortos ( 1º sesión )}{\scriptsize \par}
+
+\textbf{\scriptsize 8:00 am - 10:00 am }%
+}} & \multicolumn{1}{>{\centering}p{3cm}|}{\textbf{\scriptsize }%
+\parbox[c][25pt][c]{1\columnwidth}{%
+\textbf{\scriptsize Cursos cortos ( 2º sesión )}{\scriptsize \par}
+
+\textbf{\scriptsize 8:00 am - 10:00 am}%
+}} & \multicolumn{1}{>{\centering}p{3cm}|}{\textbf{\scriptsize }%
+\parbox[c][25pt][c]{1\columnwidth}{%
+\textbf{\scriptsize Grupos de discusión}{\scriptsize \par}
+
+\textbf{\scriptsize 8:30 am - 9:30 am}%
+}} & \multirow{10}{3cm}{\scriptsize \bf Paseo de despedida\hspace{2cm} 9:00 am - 5:00 pm}\tabularnewline
+\cline{2-5} 
+ & \textbf{\scriptsize Conferencia inaugural\hspace{1cm} 10: 00 am -
+11:30 am} & \textbf{\scriptsize }%
+\parbox[c][25pt][c]{1\columnwidth}{%
+\textbf{\scriptsize Conferencias especiales }{\scriptsize \par}
+
+\textbf{\scriptsize 10:15 am - 11:15 am}%
+} & \textbf{\scriptsize }%
+\parbox[c][25pt][c]{1\columnwidth}{%
+\textbf{\scriptsize Conferencias especiales }{\scriptsize \par}
+
+\textbf{\scriptsize 10:15 am - 11:15 am}%
+} & \textbf{\scriptsize }%
+\parbox[c][25pt][c]{1\columnwidth}{%
+\textbf{\scriptsize Reportes de investigación}{\scriptsize \par}
+
+\textbf{\scriptsize 9:45 am - 11:15 am}%
+} & \tabularnewline
+\cline{2-5} 
+ & \textbf{\scriptsize Acto cultural}{\scriptsize \par}
+
+\textbf{\scriptsize 11:30 am - 102:30 pm} & \textbf{\scriptsize }%
+\parbox[c][25pt][c]{1\columnwidth}{%
+\textbf{\scriptsize Comunicaciones breves}{\scriptsize \par}
+
+\textbf{\scriptsize 11:30 am - 12:30 pm}%
+} & \textbf{\scriptsize }%
+\parbox[c][25pt][c]{1\columnwidth}{%
+\textbf{\scriptsize Comunicaciones breves}{\scriptsize \par}
+
+\textbf{\scriptsize 11:30 am - 12:30 pm}%
+} & \textbf{\scriptsize }%
+\parbox[c][25pt][c]{1\columnwidth}{%
+\textbf{\scriptsize Conferencias especiales }{\scriptsize \par}
+
+\textbf{\scriptsize 11:30 am - 12:30 pm}%
+} & \tabularnewline
+\cline{2-5} 
+ & \multicolumn{4}{c|}{\textbf{\scriptsize }%
+\parbox[b][1\totalheight][s]{12cm}{%
+\begin{center}
+\textbf{Almuerzo}
+\par\end{center}
+
+\begin{center}
+\textbf{12:30 pm - 2:00 pm}
+\par\end{center}%
+}} & \tabularnewline
+\cline{2-5} 
+ & \textbf{\scriptsize }%
+\parbox[c][25pt][c]{1\columnwidth}{%
+\textbf{\scriptsize Talleres grupo A }{\scriptsize \par}
+
+\textbf{\scriptsize ( 1º sesión )}{\scriptsize \par}
+
+\textbf{\scriptsize 2:00 pm - 3:30 pm}%
+} & \textbf{\scriptsize }%
+\parbox[c][25pt][c]{1\columnwidth}{%
+\textbf{\scriptsize Talleres grupo A }{\scriptsize \par}
+
+\textbf{\scriptsize ( 2º sesión )}{\scriptsize \par}
+
+\textbf{\scriptsize 2:00 pm - 3:30 pm}%
+} & \textbf{\scriptsize }%
+\parbox[c][25pt][c]{1\columnwidth}{%
+\textbf{\scriptsize Talleres grupo B }{\scriptsize \par}
+
+\textbf{\scriptsize ( 1º sesión )}{\scriptsize \par}
+
+\textbf{\scriptsize 2:00 pm - 3:30 pm}%
+} & \textbf{\scriptsize }%
+\parbox[c][30pt][c]{1\columnwidth}{%
+\textbf{\scriptsize Talleres grupo B }{\scriptsize \par}
+
+\textbf{\scriptsize ( 2º sesión )}{\scriptsize \par}
+
+\textbf{\scriptsize 2:00 pm - 3:30 pm}%
+} & \tabularnewline
+\cline{2-5} 
+ & \textbf{\scriptsize }%
+\parbox[c][25pt][c]{1\columnwidth}{%
+\textbf{\scriptsize Comunicaciones breves}{\scriptsize \par}
+
+\textbf{\scriptsize 3:45 pm - 4:45 pm}%
+} & \textbf{\scriptsize }%
+\parbox[c][25pt][c]{1\columnwidth}{%
+\textbf{\scriptsize Reportes de investigación}{\scriptsize \par}
+
+\textbf{\scriptsize 83:30 pm - 5:00 pm}%
+} & \textbf{\scriptsize }%
+\parbox[c][25pt][c]{3cm}{%
+\textbf{\scriptsize Exposición de posters y  fotografías}{\scriptsize \par}
+
+\textbf{\scriptsize 3:30 pm - 5:00 pm}%
+} & \textbf{\scriptsize }%
+\parbox[c][30pt][c]{3cm}{%
+\textbf{\scriptsize Exposición de posters y \hspace{2cm} fotografías}{\scriptsize \par}
+
+\textbf{\scriptsize 3:45 pm - 5:15 pm}%
+} & \tabularnewline
+\cline{2-5} 
+ & \textbf{\scriptsize }%
+\parbox[c][25pt][c]{1\columnwidth}{%
+\textbf{\scriptsize Reportes de investigación}{\scriptsize \par}
+
+\textbf{\scriptsize 5:00 pm - 6:30 pm}%
+} & \textbf{\scriptsize }%
+\parbox[c][30pt][c]{1\columnwidth}{%
+\textbf{\scriptsize Mesas redondas}{\scriptsize \par}
+
+\textbf{\scriptsize Grupos de discusión}{\scriptsize \par}
+
+\textbf{\scriptsize 5:00 pm - 6:30 pm}%
+} & \textbf{\scriptsize }%
+\parbox[c][25pt][c]{1\columnwidth}{%
+\textbf{\scriptsize Reportes de investigación}{\scriptsize \par}
+
+\textbf{\scriptsize 5:00 pm - 6:30 pm}%
+} & \textbf{\scriptsize }%
+\parbox[c][25pt][c]{1\columnwidth}{%
+\textbf{\scriptsize Acto de apertura}{\scriptsize \par}
+
+\textbf{\scriptsize 8:30 am - 10:30 am}%
+} & \tabularnewline
+\cline{2-5} 
+ &  &  & \textbf{\scriptsize }%
+\parbox[c][25pt][c]{1\columnwidth}{%
+\textbf{\scriptsize Reunión de delegaciones}{\scriptsize \par}
+
+\textbf{\scriptsize 6:30 pm - 7:30 apm}%
+} & \textbf{\scriptsize }%
+\parbox[c][30pt][c]{1\columnwidth}{%
+\textbf{\scriptsize Conferencia de clausura}{\scriptsize \par}
+
+\textbf{\scriptsize 5:30 pm - 6:30 pm}%
+} & \tabularnewline
+\cline{2-5} 
+ & \multirow{2}{3.2cm}{} & \multirow{2}{3cm}{} & \multirow{2}{3cm}{\textbf{\scriptsize Asamblea de CLAME\hspace{1cm}8:00 pm - 9:00 pm}} & \textbf{\scriptsize }%
+\parbox[c][35pt][c]{1\columnwidth}{%
+\textbf{\scriptsize Premiación de posters }{\scriptsize \par}
+
+\textbf{\scriptsize y fotografías}{\scriptsize \par}
+
+\textbf{\scriptsize Entrega de sede}{\scriptsize \par}
+
+\textbf{\scriptsize 6:30 pm - 7:30 pm}%
+} & \tabularnewline
+\cline{5-5} 
+ &  &  &  & \parbox[c][35pt][c]{1\columnwidth}{%
+ \textbf{\scriptsize Acto cultural y lunch de
+ \\ clausura}{\scriptsize \par}
+
+\textbf{\scriptsize 7:30 pm - 9:30 pm}} & \tabularnewline
+\cline{1-6} 
+\end{tabularx}
+\end{tablacolorida}
+\encabezadoUnaLinea
+\vfill
+\end{document}

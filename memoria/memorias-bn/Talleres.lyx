@@ -1,0 +1,3886 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+\usepackage{blindtext}
+\usepackage{multicol}
+\usepackage[utf8x]{inputenc}
+\usepackage{balance}
+\pagestyle{headings}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{setspace}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\newcommand{\lyxmathsym}[1]{\ifmmode\begingroup\def\b@ld{bold}
+  \text{\ifx\math@version\b@ld\bfseries\fi#1}\endgroup\else#1\fi}
+
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\newenvironment{lyxlist}[1]
+{\begin{list}{}
+{\settowidth{\labelwidth}{#1}
+ \setlength{\leftmargin}{\labelwidth}
+ \addtolength{\leftmargin}{\labelsep}
+ \renewcommand{\makelabel}[1]{##1\hfil}}}
+{\end{list}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\input{preamble}
+\input{codigo}
+\usepackage{fancyvrb}
+\usepackage{cancel}
+\usepackage[unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=true,bookmarksopen=true,bookmarksopenlevel=1,
+ breaklinks=false,pdfborder={0 0 0},backref=false,colorlinks=false]
+ {hyperref}
+\hypersetup{
+ pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false}
+ \newsavebox{\LstBox}
+ %\graphicspath{ {./img/} }
+ \makeatletter
+\def\input@path{{./}{./build/}}
+\makeatother
+ \graphicspath{{./}{./img/}{./build/}}
+ \renewcommand{\baselinestretch}{1.5}
+\raggedbottom %para que no distibuya los espacios verticales en una hoja
+\usepackage[spanish]{babel}
+ 
+\addto\captionsspanish{
+\def\tablename{Tabla}
+\def\listtablename{\'Indice de tablas}
+}
+%\titleformat{\section}{\large\bfseries}{CO\thesection}{1em}{}
+%\renewcommand{\thesection}{CO\ \arabic{section}} 
+\renewcommand\thesection{CO\ \nplpadding{3}\numprint{\arabic{section}}}
+\makeatother
+\end_preamble
+\options twocolumn,balance,spanish,svgnames,x11names,x11names,HTML
+\use_default_options false
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding utf8x
+\fontencoding default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "pdfpagelayout=OneColumn,pdfnewwindow=true,pdfstartview=XYZ,plainpages=false"
+\papersize default
+\use_geometry false
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 2
+\papersides 1
+\paperpagestyle headings
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{headings}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+nocite{*}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fontsize{7}{8}
+\backslash
+selectfont
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+setlength{
+\backslash
+baselineskip}{5pt}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagecolor{white} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+onecolumn
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+chapter{Talleres } 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand
+\backslash
+thesection{TA
+\backslash
+ 
+\backslash
+nplpadding{3}
+\backslash
+numprint{
+\backslash
+arabic{section}}} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{section}{0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+chaptertoc
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+twocolumn
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+balance
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{section}{1}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+TÉCNICA PARA EL DISEÑO DE PROBLEMAS ADITIVOS INNOVADORES EN EDUCACIÓN PRIMARIA
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+JOSÉ ANTONIO MOSCOSO CANABAL, WILBERT SARAO PÉREZ.
+\end_layout
+
+\begin_layout Standard
+ESCUELA NORMAL URBANA, UNIVERSIDAD PEDAGÓGICA NACIONAL UNIDAD 271,
+\end_layout
+
+\begin_layout Standard
+MÉXICO,
+\end_layout
+
+\begin_layout Standard
+mocaja6109@hotmail.com; matematicologico@hotmail.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El taller ofrece a los profesores de educación primaria en servicio y a
+ los estudiantes de magisterio la oportunidad de aprender a manejar las
+ variables: semánticas, sintácticas, de contexto y magnitudes de números
+ para diseñar problemas aditivos innovadores, novedosos y diversos que permitan
+ a los alumnos de educación primaria potencializar sus esquemas de pensamiento
+ y actualizar sus “cajitas de herramientas” de que disponen para resolver
+ situaciones problemáticas, y enfrentar con mejor preparación académica
+ los desafíos de la matemática en educación secundaria.
+ Los docentes que participan en el taller perciben que son cada vez más
+ competentes para diseñar problemas aditivos.
+\end_layout
+
+\begin_layout Section
+EXPLORACIÓN DE LAS FUNCIONES POLINOMIALES A TRAVÉS DEL EMULADOR DE LA CALCULADOR
+A VOYAGE 200 PARA DISPOSITIVOS MOBILES CON SISTEMA ANDROID Y COMPUTADORAS
+ PERSONALES CON SISTEMA OPERATIVO WINDOWS
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Carlos Garrido, Renaldo Girón, Juan Orlando López.
+\end_layout
+
+\begin_layout Standard
+Universidad de San Carlos de Guatemala,
+\end_layout
+
+\begin_layout Standard
+Guatemala,
+\end_layout
+
+\begin_layout Standard
+notascg@gmail.com; ingrga@gmail.com;
+\end_layout
+
+\begin_layout Standard
+juanorlando@gmail.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una de las calculadoras más completas para cálculos matemáticos que operan
+ en forma simbólica lo constituye la Voyage 200, ahora disponible su emulador
+ para Android y Windows.
+ Uno de los temas más importantes en matemáticas lo son las funciones polinomial
+es.
+ A través del presente taller los participantes explorarán las funciones
+ polinomiales al mismo tiempo que estarán inmersos en el ambiente de la
+ calculadora Voyage 200.
+ Así que el taller se constituirá en una forma enriquecedora de combinar
+ matemática y tecnología.
+\end_layout
+
+\begin_layout Section
+LA RESOLUCIÓN DE PROBLEMAS MATEMÁTICOS UNA ESTRATEGIA EN EL AULA DE CLASE
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thais Arreaza, Irving Valencia.
+\end_layout
+
+\begin_layout Standard
+Universidad Central de Venezuela,
+\end_layout
+
+\begin_layout Standard
+Venezuela,
+\end_layout
+
+\begin_layout Standard
+tarreaza@gmail.com; irving.valencia@gmail.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La resolución de problemas ha jugado un papel fundamental en el desarrollo
+ de la matemática.
+ Hoy día se reconoce ampliamente la importancia de la misma como una estrategia
+ didáctica eficaz.
+ Es necesaria la toma de conciencia sobre la aplicación en las aulas de
+ clase.
+ Este taller constará de dos partes: en la primera, los facilitadores hablarán
+ sobre la evolución de la resolución de problemas, algunos modelos utilizados
+ y los factores que intervienen en ella; en la segunda parte, los participantes
+ resolverán problemas que les permitan repasar conocimientos matemáticos
+ adquiridos, activar procesos de pensamientos y aplicar algunos de los modelos
+ discutidos.
+ 
+\end_layout
+
+\begin_layout Section
+APRENDIZAJE GESTÁLTICO DE CÁLCULO INTEGRAL 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ma.
+ del Carmen Barrios Cuevas, Hilda Yolanda Guillén Lara.
+\end_layout
+
+\begin_layout Standard
+CBENEQ, CBTis 118, CETis 105,
+\end_layout
+
+\begin_layout Standard
+Querétaro - México,
+\end_layout
+
+\begin_layout Standard
+barrioscuevas@prodigy.net.mx; hyguillen@msn.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Taller en bachillerato con 20 actividades lúdicas, emotivas, personales,
+ históricas, ecológicas, bio-energéticas, gestálticas, en completo bienestar
+ físico, mental y social.
+ Donde el autoconocimiento es aplicable al aprendizaje constructivo del
+ cálculo y la enfermedad es el esfuerzo que hace la naturaleza para sanar
+ al hombre sin congruencia emocional.
+ Se evoluciona como persona respetando a la naturaleza, a los otros y a
+ sí mismo, se busca el arraigo y responsabilidad, desarrollan nuevas conexiones
+ neuronales, se hace uso de las funciones cerebrales superiores en el aprendizaj
+e cooperativo, la enseñanza es centrada en el estudiante con intención de
+ que matematice modelando el conocimiento.
+ 
+\end_layout
+
+\begin_layout Section
+CONSTRUCCIÓN DE PARALELOGRAMOS CON GEOGEBRA
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Leonela M.
+ Rubio U., Angela K.
+ Cervantes M., Juan L.
+ Prieto G.
+\end_layout
+
+\begin_layout Standard
+Grupo TEM ( Tecnologías en la Educación Matemática), Centro de Estudios
+ Matemáticos y Físicos (CEMAFI), Universidad del Zulia (LUZ),
+\end_layout
+
+\begin_layout Standard
+Venezuela,
+\end_layout
+
+\begin_layout Standard
+leonela.rubio@aprenderenred.com.ve; angela.cervantes@aprenderenred.com.ve;
+\end_layout
+
+\begin_layout Standard
+juan.prieto@aprenderenred.com.ve 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El propósito del taller es propiciar un ambiente de reflexión sobre los
+ paralelogramos, sus elementos, propiedades y relaciones, mediante la resolución
+ de tareas de construcción con GeoGebra.
+ Las tareas de construcción representan un medio para desarrollar conocimiento
+ geométrico por parte de los docentes, quienes elaboran procedimientos y
+ esquemas de acción que se apoyan en un saber integrado con las herramientas
+ del GeoGebra, y se transforman en instrumentos para resolver estas situaciones.
+ El taller se desarrolla en tres etapas, que incluyen: diagnóstico, reflexión
+ sobre la teoría geométrica en relación a procesos de construcción y puesta
+ en común de estos procesos.
+ 
+\end_layout
+
+\begin_layout Section
+LO CONCEPTUAL, INSTRUMENTAL Y DIDÁCTICO EN LA RESOLUCIÓN DE TAREAS DE FUNCIONES
+ CON GEOGEBRA 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Leonard A.
+ Sánchez V, Juan Luis Prieto González.
+\end_layout
+
+\begin_layout Standard
+Universidad Francisco de Miranda, Universidad del Zulia, 
+\end_layout
+
+\begin_layout Standard
+Grupo TEM (Tecnologías en la Educación Matemática), CEMAFI,
+\end_layout
+
+\begin_layout Standard
+Venezuela, 
+\end_layout
+
+\begin_layout Standard
+leonardsanchez@gmail.com; juan.prieto@aprenderenred.com.ve
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dada la naturaleza compleja del conocimiento necesario para integrar tecnologías
+ en el aula se propone un taller de formación para profesores de Matemática
+ centrado en la enseñanza de las funciones con GeoGebra, en el cual los
+ profesores desarrollen conocimiento conceptual, instrumental y didáctico.
+ En una primera etapa las tareas se abordan en ambiente de lápiz y papel.
+ Seguidamente, los facilitadores abordarán las mismas tareas utilizando
+ un recurso con GeoGebra, por último, se hará una discusión de las potencialidad
+es didácticas del recurso para abordarla.
+ Esta secuencia creará una discusión sobre el conocimiento matemático, didáctico
+ e instrumental necesario para enseñar funciones con tecnología.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{section}{10}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+TÉCNICAS DE INTEGRACIÓN ANALÍTICA MAS DE VEINTE MANERAS DE RESOLVER UNA
+ INTEGRAL DEFINIDA
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Joaquín Padovani, Erika Sabrina Estévez.
+\end_layout
+
+\begin_layout Standard
+Universidad Interamericana de Puerto Rico,
+\end_layout
+
+\begin_layout Standard
+Recinto de San Germán, Johns Hopkins University,
+\end_layout
+
+\begin_layout Standard
+Baltimore - EE.UU.
+ 
+\end_layout
+
+\begin_layout Standard
+padovani1@hotmail.com; eesteve1@jhu.edu
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Las Técnicas Analíticas de Integración, constituyen el árbol temático en
+ el que se sustenta este Taller teórico-práctico.
+ La semilla de este fecundo viene siendo, la oportunidad que se le brindará
+ a cada una de los participantes, de revisar de una manera meticulosa, diversos
+ aspectos del tema.
+ Entre estos se encuentran, las propiedades fundamentales de la integral,
+ el método de Hermite, el método de integración de Leibniz-Woods- Feynman,
+ y, naturalmente, las clásicas técnicas de integración analítica.
+ Los participantes dispondrán de amplias ocasiones para familiarizarse con
+ diversos artificios analíticos de integración, empleados en las aulas universit
+arias, por exitosos educadores, en las retropróximas cuatro décadas.
+\end_layout
+
+\begin_layout Section
+ACTIVIDADES PARA EL ESTUDIO DE LA CIRCUNFERECIA UTLIZANDO TECNOLOGÍA Y BASADAS
+ EN EL MODELO DE VAN HIELE
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Héctor Osorio Abrego.
+ 
+\end_layout
+
+\begin_layout Standard
+Universidad Autónoma de Chiriquí,
+\end_layout
+
+\begin_layout Standard
+Panamá,
+\end_layout
+
+\begin_layout Standard
+hosorioa@cwpanama.net
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El taller consta de un conjunto de actividades de experimentación didáctica
+ que tienen por objeto proveer al docente participante de ideas para desarrollar
+ clases activas en torno al concepto de circunferencia, donde el estudiante
+ mediante observación, exploración, experimentación y formulación de conjeturas
+ pueda llegar a conocer propiedades y relaciones entre los elementos de
+ dicho objeto matemático, por sí mismo y con guía del docente.
+ Las actividades han sido diseñadas teniendo como fundamento el modelo de
+ razonamiento de Van Hiele y para su desarrollo se requiere disponer de
+ computadoras y del programa GeoGebra.
+\end_layout
+
+\begin_layout Section
+NIVEL DE CONFIANZA: ¿EVOLUCIONAN LAS CONCEPCIONES? 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ingrith Álvarez, Luisa Andrade, Felipe Fernández, Isabel Quintero.
+\end_layout
+
+\begin_layout Standard
+Universidad Pedagógica Nacional,
+\end_layout
+
+\begin_layout Standard
+Colombia,
+\end_layout
+
+\begin_layout Standard
+ialvarez@pedagogica.edu.co; landrade@pedagogica.edu.co;
+\end_layout
+
+\begin_layout Standard
+fjfernandez@pedagogica.edu.co; dma_dquintero472@pedagogica.edu.co
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Producto de investigaciones, en la literatura se documentan diversas interpretac
+iones erróneas en relación con el concepto de nivel de confianza asociado
+ a un intervalo de confianza, por lo que nos interesa la puesta en práctica
+ de un experimento de enseñanza con dos objetivos primordiales, en primera
+ instancia, reconocer cuáles son las interpretaciones erradas que se evidencian
+ en los estudiantes, y en segundo lugar, propiciar a través del cuestionamiento
+ de concepciones y de la simulación reiterada de la construcción de intervalos,
+ que dichas interpretaciones evolucionen hacia una conceptualización frecuentist
+a.
+\end_layout
+
+\begin_layout Section
+VISUALIZACIÓN DE LAS FUNCIONES LINEAL Y CUADRÁTICA EMPLEANDO GEOGEBRA.
+ PROPUESTAS DE ENSEÑANZA
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Juan Antonio González Macías, Jesús Grajeda Rosas, Rosa María Farfán Márquez.
+\end_layout
+
+\begin_layout Standard
+Cinvestav-IPN, 
+\end_layout
+
+\begin_layout Standard
+México,
+\end_layout
+
+\begin_layout Standard
+jgonzalezm@cinvestav.mx;iq_jesusgr@hotmail.com;
+\end_layout
+
+\begin_layout Standard
+rfarfan@cinvestav.mx
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El tratamiento tradicional de las funciones polinomiales considera parámetros
+ de variación que resultan ambiguos al no ser observables directamente.
+ En el taller que presentamos se muestran propuestas de enseñanza que van
+ encaminadas a que el alumno visualice, manipule y emplee sus propias herramient
+as en el entorno del software (GeoGebra), tomando como referencia fenómenos
+ físicos cotidianos.
+ Partiendo de la hipótesis que para acceder al pensamiento y lenguaje variaciona
+l se requiere, entre otras cosas, del manejo de un universo de formas gráficas
+ extensas y ricas en significados por parte del que aprende.
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+uppercase{ 
+\end_layout
+
+\end_inset
+
+Diseño de Situaciones de Aprendizaje para el Desarrollo de la Competencia
+ Matemática en alumnos de nivel medio superior.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sergio Dávila Espinosa, Jonathan E.
+ Martínez Medina.
+\end_layout
+
+\begin_layout Standard
+Universidad Autónoma de San Luis Potosí, Facultad de Ciencias,
+\end_layout
+
+\begin_layout Standard
+México,
+\end_layout
+
+\begin_layout Standard
+sergio.davila@uaslp.mx; jonathan_martinez@alumnos.uaslp.edu.mx
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Las evaluaciones estandarizadas que de la competencia matemática se realizan
+ a escala internacional como el proyecto PISA de la OCDE, pueden provocar
+ en los docentes una sensación de desánimo o culposa cuando se analizan
+ los magros resultados obtenidos por países como México y Colombia.
+ Sin embargo, poco se explora la utilidad de dicho proyecto como impulsor
+ de mejoras sustantivas en la enseñanza de la matemática a través del estudio
+ de sus marcos de referencia.
+ 
+\end_layout
+
+\begin_layout Standard
+Este taller busca compartir una metodología de diseño de situaciones de
+ aprendizaje mediante la focalización de los aprendizajes esperados, el
+ diseño de un marco hipotético pero realista que exija del alumno la movilizació
+n de los componentes de competencia asociados a los aprendizajes esperados,
+ así como la elección de un producto tangible que al tiempo que exija de
+ los alumnos el desarrollo de aquello que se pretende, permita al profesor
+ su evaluación formativa.
+ 
+\end_layout
+
+\begin_layout Section
+O USO DO GEOGEBRA COMO FERRAMENTA NO ESTUDO DAS CÔNICAS
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Angelica Francisca de Araujo.
+\end_layout
+
+\begin_layout Standard
+Universidade Federal do Oeste do Pará,
+\end_layout
+
+\begin_layout Standard
+Brasil,
+\end_layout
+
+\begin_layout Standard
+angelica.araujo@ufopa.edu.br
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As inovações com o uso do computador no campo educacional, fez com que o
+ mesmo passasse a ser uma ferramenta de complementação e aperfeiçoamento
+ na qualidade do ensino, criando novos ambientes de aprendizagem.
+ O Geogebra é um software livre, possui uma interface simples, oferece dinamismo
+ em seus recursos e é um ótimo facilitador das visualizações geométricas
+ que os professores tanto buscam.
+ O objetivo principal desse trabalho foi usar o Geogebra como facilitador
+ no entendimento das cônicas durante a disciplina de geometria analítica
+ no curso de licenciatura integrada em matemática e física da universidade
+ federal do oeste do Pará.
+\end_layout
+
+\begin_layout Section
+RESOLVIENDO PROBLEMAS DE CÁLCULO DIFERENCIAL E INTEGRAL.
+ ESTRATEGIAS Y HERRAMIENTAS
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Giovanni Ruiz Faúndez, Andrea Silvina Seoane, Liliana Milevicich, Alejandro
+ Lois.
+\end_layout
+
+\begin_layout Standard
+Universidad Tecnológica Nacional - Facultad Regional General Pacheco,
+\end_layout
+
+\begin_layout Standard
+Argentina,
+\end_layout
+
+\begin_layout Standard
+gruizfaundez@gmail.com, seoane_andrea@yahoo.com.ar;
+\end_layout
+
+\begin_layout Standard
+liliana_milevicich@yahoo.com.ar; alelois@hotmail.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La propuesta del presente taller está dirigida a docentes que enseñan Cálculo
+ Diferencial e Integral en una o en dos variables en los últimos años de
+ escolaridad secundaria, en los institutos de formación docente o en la
+ universidad.
+ El propósito es: 
+\end_layout
+
+\begin_layout Description
+a) Trabajar con los participantes en la resolución de problemas de cálculo
+ diferencial e integral integrando las diferentes representaciones (gráfica,
+ numérica y algebraica).
+ 
+\end_layout
+
+\begin_layout Description
+b) Analizar grupalmente la incorporación de los procesos de conjeturación,
+ experimentación, simulación y verificación, en la resolución de problemas
+ con herramientas informáticas.
+ 
+\end_layout
+
+\begin_layout Description
+c) Comparar diferentes estrategias de resolución utilizadas por diferentes
+ grupos.
+\end_layout
+
+\begin_layout Section
+INTRODUCCIÓN DE LAS APLICACIONES EN LAS CLASES DE ÁLGEBRA LINEAL
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $^{1}$
+\end_inset
+
+Anelys Vargas Ricardo, 
+\begin_inset Formula $^{1}$
+\end_inset
+
+Olga Lidia Pérez González, 
+\begin_inset Formula $^{2}$
+\end_inset
+
+Ángela Martín, 
+\begin_inset Formula $^{1}$
+\end_inset
+
+Sandy Díaz Ramos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $^{1}$
+\end_inset
+
+Universidad de las Ciencias Informáticas , 
+\begin_inset Formula $^{1}$
+\end_inset
+
+Universidad de Camagüey, 
+\begin_inset Formula $^{2}$
+\end_inset
+
+Universidad Autónoma de Santo Domingo, 
+\begin_inset Formula $^{1}$
+\end_inset
+
+Universidad de las Ciencias Informáticas,
+\end_layout
+
+\begin_layout Standard
+Cuba
+\begin_inset Formula $^{1}$
+\end_inset
+
+, República Dominicana
+\begin_inset Formula $^{2}$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En los cursos de Álgebra Lineal, entre los alumnos, surgen desmotivación,
+ altos niveles de deserción y baja calidad en los resultados docentes que
+ obtienen ya que ellos no comprenden para qué les sirve esta materia.
+ Mostrar a sus estudiantes las aplicaciones del Álgebra Lineal desde el
+ comienzo de la clase es un aspecto poco abordado por algunos docentes.
+ En consecuencia, el objetivo de este taller es instruir a los docentes
+ sobre cómo introducir las aplicaciones del Álgebra Lineal en las clases
+ abordando problemas reales puede permitir la comprensión de los conceptos
+ más abstractos y aumentar la motivación de los estudiantes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{section}{19}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+RESOLUCIÓN DE PROBLEMAS Y DISEÑO DE ACTIVIDADES
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Víctor Manuel Pérez Torres, Marco Antonio Santillán Vázquez.
+\end_layout
+
+\begin_layout Standard
+CCH, UNAM,
+\end_layout
+
+\begin_layout Standard
+México,
+\end_layout
+
+\begin_layout Standard
+victorpt07@gmail.com; santillanmarco11@gmail.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este taller, enfocado a la formación de profesores de nivel medio superior,
+ aborda el diseño de actividad en el aula en función de plantear problemas,
+ resolverlos y analizar los procesos de resolución involucrados.
+ Se tratan temas centrales de resolución de problemas como: heurísticas,
+ estrategias meta-cognitivas, sistemas de creencias y orientaciones del
+ estándar resolución de problemas de la NCTM.
+ Desde los problemas se introducen las trayectorias hipotéticas de aprendizaje
+ como modelo del diseño de la actividad en el aula.
+ 
+\end_layout
+
+\begin_layout Section
+LA TÉCNICA DE LOS PALIGLOBOS EN LA CONSTRUCCIÓN DE POLIEDROS
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Myrian Luz Ricaldi Echevarria, Isabel Zoraida Torres Céspedes.
+\end_layout
+
+\begin_layout Standard
+Colegio de la Inmaculada - Jesuitas, 
+\end_layout
+
+\begin_layout Standard
+Colegio Peruano Norteamericano Abraham Lincoln,
+\end_layout
+
+\begin_layout Standard
+Perú,
+\end_layout
+
+\begin_layout Standard
+myrianluz@hotmail.com; isabeltz50@hotmail.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El taller propone la construcción de la estrella icosaédrica como una composició
+n de los 5 sólidos platónicos, empleando para ello paliglobos e hilo de
+ pescar.
+ En el desarrollo de la actividad se analizarán las relaciones y propiedades
+ que se establecen entre los elementos de los poliedros, así como la existencia
+ de patrones matemáticos.
+ Esta actividad se propone para ser aplicada con estudiantes de tercero,
+ cuarto o quinto grado de educación secundaria.
+ El marco teórico que justifica la propuesta corresponde a la teoría de
+ las situaciones didácticas.
+ 
+\end_layout
+
+\begin_layout Section
+CONSTRUCIONES AUREAS EMPLEANDO EL CABRI
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Mariela Lilibeth Herrera.
+\end_layout
+
+\begin_layout Standard
+Universidad de Carabobo,
+\end_layout
+
+\begin_layout Standard
+Venezuela ,
+\end_layout
+
+\begin_layout Standard
+marielalilibeth@gmail.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este taller tiene como propósito enfatizar el uso del software como herramienta
+ para desarrollar estrategias visuales y de dibujo que conllevan al progreso
+ verbal y lógico del participante, con la finalidad de propiciar la formulación
+ de conjeturas y la necesidad de realizar demostraciones formales.
+ La propuesta se fundamentada en el desarrollo de habilidades asociadas
+ a los niveles de razonamiento de Van Hiele, y como estrategias instruccionales
+ se incluyen las fases de información, de orientación guiada, de explicitación,
+ y de orientación libre.
+\end_layout
+
+\begin_layout Section
+LOS OCTÁNGULARES ALGUNAS ACTIVIDADES MATEMÁTICAS
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Diana Isabel Quintero Suica, Ingrith Álvarez Alfonso.
+\end_layout
+
+\begin_layout Standard
+Universidad Pedagógica Nacional ,
+\end_layout
+
+\begin_layout Standard
+Colombia ,
+\end_layout
+
+\begin_layout Standard
+diana.isasui@gmail.com; alvarez.ingrith@gmail.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el ámbito de la Educación Matemática en Colombia, los Lineamientos Curricular
+es de Matemáticas y los Estándares Básicos de Competencias en Matemáticas,
+ encaminan la formación de personas matemáticamente competentes a través
+ del desarrollo de procesos generales inherentes a la actividad matemática,
+ entre ellos el proceso de modelación el cual se pretende abordar, en este
+ caso, a partir de la construcción de números figurados tales como los octángula
+res, recreando caminos para llegar a su expresión simbólica, pasando por
+ la visualización e identificación de patrones numéricos, la formulación
+ y validación de conjeturas y posiblemente la generalización de las mismas.
+ 
+\end_layout
+
+\begin_layout Section
+DISEÑO Y CREACIÓN DE HERRAMIENTAS DIDÁCTICAS PARA LA ENSEÑANZA DE LA GEOMETRÍA,
+ EN MEDIA GENERAL
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Yuraima Lilibeth Ramírez Rondón, Thais Arreaza de Castro.
+\end_layout
+
+\begin_layout Standard
+Universidad Pedagógica Experimental Libertador, Instituto Pedagógico de
+ Caracas,
+\end_layout
+
+\begin_layout Standard
+Venezuela,
+\end_layout
+
+\begin_layout Standard
+yura2572@gmail.com; tarreaza@gmail.com 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La matemática, y en particular la geometría, nos permiten conocer, comprender
+ y transformar la realidad que nos rodea, tanto de la naturaleza como de
+ la sociedad.
+ Es por ello que se hace necesario que el docente cuente con una serie de
+ herramientas didácticas que mejoren el proceso de su enseñanza y aprendizaje.
+ Con este taller se pretende que los participantes diseñen recursos didácticos
+ que les permitan analizar y exponer conceptos, propiedades y otros tipos
+ de contenidos propios de la geometría en la Educación Media General.
+\end_layout
+
+\begin_layout Section
+EL RECUBRIMIENTO DE SUPERFICIES, UNA ALTERNATIVA PARA EL ESTUDIO DE RELACIONES
+ DE COVARIACIÓN 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Javier Triana, Ninfa Navarro José Luis Orozco Tróchez, Alfonso Palomá, Maryory
+ López, Vasken Stepanian Bassili, Edgar Alberto Guacaneme Suárez.
+\end_layout
+
+\begin_layout Standard
+Colegio Champagnat de Bogotá,
+\end_layout
+
+\begin_layout Standard
+Colombia,
+\end_layout
+
+\begin_layout Standard
+javiertriana@colegiochampagnat.edu.co; joseluisorozco@colegiochampagnat.edu.co;
+\end_layout
+
+\begin_layout Standard
+ninfanavarro@colegiochampagnat.edu.co; alfonsopaloma@colegiochampagnat.edu.co;
+\end_layout
+
+\begin_layout Standard
+maryorylopez@colegiochampagnat.edu.co; vaskenstepanian@colegiochampagnat.edu;
+\end_layout
+
+\begin_layout Standard
+guacaneme@pedagogica.edu.co
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este taller se analiza una estrategia para abordar con estudiantes de
+ Básica Secundaria, el estudio de relaciones de covariación, al realizar
+ una tarea de recubrimiento de una superficie rectangular con fichas cuadradas.
+ Una de las variables didácticas consideradas en la tarea es el conjunto
+ numérico; así, inicialmente las longitudes de los lados tanto de la superficie
+ como de las fichas son números enteros positivos luego se plantea la situación
+ problema con números racionales positivos incluido el estudio de tener
+ recubrir una superficie con una ficha de mayor tamaño que la superficie
+ a recubrir y, finalmente, cuando se incorporan valores irracionales positivos,
+ se intenta modelar la situación utilizando como recurso informático el
+ programa Geogebra.
+\end_layout
+
+\begin_layout Section
+REFLEXIÓN SOBRE CONOCIMIENTOS DIDACTICOS - MATEMÁTICOS EMERGENTES DE TAREAS
+ FORMATIVAS
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Autor: Patricia M.
+ Konic, Juan D.
+ Godino, Walter F.
+ Castro, Mauro Rivas.
+\end_layout
+
+\begin_layout Standard
+Universidad Nacional de Río Cuarto, Universidad de Granada.
+ España, Universidad de Antioquia, Universidad de los Andes
+\end_layout
+
+\begin_layout Standard
+Argentina, Colombia , Venezuela,
+\end_layout
+
+\begin_layout Standard
+pkonic@gmail.com; jgodino@ugr.es;
+\end_layout
+
+\begin_layout Standard
+wfcastro82@gmail.com; rmauro@ula.ve
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se propone un taller con el propósito de debatir conocimientos específicos
+ para la enseñanza de la matemática en la formación de futuros profesores
+ de primaria.
+ Se trata de un espacio para la vivencia, reflexión y conceptualización.
+ Se plantearán situaciones/problemas para promover la discusión sobre el
+ conocimiento didáctico-matemático puesto en juego, sus limitaciones, bondades
+ y posibles reformulaciones.
+ En tal sentido se propondrán tres problemas, en los que se activan diversos
+ objetos matemáticos, se evalúan procesos de significación y se identifican
+ posibles conflictos semióticos, ello en relación tanto con algunos aspectos
+ de la teoría de números como con el desarrollo del álgebra temprana.
+ 
+\end_layout
+
+\begin_layout Section
+SITUACIÓN DIDÁCTICA PARA LA ENSEÑANZA DEL ALGEBRA, A TRAVÉS DE JUEGOS DESDE
+ SEXTO AÑO BÁSICO A SEGUNDO AÑO MEDIO.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Yohana Swears Pozo.
+\end_layout
+
+\begin_layout Standard
+Universidad Iberoamericana de Ciencias y Tecnología,
+\end_layout
+
+\begin_layout Standard
+Chile
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El Álgebra se concibe como una poderosa herramienta para expresar resultados.
+ Analizando la información respecto al proceso de enseñanza y aprendizaje
+ del álgebra inicial, podemos decir que existe un grave problema por parte
+ de los estudiantes cómo también de los profesores en el álgebra.
+ Los estudiantes aprenden sin una significación de lo aprendido, por otro
+ lado existe una problemática por parte de los profesores realizan actividades
+ en que él estudiante se ve enfrentado a una mecanización por parte de ellos
+ .Este taller propone enseñanza de álgebra a través del diseño de una situación
+ didáctica con la utilización de juegos algebraicos.
+ 
+\end_layout
+
+\begin_layout Section
+SIMULACIÓN DE DINÁMICAS DE INTERACCIÓN DE GRUPOS DE ORGANISMOS, UN ACERCAMIENTO
+ DESDE LA COMPLEJIDAD
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Jesús Enrique Hernández Zavaleta*, Vicente Carrión Velázquez*, Jaime Arrieta
+ Vera**.
+\end_layout
+
+\begin_layout Standard
+CINVESTAV*, Universidad Autónoma de Guereero**, 
+\end_layout
+
+\begin_layout Standard
+México,
+\end_layout
+
+\begin_layout Standard
+jherza@gmail.com; vcarrionv@cinvestav.mx;
+\end_layout
+
+\begin_layout Standard
+jaime.arrieta@gmail.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La mirada de los fenómenos, a través del paradigma de sistemas complejos,
+ obliga a la emergencia o modificación de técnicas que permitan su entendimiento
+ e intervencion.
+ En el taller se pretende que los asistentes simulen dinámicas de interacción
+ de un grupo de organismos utilizando el Software NetLogo.
+ Al manipular los parámetros de un modelo referente a la dinámica de interacción
+ de grupos de organismos se discuten nociones, intrínsecas en la dinámica,
+ como autoorganización, caos,emergencia de patrones, estabilidad y la noción
+ de descentralización.
+ Éstas son promotoras del principio de estabilidad del cambio, constructo
+ que empieza a estudiarse en la socioepistemología.
+ 
+\end_layout
+
+\begin_layout Section
+PLANOS, CILINDROS E QUÁDRICAS – UM ENFOQUE NO TRAÇADO DE GRÁFICOS COM EXPLORAÇÃO
+ DAS SEÇÕES TRANSVERSAIS NO WINPLOT
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Janine Freitas Mota Universidade Estadual de Montes Claros, João Bosco Laudares,
+ Dimas Felipe de Miranda, Saulo Furletti.
+\end_layout
+
+\begin_layout Standard
+Pontifícia Universidade Católica de Minas Gerais – PUC-Minas , Instituto
+ Federal de Minas Gerais – IFMG , Fundação Educacional Montes Claros Pontifícia,
+ Universidade Católica de Minas Gerais – PUC-Minas
+\end_layout
+
+\begin_layout Standard
+janinemota@gmail.com; dimasfm48@yahoo.com.br;
+\end_layout
+
+\begin_layout Standard
+saulofurletti@yahoo.com.br; jblaudares@terra.com.br
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este artigo apresenta resultados de uma Pesquisa de Mestrado que teve como
+ produto a edição de um Livro, que apresenta uma metodologia diferenciada
+ para o estudo das superfícies tridimensionais Planos, Cilindros e Quádricas
+ com a utilização do software Winplot.
+ O estudante apresenta dificuldades na visualização geométrica de figuras
+ tridimensionais.
+ A metodologia utilizada contemplou os parâmetros da sequência didática,
+ com exploração da habilidade de visualização, utilizando seções transversais
+ e curvas de níveis, com melhor visualização.
+ O livro editado tem ampla ilustração dos traçados das figuras, a partir
+ de seções transversais, sem oferecer a figura pronta e possibilita uma
+ aprendizagem mais significativa.
+\end_layout
+
+\begin_layout Section
+LA COORDINACIÓN DE LAS PRINCIPALES TEORÍAS DE EDUCACIÓN MATEMÁTICA EN EL
+ AULA DE MATEMÁTICAS.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Zenón Eulogio Morales Martínez.
+ Pontificia Universidad Católica del Perú – PUCP, Instituto de Investigación
+ en Enseñanza de las Matemáticas – IREM-PUCP, Institución Educativa Particular
+ Agroestudio,
+\end_layout
+
+\begin_layout Standard
+Perú.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Analizaremos la influencia de la coordinación las principales Teorías de
+ la Educación Matemática sobre los procesos de enseñanza y aprendizaje de
+ las Matemáticas.
+ Entre estas: la Teoría del Aprendizaje Significativo, Ausubel (1983), la
+ Teoría de la Transposición Didáctica, Chevallard (1998) y la Teoría de
+ las Representaciones Semióticas, Duval (1995) y cómo influye la coordinación
+ entre ellas.
+ Realizaremos actividades sobre temas de álgebra y de geometría.
+ Se espera que la coordinación de estas teorías permita el éxito en el aprendiza
+je, que se verá reflejado cuando los alumnos hayan logrado desarrollar las
+ principales capacidades matemáticas del nivel escolar.
+ 
+\end_layout
+
+\begin_layout Section
+GEOGEBRA COMO HERRAMIENTA DE APOYO VISUAL EN LA SOLUCIÓN DE PROBLEMAS DE
+ MODELACIÓN EN MATEMÁTICA ESCOLAR
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Francisco Javier Córdoba Gómez, Elkin Alberto Castrillón Jiménez, Carlos
+ Alberto Rojas Hincapié.
+\end_layout
+
+\begin_layout Standard
+Instituto Tecnológico Metropolitano,
+\end_layout
+
+\begin_layout Standard
+Colombia,
+\end_layout
+
+\begin_layout Standard
+fjcordob@yahoo.es; franciscocordoba@itm.edu.co; 
+\end_layout
+
+\begin_layout Standard
+elkincastrillon@itm.edu.co; carojas72@gmail.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el aprendizaje y la enseñanza de las matemáticas se presenta a veces
+ una dificultad para modelar matemáticamente determinados problemas o situacione
+s puesto que a veces no se dispone de un medio adecuado que permita una
+ correcta representación y visualización del problema mismo.
+ Esta representación se puede convertir en un primer paso para llegar a
+ la formulación matemática del problema y su solución.
+ GeoGebra se presenta entonces como una poderosa herramienta que permite
+ ese primer acercamiento visual al problema.
+ En este taller se pretende entonces abordar algunos problemas matemáticos
+ desde la visualización.
+\end_layout
+
+\begin_layout Section
+NÚMEROS, SUCESIONES, ITERACIÓN DE FUNCIONES, FRACTALES Y OTROS CONCEPTOS
+ DEL CÁLCULO DIFERENCIAL E INTEGRAL.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Luis Manuel Hernández Gallardo.
+ 
+\end_layout
+
+\begin_layout Standard
+Facultad de Ciencias de la UNAM,
+\end_layout
+
+\begin_layout Standard
+México,
+\end_layout
+
+\begin_layout Standard
+lmhg@fciencias.unam.mx
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este taller se plantearán y analizarán problemas que con ciertas peculiarieda
+des interesantes cada uno de ellos, nos llevan en forma casi inmediata a
+ algunos de los conceptos e ideas fundamentales del Cálculo Diferencial
+ e Integral de una variable real.
+ Con estos problemas se busca introducir, generar y discutir en forma menos
+ abstracta algunas de las ideas y conceptos fundamentales del Cálculo, que
+ cuando se les presentan a los alumnos por primera vez, son difíciles de
+ asimilar: en este caso los conceptos de límite, derivada e integral indefinida
+ de una función.
+ 
+\end_layout
+
+\begin_layout Section
+EXPERIENCIAS GEOMÉTRICAS CON MOSAICOS
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ana María Redolfi Gandulfo.
+\end_layout
+
+\begin_layout Standard
+Universidade de Brasília - UnB,
+\end_layout
+
+\begin_layout Standard
+Brasil,
+\end_layout
+
+\begin_layout Standard
+gandulfo@uol.com.br
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este taller estudiamos los mosaicos, sus elementos, clasificaciones y
+ propiedades, aplicando conceptos geométricos básicos y las simetrías de
+ las figuras planas.
+ Caracterizamos y construimos los mosaicos unicelulares, lado a lado, periódicos
+, regulares, semirregulares, irregulares y los mosaicos no-periódicos, destacand
+o sus propiedades.
+ También analizamos las obras de M.
+ C.
+ Escher y los mosaicos en arte y arquitectura, identificando sus elementos
+ y composiciones.
+ Los temas son tratados mediante la realización de experiencias, de observacione
+s y de resolución de problemas.
+ Todos los recursos didácticos necesarios y las soluciones de las actividades
+ serán colocados a disposición de los participantes.
+\end_layout
+
+\begin_layout Section
+SI SE USA GEOMETRÍA DINÁMICA ENTONCES SE COMPRENDE LAS PROPOSICIONES CONDICIONAL
+ES 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nabil Ortegón Domínguez, Guillermo Salas Rodríguez, Carmen Samper.
+\end_layout
+
+\begin_layout Standard
+Universidad Pedagógica Nacional,
+\end_layout
+
+\begin_layout Standard
+Colombia,
+\end_layout
+
+\begin_layout Standard
+nabilortegon@hotmail.com; gsalas@pedagogica.edu.co;
+\end_layout
+
+\begin_layout Standard
+csamper@pedagogica.edu.co
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A través de una serie de tareas para desarrollar con un software de geometría
+ dinámica, buscamos propiciar la comprensión de lo que es y lo que expresa
+ una condicional en matemáticas.
+ Por medio de problemas propuestos, en los cuales se debe formular una conjetura
+ como resultado de la exploración realizada y la determinación de invariantes,
+ se busca que los participantes del taller comprendan que las condiciones
+ establecidas en el antecedente son suficientes para concluir el consecuente
+ y que el consecuente es necesariamente resultado de las condiciones que
+ se reportan en el antecedente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{section}{46}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+CONSTRUCCIÓN DE ESTRATEGIAS PARA LA ENSEÑANZA DE LA GEOMETRÍA Y ESTRUCTURACIÓN
+ DE SECUENCIAS DIDÁCTICAS.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Martínez Carmen Ysabel, Meriño Victor Hugo, Vílchez Báez Ángel.
+\end_layout
+
+\begin_layout Standard
+Universidad Nacional Experimental Rafael María Baralt, Universidad del Zulia,
+\end_layout
+
+\begin_layout Standard
+Venezuela,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Saber cómo debe enseñarse el Contenido objeto de estudio es uno de los elementos
+ que constituyen el Conocimiento Didáctico del Contenido.
+ Este taller busca presentar elementos de geometría, como saber por enseñar,
+ asociándolos a programas oficiales de educación básica y media, y considerando
+ los factores ambientales y sociales del contexto, se construyen estrategias
+ de enseñanza adecuadas a la situación.
+ Se estructura la secuencia didáctica y se desarrolla una de las actividades
+ planificadas.
+ Este encuentro brinda a los docentes la posibilidad de intercambiar opiniones,
+ visualizar posibilidades y oportunidades de enseñar geometría y develar
+ su dominio de las matemáticas.
+ 
+\end_layout
+
+\begin_layout Section
+MIRADAS PARA TRABAJAR LA COMPLEJIDAD DEL AULA MATEMÁTICA 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Jorge Ávila Contreras, Leonora Díaz Moreno; Oswaldo Martínez Padrón.
+\end_layout
+
+\begin_layout Standard
+Universidad Católica Silva Henríquez, Universidad de Valparaíso, Universidad
+ Pedagógica Experimental Libertador,
+\end_layout
+
+\begin_layout Standard
+Chile, Venezuela,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Formación de profesores; Medio Superior y Superior; Empírico
+\end_layout
+
+\begin_layout Standard
+Resumen Mediante el presente taller se busca compartir y discutir con los
+ asistentes cómo es que nos adentramos a conocer y trabajar aspectos humanos
+ que transversalizan el aula matemática, tales como actitudes, creencias,
+ emociones.
+ Entre otros se explicarán e ilustrarán el uso de Bitácoras de Reflexión
+ Estudiantil y el cómo propiciar la instalación de una práctica de consultar
+ y explorar cómo se sienten y aprenden los estudiantes cuando se involucran
+ en actividades matemáticas en clases.
+ Se espera contribuir a afinar la acción pedagógica matemática en el aula
+ a fin de favorecer la generación de mayores y mejores aprendizajes.
+ 
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+uppercase{ 
+\end_layout
+
+\end_inset
+
+El rol de los gestos en el pensamiento algebraico, multiplicativo y aditivo
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+John Gómez Triana, Anderson Javier Mojica Vargas, Oscar Leonardo Pantano
+ Mogollón, Rodolfo Vergel Causado.
+\end_layout
+
+\begin_layout Standard
+Secretaría de Educación Distrital , Universidad Distrital Francisco José
+ de Caldas , Universidad Pedagógica Nacional , Universidad Distrital Francisco
+ José de Caldas,
+\end_layout
+
+\begin_layout Standard
+Bogotá-Colombia,
+\end_layout
+
+\begin_layout Standard
+johngomezt@gmail.com; javiermojicav@hotmail.com;
+\end_layout
+
+\begin_layout Standard
+leonardopantanom@gmail.com; rodolfovergel@gmail.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se propone un reporte de investigación que se enmarca en la perspectiva
+ semiótica cultural de la enseñanza y aprendizaje de las matemáticas propuesta
+ en la Teoría Cultural de la Objetivación.
+ El objetivo es reportar una evidencia de cómo el sentido de la indeterminancia,
+ la analiticidad y la expresión simbólica se hacen evidentes en la actividad
+ matemática de los estudiantes cuando resuelven tareas en contextos algebraicos.
+ Para tal fin se muestra un análisis multimodal del pensamiento y de la
+ actividad reconociendo la importancia de los recursos cognitivos, físicos
+ y perceptuales que los estudiantes utilizan cuando trabajan con ideas matemátic
+as.
+ 
+\end_layout
+
+\begin_layout Section
+TALLER DE RESOLUCIÓN DE PROBLEMAS DE MATEMATICA CON IDEAS DEL PENSAMIENTO
+ CRITICO PARA PROFESORES DE EDUCACION MEDIA 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Claudia Vargas.
+\end_layout
+
+\begin_layout Standard
+Universidad del Bío-Bío, 
+\end_layout
+
+\begin_layout Standard
+Chile,
+\end_layout
+
+\begin_layout Standard
+cvargas@ubiobio.cl
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El cursillo de dos sesiones será acerca de la resolución de problemas como
+ activadora del pensamiento matemático el cual puede ser fomentado en los
+ alumnos de educación secundaria.
+ Los temas a desarrollar serán: Qué es la resolución de problemas y por
+ qué trabajarla en la educación matemática.
+ Dos Metodologías de Resolución de Problemas de Matemática: Las semejanzas
+ del método de Polya y las ideas para el desarrollo del Pensamiento Crítico.
+ Principales dificultades en la resolución de problemas de matemática.
+\end_layout
+
+\begin_layout Standard
+En ambas sesiones se trabajará con ejemplos de problemas de matemática que
+ los profesores participantes resolverán en grupo y también de manera individual.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{section}{55}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+EPIINFO.
+ DISEÑO DE CUESTIONARIOS PARA EL ANÁLISIS DE DATOS.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Elisa Mendoza González.
+\end_layout
+
+\begin_layout Standard
+Universidad de Panamá, 
+\end_layout
+
+\begin_layout Standard
+República de Panamá,
+\end_layout
+
+\begin_layout Standard
+emendoza2729@gmail.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el proceso de enseñanza aprendizaje es importante contar con herramientas
+ tecnológicas accesibles que permitan completar el proceso metodológico.
+ En los cursos de metodología de investigación, estadística descriptiva
+ o bioestadística, el programa Epiinfo es un programa útil y de fácil aplicación.
+ El taller se realiza de manera práctica en tres fases, la primera, corresponder
+á al diseño del formulario, se distinguen los tipos de campos: numéricos,
+ textos, fechas, horas, lógicas; en la segunda fase, realizan la captura
+ de datos, y en la tercera, Analizar, para generar Estadísticas descriptivas,
+ Tablas, Frecuencias, Gráficas, otros.
+ El programa puede utilizarse en cualquier campo del saber.
+\end_layout
+
+\begin_layout Section
+ELEMENTOS DE WX-MÁXIMA EN EL AULA DE MATEMÁTICAS 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lucero Antolínez Quijano, Yetza Ximena Díaz Pinzón.
+\end_layout
+
+\begin_layout Standard
+Universidad Pedagógica Nacional, Universidad de Boyacá,
+\end_layout
+
+\begin_layout Standard
+Colombia,
+\end_layout
+
+\begin_layout Standard
+luceroaq@gmail.com; yetzad@gmail.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En “Principios y estándares para la educación matemática” publicación de
+ Nacional Council of Teachers of Mathematics, el principio de la tec­nología,
+ se considera fundamental, influyente y enriquecedor, en la enseñanza y
+ aprendizaje de las matemáticas, indicando que la existencia, versatilidad
+ y potencia de la tecnolo­gía llaman a reexaminar qué matemáticas deberían
+ aprender los alumnos y cómo hacerlo mejor.
+ Este trabajo mostrará algunas características y bondades de WX- Máxima,
+ un sistema de álgebra computacional de código libre, que facilita manipular
+ expresiones simbólicas y numéricas, y cuyo entorno gráfico ofrece representacio
+nes en dos y tres dimensiones con resultados de alta precisión.
+ 
+\end_layout
+
+\begin_layout Section
+INTRODUCCIÓN DE LAS APLICACIONES EN LAS CLASES DE ÁLGEBRA LINEAL
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Anelys Vargas Ricardo, Olga Lidia Pérez González, Ángela Martín, Sandy Díaz
+ Ramos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $^{1}$
+\end_inset
+
+Universidad de las Ciencias Informáticas, 
+\begin_inset Formula $^{1}$
+\end_inset
+
+Universidad de Camagüey , 
+\begin_inset Formula $^{2}$
+\end_inset
+
+Universidad Autónoma de Santo Domingo, 
+\begin_inset Formula $^{1}$
+\end_inset
+
+Universidad de las Ciencias Informáticas,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $^{1}$
+\end_inset
+
+Cuba, 
+\begin_inset Formula $^{2}$
+\end_inset
+
+República Dominicana, 
+\end_layout
+
+\begin_layout Standard
+anelys@uci.cu; olga.perez@reduc.edu.cu;
+\end_layout
+
+\begin_layout Standard
+m.angela24@gmail.com; sdiaz@uci.cu 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En los cursos de Álgebra Lineal, entre los alumnos, surgen desmotivación,
+ altos niveles de deserción y baja calidad en los resultados docentes que
+ obtienen ya que ellos no comprenden para qué les sirve esta materia.
+ Mostrar a sus estudiantes las aplicaciones del Álgebra Lineal desde el
+ comienzo de la clase es un aspecto poco abordado por algunos docentes.
+ En consecuencia, el objetivo de este taller es instruir a los docentes
+ sobre cómo introducir las aplicaciones del Álgebra Lineal en las clases
+ abordando problemas reales puede permitir la comprensión de los conceptos
+ más abstractos y aumentar la motivación de los estudiantes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{section}{61}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+SIMULANDO PRÁCTICAS SOCIALES CON GEOGEBRA.
+ EL CASO DE UNA GRANJA DE CAMARONES, PARA DESARROLLAR COMPETENCIAS EN LOS
+ ESTUDIANTES DE NIVEL MEDIO SUPERIOR
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Noé Camacho Calderón, Silvino Bailón Cortez, Margarito Gódinez de Dios,
+ Santiago Ramiro Velázquez Bustamante.
+\end_layout
+
+\begin_layout Standard
+Colegio de Bachilleres del Estado de Guerrero - El Coacoyul - Zihuatanejo
+ Gro.
+\end_layout
+
+\begin_layout Standard
+México,
+\end_layout
+
+\begin_layout Standard
+noeilyn_21@hotmail.com; margodios@yahoo.com.mx;
+\end_layout
+
+\begin_layout Standard
+sramiro@prodigy.net.mx
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El desarrollo de competencias en los estudiantes depende principalmente
+ de dos factores, la sociedad y los profesores, el profesor tiene una ardua
+ labor como actor intelectual en el proceso enseñanza aprendizaje de los
+ conceptos aprendidos dentro del aula en general.
+ Sin embargo, dentro del ámbito educativo como tal se carece de ofertas
+ de capacitado, en la práctica se constata que los profesores carecen de
+ herramientas didácticas para desarrollar las competencias que la RIEMS
+ propone, el objetivo del taller propuesto es precisamente en este sentido,
+ capacitar a estudiantes y profesores en la modelación y simulación de practicas
+ sociales, en este caso la granja de camarones por medio del GeoGebra y
+ de esta manera constrir algunas herramientas.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{section}{63}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+PRODUCCIÓN DE RECURSOS DIDÁCTICOS PARA ENSEÑAR MATEMÁTICA EN LA ESCUELA
+ SECUNDARIA
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Gladys Brunini
+\begin_inset Formula $^{1,2,3}$
+\end_inset
+
+, Virginia Ciccioli
+\begin_inset Formula $^{1,4}$
+\end_inset
+
+, Eliana Dominguez
+\begin_inset Formula $^{1,5,6}$
+\end_inset
+
+, Natalia Sgreccia
+\begin_inset Formula $^{1,7}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $^{1}$
+\end_inset
+
+FCEIA-UNR, 
+\begin_inset Formula $^{2}$
+\end_inset
+
+EESOPI 2037, 
+\begin_inset Formula $^{3}$
+\end_inset
+
+EETP 656, 
+\begin_inset Formula $^{4}$
+\end_inset
+
+ENS 33, 
+\begin_inset Formula $^{5}$
+\end_inset
+
+EESOPA 8240, 
+\begin_inset Formula $^{6}$
+\end_inset
+
+EESOPI 8270, 
+\begin_inset Formula $^{7}$
+\end_inset
+
+CONICET,
+\end_layout
+
+\begin_layout Standard
+Argentina,
+\end_layout
+
+\begin_layout Standard
+gladys232003@hotmail.com; vickyc_03@hotmail.com;
+\end_layout
+
+\begin_layout Standard
+elianadominguez7@hotmail.com; nataliasgreccia@hotmail.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este taller tiene como propósito presentar algunos recursos didácticos (tangram
+ chino, geoplano cuadrangular y circular, ludo matemático y dominó matemático),
+ que fueron elaborados por los docentes del curso, para enseñar variados
+ contenidos matemáticos del secundario básico.
+ Se analizarán ventajas y desventajas en su diseño, se compartirán los instructi
+vos de elaboración, se construirán algunos y se identificarán habilidades
+ matemáticas que su uso involucra, a través de secuencias didácticas especialmen
+te diseñadas.
+ Esto aporta a reconocer el potencial didáctico de los recursos y a propiciar
+ una utilización fundamentada de los mismos a partir de situaciones áulicas
+ concretas que se recrearán en conjunto.
+ 
+\end_layout
+
+\begin_layout Section
+RESOLUCIÓN DE PROBLEMAS A TRAVÉS DE UNA EXPLORACIÓN DIGITAL
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Eduardo Basurto Hidalgo, Eduardo Mancera Martínez Benemérita.
+\end_layout
+
+\begin_layout Standard
+Escuela Nacional de Maestros, v
+\end_layout
+
+\begin_layout Standard
+México,
+\end_layout
+
+\begin_layout Standard
+basurtomat@hotmail.com; mancera.eduardo@gmail.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El uso de tecnologías digitales a favor de la enseñanza de las matemáticas
+ ofrece hoy en día una amplia gama de dispositivos y software, así como
+ una diversidad de modos de uso de la misma, el presente taller pretende
+ mostrar a los docentes e investigadores interesados en este tipo de herramienta
+s, una alternativa metodológica diseñada no sólo en el ámbito ejecutor de
+ algoritmos, sino también con prestaciones que permiten realizar orquestaciones
+ didácticas que ofrezcan la posibilidad de explorar problemas desde diversas
+ perspectivas que aporten sentido a la actividad matemática y ayuden en
+ la creación de significados de los objetos matemáticos.
+\end_layout
+
+\begin_layout Section
+ANÁLISIS EPISTÉMICO DE LAS LECCIONES DE FRACCIONES EN LOS LIBROS DE TEXTOS
+ DE SEXTO GRADO
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Johanna Franzone, Delisa Bencomo.
+\end_layout
+
+\begin_layout Standard
+Universidad Nacional Experimental de Guayana,
+\end_layout
+
+\begin_layout Standard
+Venezuela ,
+\end_layout
+
+\begin_layout Standard
+jfranzone0113@gmail.com;dbencomo@uneg.edu.ve
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Con este taller se busca que el participante conozca las bondades de las
+ herramientas teóricas-metodológicas del Enfoque Ontosemiótico de la cognición
+ y de la instrucción matemática (EOS) propuesto por Godino y Colaboradores,
+ para la reconstrucción del significado de fracciones presente en las lecciones
+ del los libros de texto de matemática.
+ 
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+uppercase{ 
+\end_layout
+
+\end_inset
+
+Solución de problemas con fundamentos algebraicos y apoyo de software matemático
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+José Isaac Sánchez Guerra, Carlos Oropeza Legorreta, Carlos Oropeza Ugalde.
+\end_layout
+
+\begin_layout Standard
+Facultad de Estudios Superiores Cuautitlán - UNAM., CBT Gabriel V.
+ Alcocer,
+\end_layout
+
+\begin_layout Standard
+México,
+\end_layout
+
+\begin_layout Standard
+joejade@hotmail.com; coropeza96@hotmail.com;
+\end_layout
+
+\begin_layout Standard
+lambo.r.gini@hotmail.com.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el presente taller se propone el uso de software matemático como instrumento
+ verificador de los resultados que se obtienen a partir del análisis de
+ problemas relativos al álgebra con otras asignaturas en la formación de
+ ingenieros, impulsando a la vez el tránsito entre registros de representación.
+ El estudio que se propone es de naturaleza cualitativa, pues en él se tiene
+ la intención de encontrar rasgos de corte analítico y geométrico que permitan
+ la identificación de cada una de las categorías en estudio.
+ Se proponen actividades centradas en la resolución de problemas y se analizan
+ algunas de las posibles soluciones.
+\end_layout
+
+\begin_layout Section
+TALLER: MAS ALLÁ DE LOS “TACHES” Y “PALOMITAS”
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Asela Carlón Monroy, Sergio Cruz Contreras,
+\end_layout
+
+\begin_layout Standard
+UNAM - FES-ACATLÁN, 
+\end_layout
+
+\begin_layout Standard
+MÉXICO,
+\end_layout
+
+\begin_layout Standard
+correoaselasergio@gmail.com; asela.carlon@gmail.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La interpretación en el proceso comunicativo, que tiene lugar en una clase
+ de matemáticas, es fundamental.
+ Recordando elementos teóricos provenientes de esquemas conceptuales generales
+ como son el trabajo de Piaget, Vygotsky, Ausubel, y de formulaciones específica
+s de la Educación Matemática, como los aportes de los van Hiele, Schoenfeld,
+ Lesh, Hiebert y Carpenter, así como nociones generales de hermenéutica,
+ se analizan e interpretan producciones de estudiantes de bachillerato,
+ con el propósito de poner de manifiesto el papel que tienen los conocimientos
+ teóricos cuando el profesor intenta interpretar las producciones de los
+ estudiantes, en particular los errores, en la clase de matemáticas.
+\end_layout
+
+\begin_layout Section
+SIMULAR DESDE GRÁFICAS DIFERENCIALES: EL ROL DE LA GESTUALIDAD.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Eduardo Carrasco Henríquez, Juan Felipe Flores Robles.
+\end_layout
+
+\begin_layout Standard
+Universidad Autónoma de Guerrero, Universidad Austral, 
+\end_layout
+
+\begin_layout Standard
+México, Chile Juan,
+\end_layout
+
+\begin_layout Standard
+F10res@hotmail.com; ecarrasc@gmail.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La socioepistemológico señala que las actividades intencionadas desde una
+ práctica social son centrales para el logro de entendimientos.
+ Así la simulación, como práctica imbricada con la modelación que se incorpora
+ en los curriculum escolares, Al ser ejercida tiene como recurso central
+ a la gestualidad en la actividad de conocer.
+ Gestualidad que asociada a una idea conforma, al actuar, un espacio gestual
+ matemático.
+ El taller propone una discusión sobre las prácticas de simulación y los
+ recursos estudiantiles al ejercerla, en particular la gestualidad, explorando
+ las estrategias y herramientas de indagación para evidenciar el rol de
+ este recurso en la actividad estudiantil.
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+uppercase{ 
+\end_layout
+
+\end_inset
+
+Usos de las gráficas y análisis de la variación en la derivada.
+ Una visión Socioepistemologíca
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Mario Adrián Caballero Pérez, Claudio Enrique Opazo Arrellano.
+\end_layout
+
+\begin_layout Standard
+Cinvestav, 
+\end_layout
+
+\begin_layout Standard
+México D.F.
+ 
+\end_layout
+
+\begin_layout Standard
+mcaballero@cinvestav.mx; opazoferrari_claudio@hotmail.com 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Desde una postura Socioepistemológica, el discurso matemático escolar ha
+ soslayado la naturaleza variacional del Cálculo, relegando su estudio a
+ un aprendizaje basado en la memorización de formulas y algoritmos.
+ Nuestro taller propone dar una mirada diferente, resaltando este carácter
+ variacional mediante el análisis de los diferentes tipos de variaciones
+ y usos que las gráficas expresan.
+ El taller se encuentra dirigido tanto a profesores que busquen formas alternati
+vas de encarar el estudio de las gráficas, como a investigadores en formación
+ que deseen ahondar en una corriente teórica relativo al estudio de las
+ gráficas y la variación.
+\end_layout
+
+\begin_layout Section
+MATEMÁTICAS FINANCIERAS UTILIZANDO EXCEL
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Julio Moisés Sánchez Barrera.
+\end_layout
+
+\begin_layout Standard
+Facultad de Estudios Superiores Cuautitlán UNAM,
+\end_layout
+
+\begin_layout Standard
+México,
+\end_layout
+
+\begin_layout Standard
+juliomoisessb@yahoo.com.mx
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Capacitación para el trabajo, Superior y Tecnología avanzada.
+\end_layout
+
+\begin_layout Standard
+Este taller pretende que el asistente conozca y familiarice con los conceptos
+ y modelos matemáticos financieros más comunes haciendo uso del software
+ Excel, el asistente podrá constatar como con el uso de las nuevas tecnologías
+ el cálculo es más preciso y rápido no importando la cantidad de periodos
+ utilizados, denotando que la base de las matemáticas financieras esta en
+ las progresiones aritméticas y geométricas.
+ 
+\end_layout
+
+\begin_layout Standard
+Por su aplicación estas matemáticas financieras deben de ser conocidas por
+ todo estudiante en su formación profesional.
+ En este taller se desarrollará la transposición didáctica del saber sabio
+ al saber enseñado aplicado a la vida real.
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+uppercase{ 
+\end_layout
+
+\end_inset
+
+Del discurso a la práctica: construyendo equidad de género en el aula de
+ Matemáticas
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Claudia Rodríguez Muñoz.
+\end_layout
+
+\begin_layout Standard
+Centro de investigación y de Estudios Avanzados del IPN,
+\end_layout
+
+\begin_layout Standard
+México,
+\end_layout
+
+\begin_layout Standard
+Claurom65@yahoo.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El taller se formula a partir de los resultados de una investigación longitudina
+l sobre las estudiantes de educación básica y la matemática escolar en México.
+ La literatura actual da cuenta de las diferencias entre hombres y mujeres
+ al estudiar matemáticas en distintos niveles educativos y en diversos ambientes
+ socioculturales.
+ Pasar de la investigación a la implantación de acciones afirmativas permitirá
+ que las y los docentes participantes construyan herramientas necesarias
+ para que, desde un enfoque de equidad entre los géneros, sugieran y generen
+ formas alternativas y creativas para eliminar el sexismo y los estereotipos
+ de género en el aula de matemáticas.
+\end_layout
+
+\begin_layout Section
+UN ACERCAMIENTO AL CONCEPTO DE FUNCIÓN A TRAVÉS DE LA MANIPULACIÓN DE OBJETOS
+ GEOMÉTRICOS, DONDE SE PRESENTAN PATRONES FUNCIONALES DE DEPENDENCIA Y DE
+ GENERALIZACIÓN, UTILIZANDO UN SOFTWARE DE GEOMETRÍA DINÁMICA”
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+JOSE FRANCISCO PUERTO MONTERROZA.
+\end_layout
+
+\begin_layout Standard
+Institución Educativa Docentes de Turbaco,
+\end_layout
+
+\begin_layout Standard
+Turbaco-Bolívar - Colombia,
+\end_layout
+
+\begin_layout Standard
+jopuermon@gmail.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Con este taller se pretende mostrar como con el uso de un software se puede
+ favorecer un acercamiento significativo al concepto de función a través
+ de actividades funcionales y de generalización y una movilidad por los
+ diferentes sistemas de representación (verbal, tabular, gráfico y algebraico).
+ Se establece una relación funcional de dependencia entre una variable inicial
+ (segmento) y una variable final (tamaño, perímetro o área) de un cuadrado,
+ posibilitándose así la visualización y el reconocimiento de patrones de
+ variación y cambio entre magnitudes.
+ Se hace un registro tabular (relación de dependencia cuantitativa) y un
+ registro gráfico (relación de dependencia cualitativa) lo que facilitara
+ la identificación y caracterización de un modelo funcional y su correspondiente
+ expresión algebraica.
+ 
+\end_layout
+
+\begin_layout Section
+DISEÑO DE UN PIZARRON DIGITAL PARA LA CLASE DE MATEMÁTICAS
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+José Lorenzo Sánchez Alavez.
+\end_layout
+
+\begin_layout Standard
+Centro de Investigación y Estudios Avanzados del IPN,
+\end_layout
+
+\begin_layout Standard
+México,
+\end_layout
+
+\begin_layout Standard
+klorenzk@ciencias.unam.mx
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este taller se diseñará una superficie interactiva con el potencial didáctico
+ de un pizarrón digital, que permita al docente generar situaciones interactivas
+ de aprendizaje bajo un enfoque metodológico de resolución de problemas.
+ La propuesta se fundamenta en el enfoque sociocultural de la acción mediada,
+ a partir de las ideas desarrolladas por Vygotsky, Brunner, Luis Moreno-Armella
+ y James Wertsch, entre otros; y se conjuga con los recursos tecnológicos
+ al alcance inmediato del docente.
+ Finalmente, se mostrarán diseños didácticos, usando distintos softwares
+ disponibles en la red, como Geogebra, Poly 32, Sankoré, BuilAR y TI Nspire
+ CX.
+ cutidos.
+ 
+\end_layout
+
+\end_body
+\end_document

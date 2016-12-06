@@ -1,0 +1,7952 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+\usepackage{blindtext}
+\usepackage{multicol}
+\usepackage[utf8x]{inputenc}
+\usepackage{balance}
+\pagestyle{headings}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{setspace}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\newcommand{\lyxmathsym}[1]{\ifmmode\begingroup\def\b@ld{bold}
+  \text{\ifx\math@version\b@ld\bfseries\fi#1}\endgroup\else#1\fi}
+
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\newenvironment{lyxlist}[1]
+{\begin{list}{}
+{\settowidth{\labelwidth}{#1}
+ \setlength{\leftmargin}{\labelwidth}
+ \addtolength{\leftmargin}{\labelsep}
+ \renewcommand{\makelabel}[1]{##1\hfil}}}
+{\end{list}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\input{preamble}
+\input{codigo}
+\usepackage{fancyvrb}
+\usepackage{cancel}
+\usepackage[unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=true,bookmarksopen=true,bookmarksopenlevel=1,
+ breaklinks=false,pdfborder={0 0 0},backref=false,colorlinks=false]
+ {hyperref}
+\hypersetup{
+ pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false}
+ \newsavebox{\LstBox}
+ %\graphicspath{ {./img/} }
+ \makeatletter
+\def\input@path{{./}{./build/}}
+\makeatother
+ \graphicspath{{./}{./img/}{./build/}}
+ \renewcommand{\baselinestretch}{1.5}
+\raggedbottom %para que no distibuya los espacios verticales en una hoja
+\usepackage[spanish]{babel}
+ 
+\addto\captionsspanish{
+\def\tablename{Tabla}
+\def\listtablename{\'Indice de tablas}
+}
+%\titleformat{\section}{\large\bfseries}{CO\thesection}{1em}{}
+%\renewcommand{\thesection}{CO\ \arabic{section}} 
+\renewcommand\thesection{CO\ \nplpadding{3}\numprint{\arabic{section}}}
+\makeatother
+\end_preamble
+\options twocolumn,balance,english,spanish,svgnames,x11names,x11names,HTML
+\use_default_options false
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding utf8x
+\fontencoding default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "pdfpagelayout=OneColumn,pdfnewwindow=true,pdfstartview=XYZ,plainpages=false"
+\papersize default
+\use_geometry false
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 2
+\papersides 1
+\paperpagestyle headings
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+frontmatter
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagecolor{ptcbackground}
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+vfill
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+begin{multicols}{1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+onecolumn
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+color{white} 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+COMITÉ LATINOAMERICANO DE MATEMÁTICA EDUCATIVA
+\end_layout
+
+\begin_layout Standard
+\align right
+Comisión Directiva Presidenta: Claudia Lara Galo (Guatemala) 
+\end_layout
+
+\begin_layout Standard
+\align right
+Secretaria: Cecilia Crespo Crespo (Argentina)
+\end_layout
+
+\begin_layout Standard
+\align right
+Tesorera: Elizabeth Mariscal Vallarta (México)
+\end_layout
+
+\begin_layout Standard
+\align right
+Vocales Caribe: Ángela Martin (República Dominicana)
+\end_layout
+
+\begin_layout Standard
+\align right
+Centroamérica: Edison De Faria (Costa Rica)
+\end_layout
+
+\begin_layout Standard
+\align right
+Norteamérica: Marcela Ferrari (México)
+\end_layout
+
+\begin_layout Standard
+\align right
+Sudamérica: Patricia Lestón (Argentina)
+\end_layout
+
+\begin_layout Standard
+\align right
+COMITÉ NACIONAL ORGANIZADOR
+\end_layout
+
+\begin_layout Standard
+\align right
+Manager Blanca Peralta
+\end_layout
+
+\begin_layout Standard
+\align right
+Coordinadores Jorge Rodríguez C.
+\end_layout
+
+\begin_layout Standard
+\align right
+Alejandro Urieles G.
+\end_layout
+
+\begin_layout Standard
+\align right
+Miembros Angélica Arroyo
+\end_layout
+
+\begin_layout Standard
+\align right
+Sonia Balbuena
+\end_layout
+
+\begin_layout Standard
+\align right
+Karina García
+\end_layout
+
+\begin_layout Standard
+\align right
+Alirio Gerardino
+\end_layout
+
+\begin_layout Standard
+\align right
+Antálcides Olivo
+\end_layout
+
+\begin_layout Standard
+\align right
+María José Ortega
+\end_layout
+
+\begin_layout Standard
+\align right
+Ramiro Peña
+\end_layout
+
+\begin_layout Standard
+\align right
+Jorge Robinson
+\end_layout
+
+\begin_layout Standard
+\align right
+Julio Romero
+\end_layout
+
+\begin_layout Standard
+\align right
+Lesly Salas
+\end_layout
+
+\begin_layout Standard
+\align right
+Diana Vargas
+\end_layout
+
+\begin_layout Standard
+\align right
+Gabriel Vergara
+\end_layout
+
+\begin_layout Standard
+\align right
+Ludwing Villa
+\end_layout
+
+\begin_layout Standard
+\align right
+Alejandro Villareal
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+end{multicols}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vfill
+\backslash
+newpage
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+color{white}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size largest
+Presentación
+\end_layout
+
+\begin_layout Standard
+La Vigésimo Octava Reunión Latinoamericana de Matemática Educativa RELME
+ 28 constituye una de las más importantes oportunidades para que docentes
+ e investigadores del ámbito de la Matemática Educativa intercambien experiencia
+s, comuniquen el avance de sus investigaciones y realicen propuestas innovadoras
+ en la enseñanza de la matemática en los distintos educativos.
+ RELME 28 ha convocado a colegas de diversos países que podrán participar
+ de las 690 actividades programadas; 48 invitadas y 642 aceptadas por el
+ comité evaluador Conferencias Plenarias: 3 Conferencias Especiales: 25
+ Cursos Cortos: 20 Mesas Redondas: 6 Grupos de Trabajo y Discusión: 6 Reportes
+ de Investigaciones: 328 Comunicaciones Breves: 208 Talleres: 52 Posters
+ (Carteles): 42 El caso de las conferencias plenarias, las conferencias
+ especiales y los cursos cortos, el comité Organizador invito a destacados
+ especialistas de su área.
+ Para el resto de las propuestas, se procedió a la evaluación, como es de
+ costumbre y tradición en RELME: cada propuesta fue enviada a dos árbitros
+ que procedieron a su revisión; en el caso en que no hubiera acuerdo entre
+ las opiniones de estos, se envió la propuesta a un tercer evaluador que
+ dictamino.
+ La cantidad de propuestas evaluadas fue de: 667, resultando 25 de ellas
+ no aprobadas para su presentación en RELME 28.
+ Las actividades contarán con los aportes de colegas provenientes de: Alemania,
+ Angola, Argentina, Brasil, Chile, Colombia, Costa Rica, Cuba, Ecuador,
+ España, Guatemala, Honduras, México, Nicaragua, Panamá, Perú, Portugal,
+ Puerto Rico, República Dominicana, Uruguay y Venezuela.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+ }
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+maketitle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+let
+\backslash
+myclearpage
+\backslash
+clearpage
+\backslash
+tableofcontents{}
+\backslash
+let
+\backslash
+myclearpage
+\backslash
+relax
+\backslash
+newpage{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+mainmatter 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{headings}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+nocite{*}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fontsize{7}{8}
+\backslash
+selectfont
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+setlength{
+\backslash
+baselineskip}{5pt}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagecolor{white} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagecolor{white}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+mainmatter
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+headings
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+chapter{Coferencias Especiales} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+chaptertoc
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+twocolumn
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+balance
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+INVESTIGACIÓN EN EDUCACIÓN MATEMÁTICA Y LOS RETOS DE LA INCLUSIÓN EN AMERICA
+ LATINA
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Paola Valero
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad de Aalborg,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Dinamarca 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill paola@learning.aau.dk
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+La educación matemática es el pilar de economías competitivas para alcanzar
+ el crecimiento y bienestar económicos.
+ Este enunciado ilustra la racionalidad sobre la función de la educación
+ matemática para el trabajo y la economía.
+ Investigación que sirva, con evidencias contundentes, y que sí asegure
+ el éxito escolar es lo que piden administradores, políticos y el público
+ en general.
+ En esta plenaria me interesa criticar esta perspectiva con preguntas como:
+ ¿Cuáles han sido los objetos de estudio de la educación matemática? ¿Cómo
+ la investigación en educación matemática contribuye a un colonialismo cultural
+ que se disfraza detrás de la neutralidad de las matemáticas? Finalmente,
+ señalaré estrategias de investigación para repensar qué papel puede jugar
+ la investigación en educación matemática en enfrentar la exclusión sistemática
+ de grandes porciones de la población en el éxito educativo.
+\end_layout
+
+\begin_layout Section
+FILOSOFÍA, MATEMÁTICAS Y EDUCACIÓN: UNA PERSPECTIVA HISTÓRICO-CULTURAL EN
+ EDUCACIÓN MATEMÁTICA
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Gilberto Obando Zapata
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad de Antioquia, 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ Colombia,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill gilberto.obando@udea.edu.co 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En esta conferencia, sobre la base de planteamientos epistemológicos derivados
+ de la teoría de la actividad, en primer lugar se argumenta en favor de
+ una postura sobre el conocimiento matemático que posiciona los procesos
+ individuales y sociales de su constitución como polos de una dualidad dialéctic
+a mediada por los sistemas de prácticas socialmente compartidos.
+ Con base en estos planteamientos, y tomando en consideración la noción
+ de configuración epistémica, en segundo lugar, se presenta una caracterización
+ de los sistemas de práctica matemática (objetos y conceptos, instrumentos
+ y procedimientos, problemas por resolver), aportando elementos teóricos
+ y metodológicos para el estudio de la actividad matemática de los individuos
+ en condiciones institucionales específicas.
+\end_layout
+
+\begin_layout Section
+COLONIZACIÓN Y MATEMÁTICAS ESCOLARES.
+ UNA MIRADA HISTÓRICO CULTURAL A LA EDUCACIÓN MATEMÁTICA
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "40col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Paola Valero  
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad de Aalborg, Dinamarca 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ paola@learning.aau.dk
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{1.1cm}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "40col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Gloria García 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill Universidad Pedagógica Nacional de Colombia
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ gloriag@pedagogica.edu.co
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{5pt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los estudios histórico-culturales que hemos realizado nos permiten pensar
+ el funcionamiento del currículo de matemáticas como una tecnologías de
+ gobierno.
+ Estas tecnologías fabrican al sujeto racional, objetivo, universal que
+ realiza las promesas del ciudadano cosmopolita Moderno.
+ A través del estudio de la inserción histórica de las matemáticas escolares
+ en el proyecto colonizador y sus mutaciones en el siglo 20, mostramos como
+ el currículo de matemáticas opera para efectuar la entrada de Colombia
+ en la promesa del desarrollo.
+ La pregunta que surge es si es posible mantener una visión cándida del
+ supuesto “empoderamiento” que se le atribuye a las matemáticas escolares
+ cuando su constitución histórico-cultural se fundamenta en la exclusión
+ de proyectos de subjetividad diferentes a los de la Modernidad Europea
+ y Norteamericana.
+\end_layout
+
+\begin_layout Section
+UNA PERTURBACIÓN VÍA INTELIGENCIAS MÚLTIPLES DEL ENFOQUE DE J.
+ D.
+ GODINO SOBRE LA COGNICIÓN MATEMÁTICA: REPORTE DE UN ESTUDIO DE CASO RELACIONADO
+ CON ALGUNOS TEMAS DE ANÁLISIS MATEMÁTICO
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad Simón Bolívar,  
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Venezuela,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill  yquintana@usb.ve 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En esta charla se presentarán algunos resultados de un estudio reciente
+ sobre el uso de los sistemas de representación semiótica como herramienta
+ para determinar los significados institucionales y personales contenidos
+ en algunos temas de Análisis Matemático de Licenciaturas de Matemática
+ y Educación Matemática de Universidades venezolanas.
+ La idea central de este estudio es perturbar el enfoque de cognición matemática
+ propuesto por J.
+ D.
+ Godino (2003) usando como plataforma cognitiva a la Teoría de Inteligencias
+ Múltiples -en lugar de la Teoría Antropológica-, con el objeto de identificar
+ posibles conflictos semióticos presentes en el proceso de enseñanza-aprendizaje
+ de temas de Análisis Matemático.
+ 
+\end_layout
+
+\begin_layout Section
+LA PEDAGOGÍA SOCIAL Y SUS APORTES A LA ENSEÑANZA DE LA MATEMÁTICA
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Miledys Tavárez Marzán
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Facultad de Educación, Universidad Autónoma de Santo Domingo,   
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Republica Dominicana,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill  miledyst@gmail.com 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Al relacionar Pedagogía Social y Matemática educativa, es por su vinculación
+ de forma directa con la didáctica y la vida social.
+ Muchos han querido soslayar estas cercanías y es necesario que educadores
+ matemáticos, investigadores e investigadoras trabajemos con mayor esfuerzo
+ esta relación para que los aprendices de la matemática puedan valorar su
+ potencia en la sociedad.
+ Matemática, vida y realidad comulgan en el intelecto humano para entender
+ su mundo y su accionar, la pedagogía social surge para fortalecer la participac
+ión derribando prejuicios sociales, la matemática se hace necesaria para
+ los procesos actuales del ser humano, urge involucrar a las mayorías en
+ su aprendizaje.
+\end_layout
+
+\begin_layout Section
+TECNOLOGÍAS NO CURRÍCULO DE MATEMÁTICA
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Claudia Lisete Oliveira Groenwald
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidade Luterana do Brasil, ULBRA   
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Brasil,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill  claudiag1959@yahoo.com.br
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esta conferência apresenta os resultados de pesquisa do projeto Inovando
+ o Currículo de Matemática através da Incorporação das Tecnologias.
+ A investigação está associada ao convênio firmado entre a Universidade
+ de La Laguna (ULL), em Tenerife, Espanha, com o grupo de Tecnologias Educaciona
+is e a Universidade Luterana do Brasil, com o Grupo de Estudos Curriculares
+ em Educação Matemática (GECEM), do Programa de Pós-Graduação em Ensino
+ de Ciências e Matemática (PPGECIM).
+ Apresenta-se o SIENA - sistema integrado de ensino e aprendizagem, que
+ é um sistema inteligente para o desenvolvimento do processo de ensino e
+ aprendizagem de um conteúdo qualquer, para qualquer nível de ensino.
+ Todo trabalho no SIENA possui as seguintes ações: grafo com o conteúdo
+ a ser desenvolvido, banco de questões para os testes adaptativos e sequências
+ didáticas para cada conceito do grafo.
+ O sistema possui duas opções de uso: a primeira serve para o aluno estudar
+ os conteúdos do grafo planificado e realizar o teste, para verificar quais
+ são seus conhecimentos sobre determinados conteúdos; a segunda opção oportuniza
+, ao aluno, realizar o teste e estudar os conceitos nos quais apresentou
+ dificuldades, sendo possível uma recuperação individualizada dos conteúdos
+ nos quais não conseguiu superar a média estipulada como necessária para
+ avançar.
+ O sistema SIENA permite estudos individualizados e, em grupos de estudos,
+ possibilitando tanto a recuperação individualizada de conteúdos como a
+ aprendizagem através da cooperação e colaboração entre os pares.
+ Entende-se que os educadores têm como desafio, descobrir maneiras diferentes
+ de ensinar a mesma coisa, pois os estudantes têm ritmos e históricos variados,
+ além disso, o sistema educacional, historicamente, é projetado igualmente
+ para todos os estudantes, de forma que o aluno deve adaptar-se em um contexto
+ educacional definido.
+ O professor necessita, nos dias atuais, questionar a abordagem do conteúdo,
+ devendo despertar a curiosidade do educando e demonstrar sua utilização
+ em diferentes situações da vida real.
+ Assim um dos desafios que os professores encontram, em sala de aula, é
+ a identificação das dificuldades individuais dos alunos.
+ Nesse sentido, o uso de recursos informáticos pode influenciar beneficamente
+ quando utilizados como suporte ao trabalho docente.
+ Em uma sociedade de bases tecnológicas, com mudanças contínuas, não é mais
+ possível desprezar o potencial pedagógico que as Tecnologias de Informação
+ e Comunicação (TIC) apresentam quando incorporadas à educação.
+ Assim, o computador é um instrumento pertinente no processo de ensino e
+ aprendizagem, cabendo à escola utilizá-lo de forma coerente com uma proposta
+ pedagógica atual e comprometida com uma aprendizagem significativa.
+\end_layout
+
+\begin_layout Section
+¿QUÉ PODEMOS APRENDER DE LOS PAÍSES DE ALTO RENDIMIENTO EN LAS MATEMÁTICAS?
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Patrick Scott
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad Estatal de Nuevo México (Emérito)   
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill  pscott@nmsu.edu
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Japón, Corea, China, Finlandia y Polonia han recibido mucha fama por su
+ éxito en las pruebas internacionales de PISA.
+ ¿Cuáles son algunas de las características demográficas de dichos países
+ y cómo se comparan con los países de América Latina? ¿Cómo son sus programas
+ de matemáticas? ¿Qué son algunos de los aspectos principales de sus sistemas
+ educativos? ¿Cuáles son algunos de dichos aspectos son los principales
+ en su éxito en pruebas internacionales? ¿Cómo se comparan los aspectos
+ educativos principales de dichos países con aquellos de los países de América
+ Latina? ¿Qué debemos aprender de sus experiencia? 
+\end_layout
+
+\begin_layout Section
+LA HISTORIA DE LAS MATEMÁTICAS EN EL CONOCIMIENTO DIDÁCTICO DEL CONTENIDO
+ MATEMÁTICO DEL PROFESOR DE MATEMÁTICAS 
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Edgar Alberto Guacaneme Suárez – Lyda Constanza Mora Mendieta
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad Pedagógica Nacional,
+\backslash
+
+\backslash
+ Colombia,  
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill  guacaneme@pedagogica.edu.co – lmendieta@pedagogica.edu.co
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El vínculo entre la Historia de las Matemáticas [HM] y el conocimiento del
+ profesor de Matemáticas [CPM] exhibe interesantes matices cuando se analiza
+ la intervención de la HM en el conocimiento didáctico del contenido matemático
+ [CDCM], entendido como un componente del CPM.
+ Tales matices viran de manera singular cuando, más allá de posiciones discursiv
+as, se investiga sobre las especificidades de la introducción factual del
+ conocimiento histórico en cursos de didácticas específicas de las Matemáticas,
+ a través de los cuales se procura favorecer el CDCM con la HM.
+ Esta condición impone, al formador de profesores, altas exigencias respecto
+ de su conocimiento.
+\end_layout
+
+\begin_layout Section
+LA EVALUACIÓN DEL DOMINIO AFECTIVO EN MATEMÁTICAS.
+ IDEAS Y CONCEPCIONES DE LOS PROFESORES DE MATEMÁTICAS.
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Janeth A.
+ Cárdenas Lizarazo
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad de Extremadur,
+\backslash
+
+\backslash
+ España,  
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill  jacardenasl@unex.es
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Diversas investigaciones constatan la importancia e influencia que tienen
+ los aspectos del dominio afectivo en el aprendizaje y la enseñanza de las
+ matemáticas.
+ En algunas prácticas de evaluación, el profesor evalúa lo actitudinal en
+ los estudiantes, a partir de unas pautas de comportamiento que visualiza
+ en ellos.
+ Cuando dichas pautas de comportamiento siguen patrones negativos, se siguen
+ procesos formativos, a partir de sugerencias que se dan a los estudiantes
+ y a los padres de familia, y en caso de ser necesario se sanciona a través
+ de la calificación; rara vez se buscan respuestas en el dominio afectivo
+ de los estudiantes.
+\end_layout
+
+\begin_layout Section
+CONFERENCIA ESPECIAL UNA “BUENA CLASE” DE MATEMÁTICAS: ¿QUÉ DEBE ENFRENTAR
+ ACTUALMENTE UN DOCENTE?
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Harold Castillo Sánchez
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Pontificia Universidad Javeriana.
+ Seccional Cali,
+\backslash
+
+\backslash
+ Colombia,  
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill  hcastillo@javerianacali.edu.co
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+¿Qué han aportado las diversas investigaciones en didáctica de las matemáticas
+ para cuestionar las planificar, realizar y evaluar una “buena clase”? ¿Cómo
+ se determina, a la luz de nuevas propuestas didácticas, que se ha realizado
+ una “buena clase”?.
+ En esta ponencia se presentarán diversas posturas resultado de investigaciones
+ en didáctica de las matemáticas con el objetivo de reflexionar, y crear
+ un espacio de reflexión, sobre lo que, como docente de matemáticas, se
+ debe considerar para afrontar un curso o asignatura de matemáticas en cualquier
+ nivel educativo.
+\end_layout
+
+\begin_layout Section
+DIFICULTADES EN EL APRENDIZAJE DE LA MATEMÁTICA
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Luis Roberto Moreno Chandler
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+CAIDDAM Panamá - Universidad de Panamá,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill  LuisMo@gmail.com   luisro25@hotmail.com
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Las dificultades en el aprendizaje de la matemática constituyen un tema
+ que aparece con frecuencia en los discursos docentes y en resultados de
+ investigadores en matemática educativa.
+ En muchos casos es evidente el manejo informal del tema y el desconocimiento
+ de una amplia gama de resultados e información estructurada científicamente
+ producto del trabajo de profesionales de diversas disciplinas científicas
+ interesado en el tema.
+ Nos proponemos revisar y compartir algunos aspectos fundamentales para
+ el estudio, investigación y atención de las DAM, es por ello que abordaremos
+ los siguientes aspectos: aproximación conceptual, factores, teorías explicativa
+s, diagnóstico, efectos y sugerencias para su intervención.
+ 
+\end_layout
+
+\begin_layout Section
+La variable aleatoria: un experimento de enseñanza en el curso de probabilidad
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Mora Rodríguez Yeferson Ferney - Parodi Garrido Karla Paola
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad Pedagógica Nacional,
+\backslash
+
+\backslash
+ Colombia,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill  yefri123@hotmail.com – mgkarlaparodi@gmail.com 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este trabajo, inscrito en la línea de Educación Estadística de la Universidad
+ Pedagógica Nacional, se diseñaron dos talleres para posibilitar el aprendizaje
+ de la distribución binomial e hipergeométrica, por medio de métodos no
+ magistrales, que a su vez proporcionaran datos que permitieran clasificar
+ el nivel estadístico de los estudiantes del curso de probabilidad.
+ Se llegó a las conclusiones, por medio de estadísticas, de que el mayor
+ porcentaje de los estudiantes corresponden al nivel de pensamiento estadístico
+ y que los talleres diseñados fueron funcionales para este tipo de experimentos.
+ 
+\end_layout
+
+\begin_layout Section
+UN MODELO DEL CONOCIMIENTO BASE PARA LA ENSEÑANZA DEL FORMADOR DE PROFESORES
+ DE MATEMÁTICAS ENCARGADO DEL COMPONENTE DIDÁCTICO
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Andrea Milena Beltrán Beltrán, Fernando Lázaro Luna, Lyda Constanza Mora
+ Mendieta
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad Pedagógica Nacional,
+\backslash
+
+\backslash
+ Colombia,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+hfill mdma
+\backslash
+_abeltran343@pedagogica.edu.co; mdma
+\backslash
+_wlazaro526@pedagogica.edu.co;
+\backslash
+
+\backslash
+  
+\backslash
+hfill lmendieta@pedagogica.edu.co 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la conferencia que se propone se presenta un modelo de lo que se considera
+ es el Conocimiento Profesional del Formador de Profesores de Matemáticas
+ (CPFPM), en particular, de aquel profesional encargado de la enseñanza
+ del componente Didáctico.
+ Dicho modelo, es resultado de: 1) un estudio de caso llevado a cabo en
+ la Universidad Pedagógica Nacional (Bogotá, D.C., Colombia) y 2) un proceso
+ análogo desarrollado a partir de la propuesta planteada por Shulman (1986)
+ con relación al conocimiento profesional del profesor y, una adaptación
+ que hace Pinto (2010) para el caso particular del conocimiento del profesor
+ de matemáticas.
+ 
+\end_layout
+
+\begin_layout Section
+MENTIRAS, MEDIAS VERDADES Y VERDADES ACERCA DE LA OBRA DE AURELIO BALDOR
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Walter O.
+ Beyer K
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Instituto Pedagógico de Caracas-Universidad Pedagógica Experimental Libertador,
+\backslash
+
+\backslash
+ Venezuela,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill nowarawb@gmail.com 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La revisión de diversas fuentes, muy particularmente Internet, sobre a la
+ vida y obra de Aurelio Baldor llaman profundamente a la reflexión.
+ Se encuentra que hay una proliferación de menciones a este personaje y
+ a sus libros; además, la gran mayoría de las afirmaciones que se hacen
+ carecen de veracidad o parten de hechos reales pero deformados.
+ La presente conferencia pretende desentrañar gran parte de los elementos
+ de la vida y obra de este autor, basándose en fuentes fidedignas que permiten
+ reconstruirlas con certeza; desenmascarando además elementos de intereses
+ subyacentes, de orden político y comercial, que rodean a este caso.
+\end_layout
+
+\begin_layout Section
+EL NECESARIO PERO DIFÍCIL DIÁLOGO ENTRE LA MATEMÁTICA ESCOLAR Y LA REALIDAD
+ (DE LOS ESTUDIANTES)
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Hugo Parra S.
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad del Zulia,
+\backslash
+
+\backslash
+ Venezuela,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill hps1710@yahoo.es 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Abordaremos la vinculación de las matemáticas escolares con la realidad,
+ ya que es una exigencia tanto desde el ámbito institucional como del académico.
+ Esta vinculación supone experiencias significativas para los estudiantes
+ que sólo será posible si se establece un diálogo entre la matemática escolar
+ y las diferentes prácticas sociales –cotidianas o no -asociadas a las matemátic
+as.
+ Para ello se debe reconsiderar los actores y su rol en los procesos de
+ enseñanza y aprendizaje.
+ Además, exige de la institución escolar traspasar sus muros e ir al encuentro
+ de las diferentes prácticas sociales de la matemática externas a ella.
+ 
+\end_layout
+
+\begin_layout Section
+CONFERENCIA: SIGNIFICADO FILOSÓFICO DEL CERO MAYA: NIK
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+José Mucia Batz.
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ Guatemala.CA,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill batz.lem@gmail.com 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+NIK: El cero forma parte de los tres símbolos numéricos básicos para el
+ conteo vigesimal maya.
+ Cosmovisión maya.
+ El pensamiento maya es circular a similitud del cosmos, por lo tanto el
+ conteo también es circular.
+ Círculos numéricos.
+ Conteo desde el cero hasta el diecinueve es el primer círculo.
+ El cero forma parte del ciclo y tiene la posición de ser el principio y
+ fin.
+ La semilla cumple con los requisitos de ser cero porque es el principio
+ y fin.
+ El día cero del calendario maya es el día Ajaw.
+ El punto cero en la vida es el nacimiento y la muerte.
+\end_layout
+
+\begin_layout Section
+DEFICIENCIAS EN LOS CONTENIDOS MATEMATICOS Y DIDÁCTICOS DE LOS PROFESORES
+ EN EJERCICIO EN REPÚBLICA DOMINICANA
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Carmen Evarista Matías de Rodríguez.
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad Autónoma de Santo Domingo,
+\backslash
+
+\backslash
+ República Dominicana,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill evaristam@gmail.com 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se realiza un estudio de tipo exploratorio para identificar las deficiencias
+ en los contenidos matemáticos y didácticos de los profesores en ejercicio.
+ La muestra estuvo conformada por 48 estudiantes de la Maestría en Didáctica
+ de la Matemática, de la Facultad de Ciencias de la Educación de la Universidad
+ Autónoma de Santo Domingo, República Dominicana.
+ Identificando la detección de deficiencias como parte del proceso de evaluación
+, el estudio se fundamenta teóricamente en los principios de la evaluación
+ del aprendizaje del carácter contingente de la evaluación y el principio
+ del equilibrio valorativo en la evaluación, así como en las regularidades
+ metodológicas para el desarrollo de la evaluación.
+ Los resultados muestran que es contradictorio que más de la mitad de los
+ profesores se siente completamente satisfechos con el trabajo que realizan
+ y que a la vez manifiesten que tienen dificultades con el conocimiento
+ de los conceptos fundamentales de la Didáctica y, además, el 81.25% tiene
+ algunas o bastantes deficiencias lo que permite indicar que los métodos
+ de investigación para la profesionalización de estos profesores deben estar
+ dirigidos, en primera instancia, a lograr en ellos el reconocimiento, de
+ su propio nivel de desarrollo, buscando el equilibrio evaluativo entre
+ los profesores.
+ 
+\end_layout
+
+\begin_layout Section
+RETOS Y DILEMAS DE LA FORMACIÓN DEL PROFESORADO DE MATEMÁTICAS QUE BUSCA
+ DESARROLLO PROFESIONAL
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Edelmira Badillo.
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Departament de Didàctica de les Matemàtiques i de les CCEE.
+ Universitat Autónoma de Barcelona,
+\backslash
+
+\backslash
+ España,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill evaristam@gmail.com 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En esta conferencia compartiré reflexiones realizadas, desde mi experiencia
+ como maestra de matemáticas, formadora de maestros e investigadora, sobre
+ los elementos esenciales de los modelos de formación del profesorado de
+ matemáticas.
+ Un recorrido por los antecedentes de esta línea de investigación desvelará
+ retos y dilemas sobre las características de la formación que promueven
+ auténtico desarrollo profesional.
+ Finalmente compartiré instrumentos formativos que estamos implementando
+ para ayudar al profesorado a identificar los elementos relevantes de una
+ práctica matemática de aula; a conectar la interacción con los aprendizajes
+ de sus estudiantes y a usar sus conocimientos para reflexionar sobre su
+ práctica y mejorarla.
+ 
+\end_layout
+
+\begin_layout Section
+A LITERATURA COMO MOTIVADORA PARA O ENSINO DE MATEMÁTICA: UM OLHAR SOBRE
+ AS OBRAS DE LEWIS CARROLL
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Rafael Montoito.
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Instituto Federal Sul-Rio-Grandense (IFSUL, Campus Pelotas),
+\backslash
+
+\backslash
+ Brasil,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill xmontoito@ig.com.br 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aliando imaginação e fantasia às aulas de matemática, a literatura pode
+ favorecer o ambiente de ensino e servir para discutir conteúdos que, às
+ vezes, aparecem nos livros didáticos de uma maneira puramente conceitual.
+ Vários estudos teóricos têm falado, também, sobre a necessidade atual de
+ os alunos aprenderem a ler, escrever e argumentar matematicamente, o que
+ é possível ser trabalhado com atividades que abordam a língua materna e
+ os conceitos e conteúdos matemáticos.
+ Dentre os autores cujos livros servem a essas propostas, destacamos as
+ obras de Lewis Carroll, suas intenções como autor e suas opiniões sobre
+ a educação e o ensino.
+\end_layout
+
+\begin_layout Section
+La escuela, el aula, la enseñanza de la matemática.
+ Un recorrido a través de la historia
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Cecilia Crespo Crespo.
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Instituto Superior del Profesorado “Dr.
+ Joaquín V.
+ González”,
+\backslash
+
+\backslash
+ Buenos Aires (Argentina),
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill crccrespo@gmail.com 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La matemática ha sido considerada por distintas culturas como disciplina
+ necesaria para explicar y predecir situaciones y fenómenos de la naturaleza,
+ lo económico y lo social.
+ Este trabajo presenta un recorrido a lo largo de la historia describiendo
+ el espacio en el que tenía lugar la enseñanza de la matemática en diversos
+ escenarios socioculturales y su relación con la manera en la que se transmitía
+ o construía el conocimiento matemático.
+ Intentaremos comprender que el aula actual tiene un pasado y que emergió
+ en respuesta a desafíos específicos y siguen teniendo algunos de sus significad
+os originales.
+ 
+\end_layout
+
+\begin_layout Section
+EDUCACIÓN MATEMÁTICA CRÍTICA Y EDUCACIÓN RELIGIOSA FEMENINA: ¿PROYECTOS
+ INCOMPATIBLES?
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Edgar Johanni Angulo Oliveros, Claudia Salazar Amaya, 
+\backslash
+
+\backslash
+ Jorge Edilson Solano Espitia.
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad Tecnológica de Bolívar- Universidad Pedagógica Nacional,
+\backslash
+
+\backslash
+ Colombia,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill edgarangulo72@hotmail.com; csalazar@pedagogica.edu.co; 
+\backslash
+
+\backslash
+ 
+\backslash
+hfill jorgesolanoespitia@gmail.com 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En Educación Matemática es frecuente considerar el significado como centro
+ de los procesos de enseñanza y aprendizaje de las matemáticas escolares
+ y asociar éste a las comprensiones de los estudiantes sobre los objetos
+ de estudio.
+ Este “centro” caracteriza los aprendizajes que se esperan sean alcanzados.
+ Sin embargo, nuestra investigación pretende discutir que el “centro” de
+ los procesos del aprendizaje y la enseñanza de las matemáticas sea el significa
+do, partiendo del reconocimiento de la resonancia entre los significados
+ que las estudiantes le atribuyen a las matemáticas y los propósitos de
+ un proyecto de formación de una escuela privada, católica y femenina.
+ 
+\end_layout
+
+\begin_layout Section
+CLASIFICACIÓN DE LOS ARGUMENTOS PRODUCIDOS POR ESTUDIANTES QUE INGRESAN
+ A CARRERAS TÉCNICAS AL RESOLVER UNA TAREA DE GENERALIZACIÓN CON NÚMEROS
+ 4-ESTELARES
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Miller Palacio Núñez 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Escuela colombiana de Carreras Industriales,
+\backslash
+
+\backslash
+ Colombia,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill milpal252000@gmail.com 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El objetivo principal de esta conferencia es presentar los resultados encontrado
+s en un trabajo de grado de la Maestría en Docencia de la Matemática, el
+ cual tiene como propósito clasificar los argumentos desarrollados por un
+ grupo de estudiantes de primer semestre de universidad al resolver una
+ tarea relacionada con números 4-estelares.
+ El análisis de los argumentos logrados por los estudiantes se hace a partir
+ del modelo de Toulmin como unidad mínima de argumentación.
+ Estos resultados se clasifican de acuerdo a los garantes y las hipótesis
+ planteadas por ellos en cinco modelos de argumentación a partir de la expresión
+ general encontrada.
+ 
+\end_layout
+
+\begin_layout Section
+PROPUESTA DE FORMACIÓN POSGRADUAL EN EDUCACIÓN MATEMÁTICA SUSTENTADA EN
+ LA INVESTIGACIÓN.
+ UNIVERSIDAD PEDAGÓGICA NACIONAL, BOGOTÁ (COLOMBIA)
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Leonor Camargo Uribe, María Nubia Soler-Álvarez 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad Pedagógica Nacional,
+\backslash
+
+\backslash
+ Colombia,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill lcamargo@pedagogica.edu.co, nsoler@pedagogica.edu.co  
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esta conferencia presenta a la comunidad internacional una propuesta de
+ formación que se viene desarrollando desde el año 2008 en el programa de
+ Maestría en Docencia de la Matemática (MDM) de la Universidad Pedagógica
+ Nacional (Bogotá – Colombia), la cual se articula alrededor del desarrollo
+ de competencias investigativas e innovativas, con las cuales pretendemos
+ que nuestros egresados se incorporen al campo de conocimiento de la educación
+ matemática, se cualifiquen y contribuyan a la solución de problemas propios
+ del contexto colombiano.
+ Esperamos que impulse el intercambio académico de experiencias de formación
+ postgradual y sirva como referente de formación en otros países latinoamericano
+s.
+\end_layout
+
+\begin_layout Section
+DIFICULTADES DE LOS ESTUDIANTES DE PROFESORADO EN RELACIÓN AL ÁLGEBRA
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Patricia Lestón.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Instituto Superior del Profesorado “Dr.
+ Joaquín V.
+ González”,
+\backslash
+
+\backslash
+ Argentina,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill patricialeston@gmail.com  
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El presente trabajo propone presentar algunas de las dificultades que los
+ estudiantes de Primer Año de Profesorado en Matemática evidencian al enfrentar
+ un primer curso de álgebra.
+ Se analizaran algunas de las problemáticas detectadas apoyados en la teoría
+ socioepistemológica, considerando las cuatro componentes de la construcción
+ del conocimiento matemático (social, didáctica, epistemológica y cognitiva).
+ En base a ese análisis y al estudio del discurso matemático escolar propio
+ del Instituto de Formación Docente que se toma como ejemplo, en este caso,
+ el Instituto Superior del Profesorado “Dr.
+ J.
+ V.
+ González”; se plantearan algunas ideas para el rediseño del curso.
+\end_layout
+
+\begin_layout Section
+DESARROLLO PROFESIONAL DEL PROFESOR DE MATEMÁTICAS: ¿CURSOS, MAESTRÍAS,
+ O COLECTIVOS?
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Javier Lezama.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Instituto Politécnico Nacional,
+\backslash
+
+\backslash
+ México,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill jlezamaipn@gmail.com 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La experiencia de trabajo en las actividades que son reconocidas formalmente
+ como desarrolladoras del desempeño profesional del profesor de matemáticas,
+ tales como estudios de posgrado, cursos específicos en el campo disciplinar,
+ así como de reflexión didáctica y pedagógica la sobre docencia en matemáticas,
+ han dejado de lado la creación de colectivos de profesores que de manera
+ independiente y con espíritu profesional definan los estándares de desempeño
+ y analicen de manera crítica su actividad docente para así hacer planteamientos
+ alternativos e innovadores para educar matemáticamente a la sociedad.
+ En esta conferencia reflexionamos sobre este tema.
+ 
+\end_layout
+
+\begin_layout Section
+LA EDUCACIÓN MATEMÁTICA EN EL MUNDO DE LA WEB 2.0
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Sandra L.
+ Castillo V.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad Nacional Experimental de Guayana,
+\backslash
+
+\backslash
+ Venezuela,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill sandralilianacastillo@gmail.com  
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se pretende, con esta Conferencia Especial, establecer la importancia que
+ se debe otorgar al uso de las Tecnologías de Información y Comunicación
+ (TIC) en el área de la Educación Matemática particularmente con el uso
+ de herramientas como la WEB 2.0 y otras TIC en los procesos de enseñanza
+ y aprendizaje de las matemáticas y, a la vez, hacer una reflexión crítica
+ acerca de la práctica del docente de matemática en tiempos de la Educación
+ 2.0.
+ Para ello se desarrollarán los siguientes tópicos: Características de la
+ educación 2.0.
+ ¿Cómo se perfilan los procesos de enseñanza y aprendizaje de la matemática
+ dentro del mundo de la WEB 2.0? ¿Se puede hablar de cambios en la manera
+ de enseñar y en la manera de aprender matemática mediante la utilización
+ de la WEB 2.0? Rol del docente de matemática en tiempos de la WEB 2.0 ¿Cómo
+ ha resultado ser la apropiación de los conocimientos matemáticos cuando
+ se hace uso de los elementos propios de la WEB 2.0? Finalmente, no olvidemos
+ que por mucha tecnología -moderna o no- que exista, el rol del DOCENTE
+ es primordial en todos los procesos involucrados en la Educación Matemática
+ sin menoscabo del ambiente y teniendo como protagonista al ALUMNO.
+\end_layout
+
+\begin_layout Section
+Evaluación en el Aula y Matemática Educativa
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Ángel Homero Flores Samaniego.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Colegio de Ciencias y Humanidades, UNAM,
+\backslash
+
+\backslash
+ México,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill ahfs@unam.mx 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La evaluación en el aula es la recolección de información pertinente sobre
+ el proceso de enseñanza-aprendizaje con miras a su mejora.
+ Mientras que la matemática educativa tiene como objetivo el estudio de
+ los procesos y la problemática que surgen en el ámbito de la enseñanza-aprendiz
+aje de la matemática con el objetivo de optimizar el aprendizaje de los
+ estudiantes.
+ En la presente conferencia se abordará la evaluación en el aula y su papel
+ en la mejora del proceso de enseñanza-aprendizaje a través de la retroalimentac
+ión y del uso de instrumentos de evaluación, como instrumentos de investigación
+ educativa en el aula.
+\end_layout
+
+\begin_layout Section
+APRENDIZAJE DE LA MATEMÁTICA EN LÍNEA: LA EXPERIENCIA DE URUGUAY CON LA
+ PLATAFORMA ADAPTATIVA DE MATEMÁTICA
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Cristina Ochoviet.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Instituto de Perfeccionamiento y Estudios Superiores-Consejo de Formación
+ en Educación,
+\backslash
+
+\backslash
+ Uruguay,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill cristinaochoviet@gmail.com 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La Plataforma Adaptativa de Matemática - bettermarks provee un ambiente
+ para aprender matemática en línea cuyo principal centro de atención es
+ el proceso de aprendizaje.
+ Combina las potencialidades de los medios digitales con una adecuada selección
+ de contenidos y actividades matemáticas.
+ La retroalimentación que se brinda al estudiante es personalizada y depende
+ de lo que este va ingresando en las distintas etapas de la resolución de
+ una tarea, de ahí que hablemos de adaptividad.
+ En esta comunicación se presentará el entorno, focalizándonos en los distintos
+ tipos de ejercicios e interacciones que se ofrecen a los estudiantes.
+\end_layout
+
+\begin_layout Section
+CONOCIMIENTO SOBRE EL CONCEPTO DE FRACCIÓN DEL PROFESOR DE MATEMÁTICAS DE
+ SECUNDARIA
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Guadalupe Cabañas-Sánchez.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad Autónoma de Guerrero,
+\backslash
+
+\backslash
+ México,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill gcabanas@uagro.mx 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se estudia el conocimiento del profesor de matemáticas de educación secundaria
+ en México respecto del concepto de fracción.
+ Nos centramos en el conocimiento común y especializado del contenido y
+ en el conocimiento del contenido y los estudiantes, desde la perspectiva
+ de Ball, Thames y Phelps (2008).
+ El análisis considera la planeación de los profesores sobre el tópico fraccione
+s, las tareas y su desarrollo en condiciones de enseñanza.
+\end_layout
+
+\begin_layout Section
+REFLEXIONES SOBRE EL PROCESO DE ENSEÑANZA DE LA MATEMÁTICA
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Analida Ardila.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Departamento de Matemática, Universidad de Panamá,
+\backslash
+
+\backslash
+ Panamá,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill analidaardila@cableonda.net 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El propósito de esta conferencia es el de invitarles a reflexionar sobre
+ cómo se está dando el proceso de enseñanza de la Matemática.
+ Nos plantearemos y analizaremos algunas interrogantes: Qué Matemática estamos
+ enseñando? ¿Cómo la estamos enseñando? ¿Qué actividades planteamos a nuestros
+ estudiantes? 
+\end_layout
+
+\begin_layout Standard
+Presentaremos algunas de las acciones que deberían disminuirse a la hora
+ de impartir una clase de Matemática.
+ Y enfatizaremos en otras en que el docente, facilitador del aprendizaje,
+ debería utilizar.
+ Veremos la solución de problemas como un enfoque de enseñanza, favoreciendo
+ la representación visual como una herramienta potente para conjeturar y
+ resolver problemas.
+ 
+\end_layout
+
+\begin_layout Section
+REFLEXIONES SOBRE EL USO DE TÍTERES EN MATEMÁTICAS
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Marcela Ferrari Escolá.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad Autónoma de Guerrero,
+\backslash
+
+\backslash
+ México,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill marcela
+\backslash
+_{}fe@yahoo.com.mx 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Varias son las actividades que involucra el uso de los títeres para comunicar
+ ideas frescas y desafiantes para niños y jóvenes que se sumergen en la
+ magia que emana en todo espectáculo de teatro guiñol.
+ En esta ponencia presentaremos un análisis de las actividades que profesores
+ diseñan y realizan con sus estudiantes al ser desafiados a reproducir,
+ en su salón de clases, una experiencia con títeres vivida en el taller.
+ Se utiliza para esta actividad la obra “La aldea de los rombos”, que se
+ les presenta en vídeo y donde la clasificación jerárquica de cuadriláteros
+ es el disparador principal de la discusión.
+ 
+\end_layout
+
+\begin_layout Section
+DESARROLLO DEL SENTIDO GEOMÉTRICO
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Joaquín Padovani.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad Interamericana de Puerto Rico, Recinto de San Germán,
+\backslash
+
+\backslash
+ Puerto Rico,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill padovani1@hotmail.com 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El sentido geométrico se presenta partiendo de la definición de geometría,
+ la geometría de Euclides, geometría sintética y geometría algebraica.
+ Analizando los estudios realizados por algunos especialistas, así como
+ otros dirigidos por expertos en la pedagogía de la matemática, se orienta
+ el sentido geométrico al desarrollo de habilidades específicas, como, las
+ visuales, verbales, de dibujo, de lógica, de aplicación y de integración.
+ El sentido geométrico se desarrolla clasificando la geometría como el espacio
+ vivido, espacio percibido, espacio concebido y los espacios físico y geométrico.
+ Se presentan actividades integradoras para ilustrar el desarrollo del sentido
+ geométrico en la sala de clases.
+ 
+\end_layout
+
+\begin_layout Section
+MODELACIÓN, FUNCIONALIDAD Y MULTIDISCIPLINARIEDAD: EL ESLABÓN DE LA MATEMÁTICA
+ Y EL COTIDIANO
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Esta investigación está financiada por CONACYT con el Proyecto Las Resignificaci
+ones del Uso del Conocimiento Matemático: la Escuela, el Trabajo y la Ciudad.
+ Clave 0177368
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Francisco Cordero Osorio.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Centro de Investigación y de Estudios Avanzados del IPN,
+\backslash
+
+\backslash
+ México,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill fcordero@cinvestav.mx 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La matemática educativa debe construir un marco de referencia para valorar
+ la justificación funcional que demandan otros dominios de conocimiento.
+ Su construcción es condición sine qua non para poder crear el eslabón entre
+ la matemática y el cotidiano.
+ La naturaleza de la formulación obliga adentrar a la construcción social
+ del conocimiento matemático.
+ El objetivo es estructurar el eslabón a la luz de la secuencia de proyectos
+ de investigación según el rol de lo multidisciplinar, de la matemática
+ funcional y de la categoría modelación.
+ Se hace un cuestionamiento de la formación de profesores de matemáticas
+ que conlleva un programa para trastocar el conocimiento matemático permanenteme
+nte.
+\end_layout
+
+\begin_layout Section
+LA RESOLUCIÓN DE PROBLEMAS COMO PUENTE ENTRE LA MATEMÁTICA FORMAL Y LA EDUCACIÓN
+ MATEMÁTICA
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Eduardo Mancera Martínez.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+C@mpus de las Matemáticas, Virtual Educa,
+\backslash
+
+\backslash
+ México,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill mancera.eduardo@gmail.com 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La matemática como disciplina se desarrolla a partir de sistemas axiomáticos,
+ sin embargo dichos elementos aunque tuvieron relevancia en los planes y
+ programas de estudio de las “reforma de la matemática moderna”, no la tienen
+ en la actualidad.
+ Los intereses de la disciplina y los de la educación matemática parecen
+ contraponerse y buscar direcciones opuestas.
+ El tránsito de lo general a lo particular o la importancia de las aplicaciones
+ son puntos extremos en discusiones entre matemáticos y educadores matemáticos.
+ Sin embargo, la resolución de problemas es un punto de convergencia por
+ considerar cuando se buscan vínculos entre estas dos tendencias.
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+uppercase{ 
+\end_layout
+
+\end_inset
+
+Cursos bimodales: una buena estrategia para capacitar a docentes de matemática
+ en servicio
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Edison De Faria Campos.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad de Costa Rica,
+\backslash
+
+\backslash
+ Costa Rica,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill edison.defaria@ucr.ac.cr
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se describen logros alcanzados en capacitaciones desarrolladas durante 2013
+ con maestras de enseñanza básica y docentes de matemática de media.
+ Los cursos, desarrollados en forma bimodal enfatizaron dos ejes disciplinares
+ centrales del nuevo currículo de matemáticas: uso de tecnología y de historia
+ de las matemáticas.
+ Los 80 líderes de media capacitados se encargaron de replicar el modelo
+ a 1400 docentes de matemáticas mientras que las 300 maestras de básica
+ replicaron a 6000 maestras.
+ Los instrumentos aplicados revelaron que la estrategia bimodal utilizada
+ fue pertinente, novedosa y excelente, cuando comparada con otras estrategias
+ de capacitación aplicadas anteriormente en el país.
+ 
+\end_layout
+
+\begin_layout Section
+¿CONTRIBUYE LA DIDÁCTICA DEL ÁLGEBRA LINEAL A QUE LOS ESTUDIANTES IDENTIFIQUEN
+ LOS ESPACIOS VECTORIALES COMO UNA ESTRUCTURA SISTÉMICA?
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Ángela Mercedes Martín Sánchez.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Santo Domingo, República Dominicana,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill m.angela24@gmail.com 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la conferencia se exponen los aspectos teóricos relacionados con las
+ estructuras sistémicas y sus implicaciones didácticas, se hace un análisis
+ del enfoque didáctico de los libros de texto del Álgebra Lineal, en relación
+ a los Espacios Vectoriales, y se presentan los resultados de un estudio
+ realizado con profesores para precisar el conocimiento común, especializado
+ y propedéutico sobre el contenido de Espacios Vectoriales.
+ Con los resultados obtenidos se expone el análisis cualitativo en relación
+ a la contribución de la didáctica del Álgebra Lineal a que los estudiantes
+ identifiquen los espacios vectoriales como una estructura sistémica.
+ 
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+uppercase{ 
+\end_layout
+
+\end_inset
+
+Una reflexión acerca de la RESIGNFICACIÓN de conocimiento matemático escolar
+ a través de los usos de las gráficas
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Gabriela Buendía Abalos.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Red de Cimates,
+\backslash
+
+\backslash
+ México,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill buendiag@hotmail.com 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Buscamos poner al uso de las gráficas en el centro del análisis de la problemáti
+ca educativa, pero no como una aplicación de lo aprendido o como su empleo
+ cotidiano, sino hacer notar su papel en la construcción de conocimiento
+ matemático.
+ Para ello, proponemos al seno del marco teórico socioepistemológico, una
+ reflexión acerca de la naturaleza compleja de la noción uso la cual trae
+ consigo el contexto sociocultural.
+ Este enfoque deja de lado a la gráfica como un objeto matemático que sólo
+ representa a una función y trataremos de argumentar su papel como conocimiento
+ en uso, resignificando continuamente el saber matemático asociado.
+ 
+\end_layout
+
+\begin_layout Section
+EXPERIMENTOS DE DISEÑO EN EL AULA EXTENDIDA.
+ UNA ESTRATEGIA PARA EL REDISEÑO DEL DISCURSO TRIGONOMÉTRICO ESCOLAR
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Gisela Montiel Espinosa.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Instituto Politécnico Nacional,
+\backslash
+
+\backslash
+ México,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill gmontiel@ipn.mx  
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En esta conferencia presentaremos una mirada integral a los avances y resultados
+ de investigación que sobre la construcción social de conocimiento trigonométric
+o han obtenido algunos estudiantes de posgrado con orientación a la profesión,
+ y que también son profesores en servicio, para ejemplificar la conformación
+ de un aula extendida.
+ El elemento clave, proponemos en esta mirada, para lograr el rediseño del
+ discurso matemático escolar son los diseños de innovación didáctica fundamentad
+os en la interacción y el consenso entre la investigación (teoría) y la
+ práctica (conocimiento del aula).
+\end_layout
+
+\begin_layout Section
+TEORÍA SOCIOEPISTEMOLÓGICA DE LA MATEMÁTICA EDUCATIVA
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Ricardo Cantoral.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Cinvestav,
+\backslash
+
+\backslash
+ México,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill rcantor@cinvestav.mx 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El programa socioepistemológico de investigación en Matemática Educativa
+ se ha propuesto investigar los procesos de construcción social del conocimiento
+ matemático, produciendo una “descentración del objeto” como requisito indispens
+able para el “rediseño del discurso Matemático Escolar”.
+ La acción del rediseño es compartida entre docentes con sustento teórico
+ según la cual el saber matemático no se reduce al saber sabio, sino que
+ se constituye por una dialéctica entre saberes: populares, técnicos y cultos
+ que constituyen todos a la sabiduría humana.
+ En esta conferencia mostraremos tanto los elementos teóricos, cómo las
+ diversas formas en que opera la teoría a partir de ejemplos concretos de
+ diversos niveles educativos.
+ 
+\end_layout
+
+\begin_layout Section
+SISTEMA DE TAREAS PARA LA EVALUACIÓN DEL APRENDIZAJE EN EL TEMA DE ESPACIOS
+ VECTORIALES
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Olga Lidia Pérez González.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad de Camagüey,
+\backslash
+
+\backslash
+ Cuba,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill olguitapg@gmail.com  
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como resultado de un proyecto de investigación para el perfeccionamiento
+ de la enseñanza de la Matemática en el que se han propuestos resultados
+ teóricos y prácticos sobre el Álgebra Lineal, se propone un sistema de
+ tareas como sostén para el diseño del sistema de evaluación del aprendizaje.
+ La fundamentación teórica del diseño toma en consideración los aspectos
+ teóricos relacionados con 5 problemas claves que actúan como hilo conductor,
+ utilizando la combinación lineal de vectores como la célula que genera
+ cada uno de dichos problemas.
+ 
+\end_layout
+
+\begin_layout Section
+LOS ALGORITMOS TRADICIONALES DE LAS CUATRO OPERACIONES ARITMÉTICAS: ¡HAN
+ MUERTO, PERO NO HAN SIDO ENTERRADOS! ¡VIVAN LAS CALCULADORAS Y LOS ALGORITMOS
+ QUE DESARROLLAN EL CÁLCULO MENTAL!
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Antonio Ramón Martín Adrián.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Colegio público Aguamansa ,
+\backslash
+
+\backslash
+ Tenerife    Islas Canarias     ESPAÑA,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill tonycapicua@yahoo.es  
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La enseñanza y el aprendizaje de los ALGORITMOS TRADICIONALES DE LAS OPERACIONES
+ ARITMÉTICAS (ATOA) es actualmente un tema caduco y obsoleto.
+ En la actualidad, ninguno de estos procedimientos se hace fuera de los
+ centros escolares, y no aportan ni desarrollan ninguna habilidad cognitiva
+ que mejore el razonamiento lógico-matemático, siendo esto último el objetivo
+ fundamental que debe predominar en todas las acciones que hacemos los educadore
+s matemáticos con nuestros alumnos.
+ Esta conferencia quiere dar a conocer otros algoritmos para las operaciones
+ aritméticas, y será mediante la presentación de varios videos, donde se
+ verán situaciones reales de enseñanza aprendizaje.
+ 
+\end_layout
+
+\begin_layout Section
+MODELOS Y MODELACIÓN EN EDUCACIÓN MATEMÁTICA: ¿CUÁL ES EL ROL DE PROFESOR?
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Jhony Alexander Villa-Ochoa.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad de Antioquia,
+\backslash
+
+\backslash
+ Colombia,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill jhony.villa@udea.edu.co    
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En esta conferencia discutiré algunos episodios derivados de una investigación
+ en la que participa un conjunto de futuros profesores quienes se han involucrad
+o en temas de modelación matemática.
+ En los episodios, los participantes han analizado modelos matemáticos y
+ se les han fomulado cuestionamientos frente a los usos, posibilidades,
+ alcances y limitaciones que los modelos podrían frente al fenómeno que
+ modelan.
+ Los resultados muestran que cuando los futuros profesores analizan modelos
+ matemáticos, se reconocen como “otros usuarios” de los modelos, lo cual
+ complementa los planteamientos de Giere (1999) quien señala que los modelos
+ se constituyen como una terna de objeto representado, objeto representante
+ (representación) y usuario.
+ En el ámbito escolar, , los profesores reconocen las diferentes relaciones
+ y usos que se dan entre los objetos y los usuarios, pero también se reconocen
+ a sí mismos y a los estudiantes como otro tipo de usuarios de los modelos.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+onecolumn
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+chapter{Cursos Cortos} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand
+\backslash
+thesection{CC
+\backslash
+ 
+\backslash
+nplpadding{3}
+\backslash
+numprint{
+\backslash
+arabic{section}}} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{section}{0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+chaptertoc
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+twocolumn
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+balance
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+LA METODOLOGÍA DE RELATOS PARA INVESTIGAR LA  SUBJETIVACIÓN EN LA EDUCACIÓN
+ MATEMÁTICA
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Paola Valero, Kenneth Mølbjerg Jørgensen.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad de Aalborg,
+\backslash
+
+\backslash
+ Dinamarca,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill paola@learning.aau.dk, kmj@learning.aau.dk 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En nuestra investigación socio-política nos interesamos en cómo las prácticas
+ educativas de las matemáticas fabrican un tipo de sujeto deseado y al mismo
+ tiempo excluyen otras formas posibles de ser de muchos estudiantes.
+ El enfoque de los relatos (story-telling) permite conceptualizar la manera
+ como los seres humanos dan sentido a sus prácticas y a si mismos.
+ Con ejemplos de nuestras investigaciones, en este taller presentaremos
+ en primer lugar los puntos teóricos centrales de este enfoque y sus principios
+ metodológicos, y en segundo lugar ilustraremos sus potencialidades para
+ explorar la constitución de la subjetividad de los participantes de las
+ prácticas de la educación matemática.
+\end_layout
+
+\begin_layout Section
+EL VÍDEO EDUCATIVO UNA HERRAMIENTA RECREATIVA PARA ENSEÑAR MATEMÁTICA
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Miledys Tavárez Marzán.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Facultad de Educación, UASD,
+\backslash
+
+\backslash
+ Rep
+\backslash
+'ublica.
+ Dominicana,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill miledyst@gmail.com
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Usar la informática y las nuevas tecnologías como apoyo a procesos de aprendizaj
+es, ha sido una inquietud que durante mucho tiempo se ha investigado y se
+ ha probado su eficacia, aunque su aplicación en educación ha sido de forma
+ complementaria.
+\end_layout
+
+\begin_layout Standard
+En ese sentido urge el cambio en docentes, para ser formados y capacitados
+ en el aprovechamiento de todas las herramientas posibles que como el vídeo
+ educativo, dan mayor posibilidad de aprendizajes a nuestros estudiantes,
+ los cuales son parte de estos tiempos modernos en que lo digital es parte
+ de su desarrollo, de esa forma cambiaremos la cultura negativa hacia la
+ matemática y su aprendizaje.
+\end_layout
+
+\begin_layout Section
+CURRÍCULO DE MATEMÁTICA E O PENSAMENTO MATEMÁTICO
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Claudia Lisete Oliveira Groenwald.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidade Luterana do Brasil – ULBRA,
+\backslash
+
+\backslash
+ Brasil,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill claudiag1959@yahoo.com.br 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os estudos sobre Currículo possuem uma tradição centenária, porém, somente
+ nos últimos anos se estão dirigindo pesquisas que levam a uma reflexão
+ significativa, atenta e científica em relação ao desenvolvimento de um
+ currículo de acordo com as necessidades atuais.
+ A sociedade complexa em que vivemos exige, cada vez mais, tomada de decisões
+ e opções feitas responsavelmente, sendo necessário organizar o pensamento,
+ estruturar dados e informações, fazer previsões para decidir, avaliar riscos
+ quantitativamente, relacionar os conhecimentos e aplicá-los em situações
+ novas.
+ Assim, torna-se evidente a utilidade social da Matemática para fornecer
+ instrumentos para viver no mundo de modo eficaz, formando gerações constituídas
+ de homens e mulheres preparados.
+ Esse curso vai tratar do currículo de Matemática para a escola dos dias
+ atuais, buscando apresentar resultados investigativos sobre o pensamento
+ matemático desenvolvido na Escola Básica.
+ Entendendo currículo como todas as atividades acadêmicas desenvolvidas
+ na escola para a formação de estudantes críticos, atualizados e competentes
+ para atuarem no mundo moderno.
+ Apresenta currículo na perspectiva do que ensinar, quando ensinar, como
+ ensinar e como, quando e o que avaliar.
+ É evidente que a vida moderna exige, cada vez mais, o desenvolvimento de
+ habilidades como: lógica de raciocínio; saber transferir conhecimentos
+ de uma área para outra; saber comunicar-se e entender o que lhe é comunicado;
+ trabalhar em equipe; interpretar a realidade; buscar, analisar, tratar
+ e organizar a informação; adotar uma postura crítica, sendo consciente
+ de que o conhecimento não é algo terminado e deve ser construído constantemente
+; tomar decisões, ganhando em autonomia e criatividade.
+ Logo, aprender Matemática é mais do que aprender técnicas de utilização
+ imediata; é interpretar, construir ferramentas conceituais, criar significados,
+ perceber problemas, preparar-se para equacioná-los ou resolvê-los, desenvolver
+ o raciocínio lógico, a capacidade de compreender, imaginar e extrapolar.
+ Baseados nesses princípios, a escola e os professores devem refletir sobre
+ a necessidade de um planejamento curricular em Matemática que esteja em
+ sintonia com o progresso científico e tecnológico da sociedade atual.
+ Logo, há necessidade de estruturar o currículo de Matemática onde o eixo
+ central não seja a repetição de exercícios, mas “aprender a interpretar
+ problemas, desenvolver sistemas de ações, comparar idéias, métodos e soluções,
+ saber comunicar idéias através da Matemática e concluir processos de forma
+ clara, rigorosa e precisa, entre outras estratégias”.
+\end_layout
+
+\begin_layout Section
+ACTIVIDADES QUE PROMUEVEN EL RAZONAMIENTO EN EL APRENDIZAJE DE CONCEPTOS
+ MATEMÁTICOS DEL NIVEL DE PRIMARIA
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Patrick Scott.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad Estatal de Nuevo México (Emérito),
+\backslash
+
+\backslash
+ México,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill pscott@nmsu.edu 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este curso se presentarán varias actividades que promueven el razonamiento
+ y la comprensión en el aprendizaje de varios conceptos matemáticos fundamentale
+s del nivel de primaria.
+ Las actividades promuevan la participación activa a la vez que no requieren
+ de manipulativos comerciales.
+ Entre las actividades se contemplan “El juego de objetivos” (valor posicional,
+ operaciones, azar), “La posición de dígito” (valor posicional), “El problema
+ de sumas consecutivas” (números consecutivos, patrones), y “Las sumas de
+ números del 1 al 25” (sumas, patrones).
+ Después de jugar cada actividad se conversará su uso con alumnos.
+ Se proporcionará a los participantes un instructivo para cada actividad
+\end_layout
+
+\begin_layout Section
+EL MATRIMONIO DEL CINE Y EL AULA DE MATEMÁTICAS
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Marger da Conceição Ventura Viana.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidade Federal de Ouro Preto (UFOP),
+\backslash
+
+\backslash
+ Brasil,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill margerv@terra.com.br 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se llevará al debate ¿Por qué cine en el aula? ¿Las clases de matemáticas
+ también pueden ir al cine? Porqué el cine es un recurso que, aunque no
+ fue construido con fines educativos, tiene un gran potencial como un espacio
+ de transformación de la conciencia, de adquisición de conocimiento, incluyendo
+ las matemáticas, no debiendo ser descartado por los profesores como medio
+ de enseñanza en el desarrollo de actividades educativas.
+ Para utilizar este recurso como medio de enseñanza, además de desarrollar
+ un plan de actividades se presentará diversas formas para ver y explorar
+ las películas en el aula de matemáticas.
+ 
+\end_layout
+
+\begin_layout Section
+INCONMENSURABILIDAD E IRRACIONALIDAD: ENCUENTROS Y DESENCUENTROS DESDE UNA
+ PERSPECTIVA HISTÓRICA
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Edgar Alberto Guacaneme Suárez.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad Pedagógica Nacional,
+\backslash
+
+\backslash
+ Colombia,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill guacaneme@pedagogica.edu.co  
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Inconmensurabilidad e irracionalidad pueden entenderse más que como temáticas
+ de las Matemáticas, como problemáticas consustanciales a varios periodos
+ de la historia de las Matemáticas, que tienen hitos de encuentro y desencuentro
+s.
+ De manera no casual, las diversas teorías de la razón y proporción han
+ jugado un papel central en el planteamiento, abordaje y solución de tales
+ problemáticas.
+ Estudiar tales interrelaciones, mediadas por ideas de razón y proporción
+ poco convencionales (v.g., la antanairesis), aporta al conocimiento del profesor
+ de Matemáticas, tanto a clarificar la diferencia entre inconmensurabilidad
+ e irracionalidad, como a establecer conexiones temáticas usualmente poco
+ atendidas en las matemáticas escolares.
+\end_layout
+
+\begin_layout Section
+¿CÓMO RECONOCER LOS APRENDIZAJES QUE SE POTENCIAN EN MATEMÁTICAS A TRAVÉS
+ DEL EXAMEN ESCRITO?
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Janeth A.
+ Cárdenas Lizarazo.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad de Extremadura,
+\backslash
+
+\backslash
+ España,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill jacardenasl@unex.es
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los currículos de matemáticas han sufrido diferentes cambios.
+ Esto ha sugerido la aparición de diferentes tipos de contenido matemático
+ y, cambios en la formación del profesorado de matemáticas y en la matemática
+ escolar.
+ Se han introducido variaciones en las prácticas de enseñanza-aprendizaje,
+ haciendo uso de de las TICs, y del trabajo sobre situaciones reales, en
+ busca de un aprendizaje significativo en los estudiantes.
+ Sin embargo, la evaluación sigue enmarcada bajo los mismos parámetros de
+ hace más de 20 años.
+ En el curso/Taller, propongo un instrumento con el cual el profesor puede
+ verificar el tipo de contenidos que está evaluando.
+\end_layout
+
+\begin_layout Section
+TÉCNICA PARA EL DISEÑO DE PROBLEMAS ADITIVOS INNOVADORES EN EDUCACIÓN PRIMARIA
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+ J
+\backslash
+lowercase{OS
+\backslash
+'e} A
+\backslash
+lowercase{NTONIO} M
+\backslash
+lowercase{OSCOSO} C
+\backslash
+lowercase{ANABAL}, W
+\backslash
+lowercase{ILBERT} S
+\backslash
+lowercase{ARAO} P
+\backslash
+lowercase{
+\backslash
+'eREZ}.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+E
+\backslash
+lowercase{SCUELA NORMAL URBANA}, U
+\backslash
+lowercase{NIVERSIDAD} P
+\backslash
+lowercase{EDAG
+\backslash
+'oGICA} N
+\backslash
+lowercase{ACIONAL} 
+\backslash
+lowercase{UNIDAD 271},
+\backslash
+
+\backslash
+ M
+\backslash
+lowercase{
+\backslash
+'eXICO},
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill mocaja6109@hotmail.com - matematicologico@hotmail.com
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El taller ofrece a los profesores de educación primaria en servicio y a
+ los estudiantes de magisterio la oportunidad de aprender a manejar las
+ variables: semánticas, sintácticas, de contexto y magnitudes de números
+ para diseñar problemas aditivos innovadores, novedosos y diversos que permitan
+ a los alumnos de educación primaria potencializar sus esquemas de pensamiento
+ y actualizar sus “cajitas de herramientas” de que disponen para resolver
+ situaciones problemáticas, y enfrentar con mejor preparación académica
+ los desafíos de la matemática en educación secundaria.
+ Los docentes que participan en el taller perciben que son cada vez más
+ competentes para diseñar problemas aditivos.
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+uppercase{ 
+\end_layout
+
+\end_inset
+
+curso corto Integración entre las Matemáticas y la Física en el ámbito educativo
+: Algunos elementos teóricos
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Harold Castillo Sánchez.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Pontificia Universidad Javeriana,
+\backslash
+
+\backslash
+ Cali - Colombia,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill hcastillo@javerianacali.edu.co 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cuando se piensa en una integración entre dos disciplinas como las matemáticas
+ y la Física en el ámbito educativo se hace, en un gran porcentaje, desde
+ los modelos que las matemáticas brinda a la física o el papel de “lenguaje”
+ que juegan las matemáticas para la física o cómo la física proporciona
+ problemas de aplicación a las matemáticas; pero la integración tiene muchas
+ más implicaciones.
+ En este taller se abordarán algunos elementos teóricos que, como docentes
+ o investigadores, se deben hacer explícitos cuando se desea poner en interrelac
+ión las matemáticas y la física con fines de enseñanza y de aprendizaje.
+\end_layout
+
+\begin_layout Section
+RESOLUCIÓN DE PROBLEMAS Y TRIGONOMETRÍA PLANA
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Luis Roberto Moreno Chandler.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+CAIDDAM Panamá,  Universidad de Panamá ,
+\backslash
+
+\backslash
+ Panamá,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill LuisMo@gmail.com - luisro25@hotmail.com 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+ El planteamiento y la resolución de problemas constituyen una de las competenci
+as matemáticas a construir en los procesos enseñanza-aprendizaje de la matemátic
+a en diversos contextos y niveles educativos.
+ Pretendemos revisar aspectos teóricos-formales para el abordaje de la resolució
+n de problemas en cursos de trigonometría plana entre los cuales cabe mencionar:
+ las competencias matemáticas según M.
+ Niss, orientaciones para la resolución de problemas de G.
+ Polya y consideraciones didáctico–matemáticas para el mejoramiento de la
+ calidad de los aprendizajes en trigonometría.
+ A dos grandes temas dedicaremos nuestra atención: resolución de problemas
+ de triángulos rectángulos y resolución de problemas de triángulos oblicuángulos.
+ 
+\end_layout
+
+\begin_layout Section
+LOS NÚMEROS REALES: PRESENCIA Y DESCONOCIMIENTO.
+ UNA VISIÓN PARA SU ENSEÑANZA
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Walter O.
+ Beyer K.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Instituto Pedagógico de Caracas-Universidad Pedagógica Experimental Libertador,
+\backslash
+
+\backslash
+ Venezuela ,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill nowarawb@gmail.com  
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se hará una revisión de diversos aspectos vinculados con el conjunto de
+ los números reales.
+ Este conjunto permea buena parte de la estructura curricular de los niveles
+ medio y superior y posee una complejidad, riqueza e importancia insoslayables.
+ No obstante su enseñanza-aprendizaje no está exenta de grandes obstáculos.
+ Se considerarán diversos aspectos relacionados con este conjunto desde
+ distintas ópticas, enfatizando en los aspectos didácticos.
+ En tal sentido se considerarán dichos aspectos a través de los problemas,
+ el uso de las TIC, el conocimiento histórico, etc.
+ La guía del curso consistirá en plantear una visión alternativa para su
+ enseñanza-aprendizaje.
+\end_layout
+
+\begin_layout Section
+CONECTANDO LA MATEMÁTICA CON LA REALIDAD
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Hugo Parra S.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad del Zulia,
+\backslash
+
+\backslash
+ Venezuela,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill hps1710@yahoo.es 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Vincular las matemáticas escolares con la realidad de los estudiantes es
+ una necesidad que la sociedad reclama a las instituciones educativas.
+ La matemática que se enseñe debe tener sentido para el estudiante porque
+ en el plano cognitivo facilitaría el aprendizaje y en el plano de la sociedad,
+ contribuiría en la formación del ciudadano necesario para la realidad presente
+ y futura de cualquier nación.
+ En consecuencia, este taller espera proveer un conjunto básico de orientaciones
+ didácticas para incorporar elementos de la realidad a las situaciones de
+ aprendizaje de la matemática
+\end_layout
+
+\begin_layout Section
+CURSO-TALLER MATEMATICA VIGESIMAL MAYA.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+José Mucia Batz.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ Guatemala.CA,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill batz.lem@gmail.com 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Objetivo: enseñar a los asistentes el uso de los números concretos, cero,
+ uno, y cinco para resolver operaciones de aritmética.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Contenidos
+\series default
+:
+\end_layout
+
+\begin_layout Enumerate
+Explicar el sistema vigesimal del conteo.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Explicarlo ciclos numéricos 
+\end_layout
+
+\begin_layout Enumerate
+Explicar cómo cinco unidades se convierten en una barra de valor cinco.
+ Como cuatro barras se convierten en una veintena.
+ 
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{-18pt}
+\end_layout
+
+\end_inset
+
+ 
+\series bold
+Materiales:
+\series default
+ 
+\end_layout
+
+\begin_layout Enumerate
+Enseñar a realizar cálculos con los números concretos.
+ Cero: podrían ser flores, caracoles, semillas ovaladas de cáscara dura
+ (semilla de durazno, de zapote y similares).
+ Unidad podrían ser granos: maiz, frijoles (judías), piedrecitas y similares.
+ Cinco podrían ser: pedacitos de madera, de fideos, de plástico y similares.
+ Estos ejercicios se realizaran sobre mesas planas.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Tiempo: una hora.
+\end_layout
+
+\begin_layout Section
+ESTUDIO DE LA CLASE COMO ESTRATEGIA PARA LA MEJORA DE LA ENSENAZA DE LA
+ MATEMATICA.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Carmen Evarista Matías Rodríguez.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad Autónoma de Santo Domingo,
+\backslash
+
+\backslash
+ República Dominicana,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill evaristam@gmail.com 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+“Estudio de la Clase como estrategia para la mejora de la docencia en el
+ área de la matemática”, se analizan los componentes sobre el Estudio de
+ la Clase en el área de Matemática.
+ Este método, le da una importancia especial al trabajo colaborativo, la
+ observación de la clase, el análisis del plan de clase, la reflexión y
+ la autorreflexión, el desarrollo de esta estrategia un ambiente de camaradería,
+ de armonía y respeto, además todo el proceso es sistematizado desde la
+ concepción del plan, que incluye la filosofía educativa, todo la producción
+ que se va desarrollarando, más las opiniones de otros colegas en mesas
+ de discusión y reflexiones que se pueden hacer de manera oral y por escrito
+ ,todo este proceso son recogidos en un portafolio.
+ Este método japonés “Estudio de la Clase” que incluye el portafolio, siendo
+ estos los elementos esenciales que aportan al mejoramiento de la docencia,
+ en el caso particular en el área de Matemática.
+ 
+\end_layout
+
+\begin_layout Section
+ANÁLISIS COMPETENCIAL DEL PROCESO DE RESOLUCIÓN DE UN PROBLEMA GEOMÉTRICO
+ EN EL CONTEXTO DEL JUEGO EL TRIDIO®
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Edelmira Badillo, Laura Morera.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Departament de Didàctica de les Matemàtiques i de les CCEE.
+ Universitat Autónoma de Barcelona,
+\backslash
+
+\backslash
+ España,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill Edelmira.Badillo@uab.cat; Laura.Morera@uab.cat
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+El curso se basa en el análisis competencial del proceso de resolución de
+ problemas geométricos sobre la relación entre 2D y 3D implícitos en el
+ juego TRIDIO®.
+ A partir de la presentación del juego y del visionado de vídeo-episodios
+ de aula de primaria, se propone a los participantes hacer un análisis de
+ las estrategias usadas por los alumnos de primaria y de los procesos de
+ discusión y argumentación matemática que emergen durante el desarrollo
+ del juego.
+ Se pondrá énfasis en la importancia del proceso de anticipación (árbol
+ del problema y rúbrica de evaluación) a la gestión del aula necesarios
+ para potenciar el trabajo colaborativo y la construcción conjunta de significad
+os matemáticos.
+ 
+\end_layout
+
+\begin_layout Section
+O UNIVERSO MATEMÁTICO DE LEWIS CARROLL: CONTOS E PASSATEMPOS PARA SE PENSAR
+ A MATEMÁTICA
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Rafael Montoito.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ Instituto Federal Sul-Rio-Grandense (IFSUL, Campus Pelotas),
+\backslash
+
+\backslash
+ Brasil ,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill xmontoito@ig.com.br
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lewis Carroll, professor de matemática da Inglaterra vitoriana e autor de
+ diversos livros infantis e científicos, deixou uma ampla obra que pode
+ servir como suporte para o ensino de matemática, ainda nos dias atuais.
+ Utilizando a linguagem materna e as narrativas fantasiosas, o autor nos
+ leva a um universo cheio de conteúdos e estruturas matemáticas que, neste
+ curso, serão apresentados aos inscritos através atividades baseadas nos
+ seus escritos (capítulos de livro, contos, passatempos, cartas que enviava
+ etc), com o objetivo principal de fazer pensar as inter-relações entre
+ imaginação, linguagem e ensino de matemática.
+\end_layout
+
+\begin_layout Section
+PROCESOS DE RAZONAR Y ARGUMENTAR EN CLASES DE MATEMÁTICAS 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Nubia Soler-Álvarez; Diego Izquierdo; Ingrith Álvarez.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad Pedagógica Nacional,
+\backslash
+
+\backslash
+ Colombia,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill nsoler@pedagógica.edu.co; diegoiz@hotmail.com; 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill ialvarez@pedagogica.edu.co
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este curso se presentan resultados de estudios hechos en la Universidad
+ Pedagógica Nacional, Colombia y que aportan a la línea de investigación
+ Argumentación y prueba.
+ Se busca que los participantes identifiquen procesos de razonamiento y
+ argumentación en clases de matemáticas.
+ En la primera sesión, se revisa el proceso de razonar, a partir de la solución
+ a un ejercicio matemático y teniendo como referencia, entre otros, los
+ Estándares Curriculares de Matemáticas de Colombia.
+ En la segunda sesión, se estudia el modelo de Toulmin sobre la estructura
+ interna de un argumento y se identifican algunos de estos en clases de
+ matemáticas.
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+uppercase{ 
+\end_layout
+
+\end_inset
+
+La proporcionalidad en la educación básica: lecciones pedagógicas desde
+ lA historia de las matemáticas
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Gilberto Obando Zapata.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad de Antioquia,
+\backslash
+
+\backslash
+ Colombia,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill gilberto.obando@udea.edu.co 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+El curso realiza un recorrido por diferentes épocas y lugares de la historia
+ de las matemáticas buscando indagar en las prácticas matemáticas de diferentes
+ culturas por elementos de orden epistemológico que permitan comprender
+ algunos de los procesos implicados en la constitución de razones y proporcional
+idad como objetos de conocimiento matemático.
+ En ese sentido, se hace una mirada de los contextos de práctica matemática
+ (el tipo de problemas que permitían resolver, las formas de representación
+ y las formas operatorias) que permitieron su objetivación, mostrando hitos
+ importantes en ese proceso: las razones sin un fundamento explícito en
+ la proporcionalidad (linealidad), o a la inversa, la linealidad sin un
+ fundamento explícito en las razones.
+ Estos hitos arrojan luces sobre cómo orientar la acción matemática de los
+ alumnos en el aula de clase de las escuelas regulares en el proceso de
+ aprendizaje de los objetos de conocimiento razón y proporcionalidad (trascendie
+ndo la tradicional regla de tres).
+\end_layout
+
+\begin_layout Section
+IDENTIDAD DEL PROFESOR DE MATEMÁTICAS: TRES ENFOQUES TEÓRICOS 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Javier Lezama, Elizabeth Mariscal.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Instituto Politécnico Nacional,
+\backslash
+
+\backslash
+ México,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill jlezamaipn@gmail.com; elimarical@gmail.com
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dentro del campo de la Matemática Educativa, un aspecto que están siendo
+ estudiados en el subcampo del Profesor de Matemáticas, tanto en profesores
+ en formación como en los que están en servicio, se encuentra el aspecto
+ de la identidad del profesor de matemáticas.
+ ¿Podrán las indagaciones sobre la identidad del profesor de matemáticas,
+ aportar información complementaria y relevante, a las ya conocidas en relación
+ al conocimiento, prácticas, así como aspecto afectivo y que están presentes
+ en su formación y desempeño? En este taller discutimos tres enfoques teóricos
+ sobre la identidad, que pueden ayudar orientar las investigaciones sobre
+ el tema.
+ 
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+uppercase{ 
+\end_layout
+
+\end_inset
+
+Aprender Matemática, Haciendo Matemática: modelación como estrategia de
+ enseñanza-aprendizaje
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Ángel Homero Flores Samaniego .
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Colegio de Ciencias y Humanidades,
+\backslash
+
+\backslash
+ UNAM-México,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill ahfs@unam.mx 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La modelación matemática se puede definir como el proceso de construcción
+ de un modelo matemático que servirá para estudiar o explicar un fenómeno.
+ En los últimos años ha venido tomando fuerza como una estrategia de enseñanza
+ de la matemática en todos los niveles educativos (Alsina y col., 2007; Bloom
+ y col.
+ 2007; Bolea y col.
+ 2004; Ortiz y col.
+ 2008).
+ El modelo matemático puede ser una función, una ecuación, una desigualdad,
+ una tabla, una gráfica o cualquier otro objeto matemático.
+ Más que enseñar a modelar a los estudiantes, la intención es que ellos
+ utilicen la modelación como un medio para aprender matemática a partir
+ de sus aplicaciones.
+ Desde 2006 hemos estado desarrollando un modelo de enseñanza, denominado
+ Aprender Matemática, Haciendo Matemática (Flores 2006, 2010), en el que
+ la resolución de problemas juega un papel importante en el desarrollo del
+ pensamiento matemático del estudiante.
+ En particular, los problemas de modelación han probado ser un medio efectivo
+ para que el estudiante aprenda matemática.
+ En este contexto hemos caracterizado los problemas de modelación en dos
+ tipos: piensa y actúa, y ajuste de curvas.
+ En los problemas de piensa y actúa, se puede proponer un modelo o una ecuación
+ cuya solución es el modelo (como es el caso de las ecuaciones diferenciales)
+ a partir del enunciado del problema o del estudio del fenómeno en cuestión;
+ mientras que en los problemas de ajuste de curvas no se puede proponer
+ de manera inmediata el modelo, por lo que es necesario obtener una serie
+ de datos relativos a las variables involucradas, estos datos se grafican
+ y se busca una curva que los aproxime.
+ En este último caso, la curva y su ecuación, son el modelo que se busca.
+ El conocimiento que se fomenta y se pone en acción en cada tipo de problema
+ de modelación es muy diferente y requiere de razonamientos diferentes.
+ Con fines didácticos, la modelación se puede caracterizar de acuerdo con
+ el esquema de la Figura 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{figa}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Modelación matemática con fines didácticos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pegado4.png
+	scale 105
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{figa}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+(Flores y Gómez, 2013).
+ De acuerdo con el nivel de estudios en donde se utilice la modelación será
+ el énfasis que se ponga en las fases o etapas de la modelación Las fases
+ del proceso de modelación se pueden explicar de la siguiente manera: identifica
+r el fenómeno que se quiere estudiar, convertir los aspectos que nos interesan
+ del fenómeno en un problema a resolver, ya sea planteando preguntas o conjetura
+s, matematizar el problema definiendo las variables involucradas y los datos
+ relevantes para determinar la relación entre ellas, proponer un modelo
+ matemático con la información obtenida (modelo intermedio), verificar el
+ modelo intermedio para determinar si cumple con las condiciones del problema
+ matematizado, interpretar el modelo intermedio satisfactorio con respecto
+ al fenómeno problematizado, modelo matemático definitivo obtenido después
+ de la fase de Interpretación.
+ Los objetivos de aprendizaje y el grado escolar del que se trate definirán
+ el énfasis que e pondrá en cada fase.
+ Por ejemplo, en algunos casos se pueden presentar fenómenos ya matemátizados
+ y poner el énfasis en su resolución; mientras que en otros es posible iniciar
+ el proceso desde el estudio mismo del fenómeno, siguiendo un procedimiento
+ muy parecido al planteado por el aprendizaje basado en problema (ABP) o
+ la enseñanza por proyectos.
+ En el presente curso se abordarán los detalles de la propuesta de enseñanza
+ mediante la modelación matemática y se trabajarán algunos ejemplos que
+ se pueden aplicar en los niveles medio superior y superior.
+\end_layout
+
+\begin_layout Section
+INTERVENIR EJERCICIOS O DE CÓMO REDISEÑAR SITUACIONES DE ENSEÑANZA 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Cristina Ochoviet.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Instituto de Perfeccionamiento y Estudios Superiores-Consejo de Formación
+ en Educación,
+\backslash
+
+\backslash
+ Uruguay,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill cristinaochoviet@gmail.com
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Intervenir un ejercicio refiere a una transformación de un ejercicio o tarea
+ preexistente, con objetivos bien específicos.
+ La planificación de una clase de matemática supone la elección de las tareas
+ que luego se propondrán a los estudiantes para favorecer el aprendizaje.
+ Para esta elección es habitual que se utilicen distintas fuentes: libros
+ de textos, materiales recopilados por el docente o creaciones propias.
+ En este curso reflexionaremos sobre distintos marcos teóricos que pueden
+ orientar el rediseño de esos ejercicios o tareas para tornarlos de situaciones
+ cerradas en abiertas, de hechos a situaciones a investigar o crear, de
+ actividades rutinarias a lúdicas, entre otras transformaciones posibles.
+\end_layout
+
+\begin_layout Section
+CONSTRUCCIÓN DE UNA PRUEBA DE MATEMÁTICA 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Analida Ardila.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Departamento de Matemática, Universidad de Panamá,
+\backslash
+
+\backslash
+ Panamá,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill analidaardila@cableonda.net
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Uno de los grandes problemas con que nos encontramos en nuestra labor docente,
+ es el de elaborar pruebas válidas.
+ El objetivo de este curso es el de construir una prueba de Matemática con
+ base a objetivos propuestos.
+ Presentaremos diferentes tipos de pruebas, sus ventajas, desventajas y
+ sugerencias para la construcción.
+ Además se determinará los productos del aprendizaje que puedan ser evaluados
+ con un determinado tipo de prueba.
+ Finalmente, se redactará una prueba de Matemática atendiendo a la tabla
+ de especificaciones que ligue los productos del aprendizaje que se desea
+ lograr, con el contenido del curso que se utiliza para provocar los conocimient
+os.
+\end_layout
+
+\begin_layout Section
+EL USO DE TÍTERES EN EL AULA DE MATEMÁTICAS
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Marcela Ferrari, Miguel Ribeiro, Magdalena Rivera.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad Autónoma de Guerrero (UAGro),  Universidad de Algarve,
+\backslash
+
+\backslash
+ México, Portugal,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill marcela
+\backslash
+_{}fe@yahoo.com.mx, cmribeiro@ualg.pt,
+\backslash
+
+\backslash
+ 
+\backslash
+hfill magrivab@hotmail.com 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En esta oportunidad proponemos reflexionar sobre el uso de una de las herramient
+as más antiguas que el hombre ha utilizado para comunicarse: el títere.
+ En el desarrollo del curso, presentaremos extractos de puestas en escena
+ vídeo grabadas de obras diseñadas y estrenadas por los Matetíteres, con
+ el fin de analizar el ámbito discursivo que genera las obras elegidas y
+ discutir las actividades que podrían implementarse en un salón de clases
+ entremezclando saberes matemáticos y títeres.
+ Los Matetíteres es un grupo de estudiantes de licenciatura de la Unidad
+ Académica de Matemáticas de la UAGro interesados en el acercamiento de
+ las matemáticas al público en general.
+ 
+\end_layout
+
+\begin_layout Section
+LA CONSTRUCCIÓN SOCIAL DEL CONOCIMIENTO MATEMÁTICO Y EL DISCURSO MATEMÁTICO
+ ESCOLAR.
+ APROXIMACIONES A UN PROGRAMA PERMANENTE DE FORMACIÓN DEL DOCENTE
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Héctor Silva Crocci, Daniela Soto Soto, Karla Gómez Osalde, Francisco Cordero
+ Osorio.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Cinvestav-IPN,
+\backslash
+
+\backslash
+ México,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill hsilva@cinvestav.mx; dsoto@cinvestav.mx;
+\backslash
+
+\backslash
+ 
+\backslash
+hfill kmgomez@cinvestav.mx; fcordero@cinvestav.mx
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La separación de la matemática escolar con la realidad define las pautas
+ de la problemática fundamental del aprendizaje de la matemática.
+ En los cursos anteriores hemos discutido y formulado cómo la matemática
+ escolar en esa limitación genera un discurso (dME) nocivo que afecta la
+ condición humana para participar en la construcción social del conocimiento
+ matemático.
+ Esta afectación es de gran envergadura porque está enraizada en tres fenómenos,
+ a saber: adherencia, exclusión y opacidad.
+ En esta ocasión, en este curso, vamos a poner en juego los constructos:
+ la identidad disciplinar, la dialéctica inclusión-exclusión y socialización
+ en el cotidiano, con los siguientes propósitos: 1) Trastocar la formación
+ del docente y 2) Formular el programa permanente para la formación del
+ docente.
+ 
+\end_layout
+
+\begin_layout Section
+TECNOLOGÍA Y FORMACIÓN DEL PENSAMIENTO GRÁFICO Y ANALÍTICO.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Eduardo Mancera Martínez.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+C@mpus de las Matemáticas, Virtual Educa,
+\backslash
+
+\backslash
+ México,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill mancera.eduardo@gmail.com
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Resumen ejecutivo Sin participar en la discusión sobre aspectos semióticos
+ o del manejo de representaciones múltiples en matemáticas, tomando esto
+ como punto de partida, se desarrolló un proyecto denominado “la danza de
+ las rectas”, a partir del cual con un manejo gráfica, tabular y simbólico
+ de las representaciones de funciones o relaciones en el plano cartesiano,
+ se pueden abordar temas de geometría analítica en el plano y de funciones
+ reales de una variable real.
+ Se puede llevar a cabo un tratamiento de los contenidos mencionados con
+ materiales manipulativos, pero es muy útil el uso de calculadoras gráficas
+ con CAS.
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+uppercase{ 
+\end_layout
+
+\end_inset
+
+Matemáticas y belleza 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Edison De Faria Campos.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad de Costa Rica,
+\backslash
+
+\backslash
+ Costa Rica,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill edison.defaria@ucr.ac.cr 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este curso, dirigido a un público general, veremos dos aspectos que relaciona
+n matemáticas y belleza: por un lado algunas ecuaciones y demostraciones
+ que son verdaderas royas del intelecto humano, y por otro lado ciertos
+ patrones y simetrías que encontramos en la naturaleza, a nivel microscópico
+ y macroscópico, que producen bienestar visual y emocional.
+ 
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+uppercase{ Ejemplos de  la resignificación de conocimiento matemático escolar
+ a través de usos de las gráficas}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Gabriela Buendía.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Abalos Red de Cimates,
+\backslash
+
+\backslash
+ México,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill buendiag@hotmail.com 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Proponemos al seno del marco teórico socioepistemológico, una reflexión
+ acerca de la naturaleza compleja de la noción uso.
+ Este enfoque deja de lado a la gráfica como un objeto matemático que sólo
+ representa a una función y trataremos de argumentar su papel como conocimiento
+ en uso, resignificando continuamente el saber matemático asociado.
+ En particular, trataremos con gráficas cartesianas de distintos niveles
+ educativos -secundaria, bachillerato, primeros semestres de ingeniería-
+ para evidenciar la resignificación de distintos tópicos matemáticos -funciones
+ lineales, funciones por partes, ecuaciones diferenciales- que es factible
+ desarrollar considerando el uso de las gráficas.
+ 
+\end_layout
+
+\begin_layout Section
+DISEÑO DE TAREAS BASADO EN PRÁCTICAS.
+ EL CASO DE LA TRANSICIÓN DE LAS RAZONES A LAS FUNCIONES TRIGONOMÉTRICAS
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Gisela Montiel Espinosa, Olivia Alexandra Scholz Marbán, Diana del Carmen
+ Torres Corrales.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Instituto Politécnico Nacional, Instituto de Educación Media Superior 
+\backslash
+
+\backslash
+ DF, Instituto Tecnológico de Sonora,
+\backslash
+
+\backslash
+ México,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill gmontiel@ipn.mx, olivia.scholz@iems.edu.mx, 
+\backslash
+
+\backslash
+ 
+\backslash
+hfill d.torres@live.com.mx
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el curo nos proponemos trabajar algunos diseños didácticos orientados
+ a la transición de las razones a las funciones trigonométricas, vía la
+ modelación de situaciones de medición.
+ Nuestro objetivo no se centra únicamente en la resolución de las actividades,
+ sino en su análisis a la luz de los referentes teóricos que las fundamentan
+ y de los conocimientos que sobre el aula tienen los participantes.
+ Es decir, buscamos integrar los resultados de la investigación con la experienc
+ia docente para validar y rediseñar las actividades.
+\end_layout
+
+\begin_layout Section
+P* Y EL DEL DESARROLLO DEL PENSAMIENTO Y LENGUAJE 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Ricardo Cantoral.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Cinvestav,
+\backslash
+
+\backslash
+ México,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill rcantor@cinvestav.mx 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Resumen.
+ El pensamiento y lenguaje variacional fue la base empírica sobre la que
+ se desarrolló la Teoría Socioepistemológica de la Matemática Educativa.
+ El programa socioepistemológico se ocupa de investigar procesos de construcción
+ social del conocimiento matemático con el fin de intervenir en la acción
+ didáctica a partir de la “descentración del objeto” como requisito sine
+ qua non del “rediseño del discurso Matemático Escolar”.
+ En este curso corto, trabajaremos ejemplos que van de la escuela elemental
+ al nivel del posgrado a través del empleo del que llamamos principio estrella
+ (P*).
+ Analizaremos la forma en que se rediseña colaborativamente entre docentes
+ e investigadores.
+ 
+\end_layout
+
+\begin_layout Section
+EXPERIMENTANDO CON LA CALCULADORA CIENTÍFICA EN LA ESCUELA MEDIA 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+César Lau Mego.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad Nacional Mayor de San Marcos,
+\backslash
+
+\backslash
+ Perú ,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill  cesar.lau@unmsm.edu.pe 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este curso se presentaran diversas situaciones matemáticas que nos servirán
+ para analizar el papel de una herramienta tan simple y tan versátil como
+ una calculadora científica para generar aprendizajes significativos en
+ los estudiantes.
+ Desde una perspectiva socioconstructivista, la enseñanza situada puede
+ definirse como aquella propuesta pedagógica que se diseña y estructura
+ con la intención de promover aprendizajes situados, experienciales y auténticos
+ en los alumnos (Diaz Barriga, 2010), teniendo en cuenta el ABP y usando
+ una calculadora científica Casio fx-991ES PLUS, realizaremos un recorrido
+ breve y suficientemente profundo en temas como fracciones continuas y su
+ relación con los números irracionales, interés continuo y el número e,
+ el número de oro, la sucesión de Fibonacci, probabilidades, modelo de las
+ dos fuentes de Cournot para el duopolio resuelto con fracciones, entre
+ otros para mostrar con ejemplos concretos como podemos usar esta maravillosa
+ herramienta que siempre estuvo tan cerca, pero en muchos casos con uso
+ práctico muy limitado como un mediador instrumental real en la clase de
+ matemática.
+\end_layout
+
+\begin_layout Section
+MATERIALES PARA LA ENSEÑANZA DE ECUACIONES LINEALES
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Argeni Serrano Pedroza, Enny Moreno, Sugey Santoyo, Yolanda Hernández.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+GEMAD,
+\backslash
+
+\backslash
+ Colombia ,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill  aryemat@gmail.com 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para este curso presentamos una síntesis del diseño, implementación y evaluación
+ de la unidad didáctica de ecuaciones lineales.
+ Luego presentamos a profundidad el análisis, la selección, aplicación y
+ evaluación de los materiales y recursos didácticos empleados en la implementaci
+ón de la unidad.
+ Finalmente, realizaremos un taller de aplicación con algunos de los materiales
+ y recursos didácticos empleados por el grupo para el desarrollo de la secuencia
+ didáctica.
+\end_layout
+
+\begin_layout Section
+INSTRUMENTOS DE EVALUACIÓN EN EL APRENDIZAJE DE LAS RAZONES TRIGONOMÉTRICAS.
+ UNA PROPUESTA DE INNOVACIÓN CURRICULAR
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Fredy Yesid Arenas Torres, John Fredy Morales García, Evans Leonardo Urrutia
+ Bolívar.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad Santo Tomas, Universidad San Buenaventura
+\backslash
+
+\backslash
+  Secretaria de Educación del distrito.
+ Bogotá
+\backslash
+
+\backslash
+ Colombia,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill  fy.arenas@gmail.com; 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill Sigma818@gmail.com; Urrutia10@gmail.com 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Resumen.
+ En este curso presentamos una propuesta frente al diseño y la utilización
+ de algunos instrumentos de evaluación, orientados en la perspectiva del
+ conocimiento trigonométrico.
+ Mostramos un conjunto de actividades enmarcadas dentro de un diseño y análisis
+ previo, que permiten caracterizar los instrumentos de evaluación, desde
+ el registro de capacidades y habilidades orientadas por la formulación,
+ de un camino de aprendizaje.
+ Seguido a esto, validamos las actuaciones del profesor a partir de los
+ requerimientos metodológicos de cada instrumento, generando un conjunto
+ de conclusiones alrededor de la pertinencia, o no de estos, frente al desarroll
+o de un aprendizaje trigonométrico, así como, de su utilidad, al momento
+ de registrar procesos de evaluación continuos, estratégicos y asertivos.
+\end_layout
+
+\begin_layout Section
+SECUENCIAS EN EL APRENDIZAJE DE LAS MATEMÁTICAS 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Carlos David Benavides Delgado, Andrés Camilo Carrillo Acosta,
+\backslash
+
+\backslash
+ Carlos Alberto Velasco Saavedra, Sara Parra Torres, Hilda Milena Ortiz
+ Cárdenas, Pedro Gómez.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad de los Andes
+\backslash
+
+\backslash
+   Colombia,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill  cb.benavides10@uniandes.edu.co; ac.carrillo459@uniandes.edu.co; 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill Sigma818@gmail.com; Urrutia10@gmail.com 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill ca.velasco95@uniandes.edu.co; sb.parra10@uniandes.edu.co;
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill tilmiorca@gmail.com; argeifontes@gmail.com
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+Iniciamos el análisis cognitivo planteando nuestras previsiones sobre lo
+ que esperamos que hagan los estudiantes identificando tres niveles de expectati
+vas de aprendizaje para el tema permutaciones sin repetición.
+ Inicialmente tuvimos en cuenta los conocimientos previos que los escolares
+ deberían saber para desarrollar el tema.
+ Por ejemplo, calcular factoriales, realizar un diagrama de árbol y reconoce
+ la diferencia entre una situación en la que los elementos pueden o no ser
+ usados más de una vez (repetición), entre otros.
+ Establecimos unas competencias a las que queríamos contribuir, cuatro objetivos
+ a desarrollar y las capacidades (acciones que podemos evidenciar directamente
+ en las actividades desarrollas en clase por los estudiantes) que pretendemos
+ activar.
+ Para caracterizar cada objetivo de aprendizaje y visualizar la manera en
+ la que cada tarea contribuiría a su logro, elaboramos caminos de aprendizaje.
+ Los caminos de aprendizaje están definidos por las capacidades y el orden
+ en que los estudiantes las van activando a medida que desarrollan una tarea
+ específica.
+ Construimos los caminos de aprendizaje a partir de nuestras hipótesis sobre
+ lo que consideramos que podían hacer los escolares para solucionar las
+ tareas.
+ La idea central de los caminos de aprendizaje es ordenar las capacidades
+ que se ponen en juego al desarrollar una tarea, asociando los posibles
+ errores en que podrían incurrir los estudiantes.
+ La figura 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{fig1}
+\end_layout
+
+\end_inset
+
+ es uno de los caminos de aprendizaje ideados para cierto objetivo, C# es
+ la codificación de las capacidades y E# la de los errores en los cuales
+ pueden incurrir los estudiantes.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Caminos de aprendizaje de una tarea específica de un objetivo 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pegado2.png
+	lyxscale 25
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig1}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Resumimos todos los caminos de aprendizaje de cada objetivo en un solo grafo,
+ evidenciando secuencias de capacidades que tenían funciones específicas
+ dentro de una o varias tareas.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Grafo de secuencias de capacidades para un objetivo.
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pegado3.png
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Evidenciamos que el grafo tiene tres fases, estas están vinculadas a ciertos
+ momentos del estudiante frente a las tareas.
+ Presentamos una breve explicación del grafo.
+ La primera fase corresponde a interpretar la información dada (C41-C40)
+ en el contexto del problema.
+ Incluimos capacidades para deducir cuáles (C8) y cuántos (C9) elementos
+ se deben permutaciones.
+ La segunda fase implica elegir el sistema de representación adecuado (C1-C39),
+ determinar su necesidad para hacer conteo sobre ellos (C57).
+ Esta fase comprende capacidades para representar los posibles arreglos
+ mediante diagramas de árbol (C10-C11-C13), tablas de doble entrada (C15
+ a C21) o listas (C2 a C52).
+ En la misma fase hay una secuencia relacionada con el recuento haciendo
+ uso del sistema de representación simbólico (C27 a C35).
+ La tercera fase comprende desde extraer los arreglos del sistema de representac
+ión (C14, C56-C52), hasta interpretarlos, verificando el resultado en el
+ contexto del problema dado (C7-C47-C54).
+ Al presentar el grafo de los caminos de aprendizaje resumido mediante secuencia
+s de capacidades, también evidenciamos dificultades.
+ Identificamos dificultades (a) para interpretar cuándo una situación implica
+ permutaciones; (b) para usar correctamente los sistemas de representación;
+ y (c) para identificar quien es n y quien es r en una situación.
+ El trabajo con secuencias de capacidades le pueden facilitar a los estudiantes
+ un mejor acercamiento al aprendizaje de determinado tema de matemáticas
+ y a los docentes una mejor planeación y desarrollo de sus clases.
+\end_layout
+
+\begin_layout Section
+DESCUBRIENDO PATRONES EN NUESTRA CULTURA 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Darwin Alexander Moreno Gatica.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Centro Escolar El Roble,
+\backslash
+
+\backslash
+ Guatemala,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill  damoreno@ceroble.edu.gt 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Todos pertenecemos a un país por lo tanto también a una cultura y cada lugar
+ tiene cosas propias, su música, sus artesanías, rituales, formas de actuar,
+ sus danzas etc.
+ Es importante enseñar desde la escuela primaria toda esta riqueza cultural
+ que existe en nuestros países latinoamericanos para este caso específico
+ “Los patrones” que es un contenido que se debe enseñar en Guatemala, según
+ el Currículum Nacional Base, y que mejor que enseñar este tema utilizando
+ actividades propias de nuestra cultura.
+ Lo que se busca con involucrar en las clases de matemática la cultura guatemalt
+eca es hacer viva la educación intercultural.
+ 
+\end_layout
+
+\begin_layout Section
+ORIENTACIONES METODOLÓGICAS PARA PUBLICAR EN REVISTAS CIENTÍFICAS DE MATEMÁTICA
+ EDUCATIVA
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Olga Lidia Pérez González.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad de Camagüey,
+\backslash
+
+\backslash
+ Cuba,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill  olguitapg@gmail.com 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El curso tendrá dos secciones, una para analizar los tipos de artículos
+ científicos y sus principales regularidades, así como las estrategias a
+ seguir para que los profesores puedan tener éxitos en las publicaciones.
+ En la segunda parte se analizarán ejemplos de artículos de la Revista RELIME
+ y del ALME sobre la base de los aspectos analizados en la primera sección.
+ Los artículos serán clasificados en artículos de revisión, de investigación
+ empírica y teóricos.
+ Para el mejor desarrollo del curso, cada participante debe llevar tres
+ artículos de las revistas anteriormente mencionadas.
+ 
+\end_layout
+
+\begin_layout Section
+LA MODELACIÓN Y LA TRANSVERSALIDAD DEL CONOCIMIENTO MATEMÁTICO: EL CASO
+ DE LA ESTABILIDAD
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+David Zaldívar, Andrés Ruiz Esparza, Johanna Mendoza, Tamara Del Valle.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+CINVESTAV, PUCV, 
+\backslash
+
+\backslash
+ México, Chile,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill  jzaldivar@cinvestav.mx; andresruizep@gmail.com 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill ejmendoza@cinvestav.mx; tamaradc.mat@gmail.com
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La modelación y la Graficación, desde una postura Socioepistemológica, se
+ consideran como una visión de construcción social, lo cual implica no centrar
+ la mirada en el objeto matemático, sino en las argumentaciones que se hacen
+ de dichos objetos, en tanto su uso y su desarrollo.
+ Para reflexionar sobre ello, se abordará el fenómeno de la estabilidad,
+ con el fin de promover la matemática funcional presente en el cotidiano
+ de los ciudadanos en aquellos procesos de modelación y de reconocer el
+ carácter transversal que tiene la matemática para con otras disciplinas
+ científicas que aportan elementos para el diseño de tales situaciones.
+ 
+\end_layout
+
+\begin_layout Section
+LAS PERMUTACIONES SIN REPETICIÓN, UNA TÉCNICA DE CONTEO QUE TRASCIENDE DEL
+ CARDINAL
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Camilo Carrillo, Sara Parra, Carlos Velasco, Milena Ortiz, David Benavides.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+GEMAD –Grupo de Educación Matemática y Análisis Didáctico– Universidad de
+ los Andes, 
+\backslash
+
+\backslash
+ Colombia,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill  sb.parra10@uniandes.edu.co; ca.velasco95@uniandes.edu.co; ac.carrillo459@uniande
+s.edu.co; 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill hm.ortiz107@uniandes.edu.co; cd.benavides10@uniandes.edu.co
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este curso presentamos una propuesta de diseño curricular del tema permutacio
+nes sin repetición.
+ Inicialmente describimos y justificamos el problema que abordamos.
+ Presentamos un diseño previo sobre el cual hacemos un análisis detallado
+ que fundamentará nuestra propuesta de unidad didáctica.
+ Presentamos las permutaciones como una técnica de conteo que no se reduce
+ al hallazgo de una cantidad de arreglos.
+ Enfatizamos en las formas de enumeración y formas de recuento de arreglos
+ que puedan ser caracterizados como permutaciones.
+ Exponemos algunos instrumentos y procedimientos que diseñamos y utilizamos
+ para recolectar y analizar la información durante y después de la implementació
+n del diseño previo.
+ Luego, describimos el diseño implementado y la forma como desarrollamos
+ la implementación.
+ Posteriormente, presentamos la evaluación de la implementación y su análisis
+ respectivo.
+ Hacemos énfasis en los resultados de esos análisis sobre indicadores de
+ debilidades y fortalezas del diseño implementado.
+ Finalmente, y basados en los datos analizados, proponemos y justificamos
+ un nuevo diseño.
+\end_layout
+
+\begin_layout Section
+CRITERIOS PARA ESTABLECER NIVELES DE DESEMPEÑO: EL CASO DE LAS PERMUTACIONES
+ SIN REPETICIÓN
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Camilo Carrillo, Sara Parra, Carlos Velasco, Milena Ortiz, David Benavides.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+GEMAD –Grupo de Educación Matemática y Análisis Didáctico– Universidad de
+ los Andes,
+\backslash
+
+\backslash
+ Colombia,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill  sb.parra10@uniandes.edu.co; ca.velasco95@uniandes.edu.co; ac.carrillo459@uniande
+s.edu.co;
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill hm.ortiz107@uniandes.edu.co; cd.benavides10@uniandes.edu.co
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este curso presentamos una propuesta para establecer niveles de desempeño
+ de los estudiantes al desarrollar actividades de aprendizaje relacionadas
+ con el tema permutaciones sin repetición.
+ Basamos nuestra propuesta en el diseño e implementación de siete tareas
+ desarrolladas en el aula.
+ Elaboramos las tareas con el fin de lograr cuatro objetivos relacionados
+ con el aprendizaje de las permutaciones sin repetición.
+ Sobre esas tareas diseñamos algunas hipótesis de aprendizaje.
+ Esas hipótesis consisten en la elaboración de un listado de capacidades
+ que cada tarea pretende poner en juego.
+ Luego, elaboramos con las capacidades, unos caminos de aprendizaje que
+ pueden seguir los estudiantes al desarrollar las tareas.
+ Posteriormente, presentamos la forma como los caminos de aprendizaje se
+ resumen en secuencias de capacidades.
+ En seguida, interpretamos las secuencias de capacidades y la forma como
+ darían cuenta del aprendizaje y dificultades de aprendizaje que puedan
+ presentar los estudiantes.
+ Finalmente y basados en las secuencias de capacidades, proponemos unos
+ niveles de desempeño que permitirán evaluar el nivel de logro de los estudiante
+s respecto al tema permutaciones sin repetición
+\end_layout
+
+\begin_layout Section
+Titulo: LA CALCULADORA EN EDUCACIÓN PRIMARIA: CÁLCULO MENTAL 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Antonio Ramón Martín Adrián.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Colegio público Aguamansa,
+\backslash
+
+\backslash
+ Tenerife Islas Canarias ESPAÑA,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill  tonycapicua@yahoo.es 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el pasado fue imprescindible sacrificar tiempo y energía en impartir
+ destrezas de cálculo numérico.
+ Hoy no tiene nada que ver con formación matemática el adiestrar seres humanos
+ para hacer lo que las máquinas pueden hacer mucho mejor.
+ La calculadora es una herramienta que ofrece muchas posibilidades para
+ trabajar en la clase de matemáticas desde los niveles iniciales, despierta
+ un gran interés en la mayor parte del alumnado.
+ Este curso quiere dar a conocer algunas de las posibilidades de la calculadora
+ para este tramo educativo, y de manera especial , para el cálculo mental.
+ El desarrollo del mismo será a través del análisis y reflexión de diferentes
+ vídeos, donde veremos situaciones reales de enseñanza y aprendizaje, para
+ que los profesores asistentes reflexionen sobre su práctica educativa.
+\end_layout
+
+\begin_layout Section
+CUESTIONES CRÍTICAS SOBRE EDUCACIÓN MATEMÁTICA Y EDUCACIÓN INDÍGENA EN COLOMBIA
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Aldo Iván Parra Sánchez, Jorge Isidro Orjuela Bernal.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Centro de Investigaciones Indígenas e Interculturales de Tierradentro (CIIT),
+\backslash
+
+\backslash
+ Colombia,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill  aisparras@unal.edu.co; jorgelicmat@gmail.com
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+ El presente artículo retoma algunas de las problemáticas planteadas en
+ la producción etnomatemática internacional sobre educación indígena, ejemplific
+ándolas en el contexto del departamento del Cauca y del Guainía, en Colombia,
+ con la doble intención de a) relatar parte de los procesos educativos adelantad
+os por algunos pueblos indígenas colombianos y b) aportar a una discusión
+ académica propuesta que a nuestro juicio merece ser ampliada a partir a
+ las experiencias colombianas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+onecolumn
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+chapter{Mesas Redondas} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand
+\backslash
+thesection{MR
+\backslash
+ 
+\backslash
+nplpadding{3}
+\backslash
+numprint{
+\backslash
+arabic{section}}} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{section}{0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+chaptertoc
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+twocolumn
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+balance
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+MESA REDONDA DE POSGRADOS EN EDUCACIÓN MATEMÁTICA: RETOS PARA LATINOAMÉRICA
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+María Nubia Soler-Álvarez (coordinadora), Cristina Ochoviet, Fredy González,
+\backslash
+
+\backslash
+ Arturo Mena, Avenilde Romo Vázquez, Judith Alejandra Hernández.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad Pedagógica Nacional, Instituto de Perfeccionamiento y Estudios
+ Superiores-Consejo de Formación en Educación, 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad Pedagógica Experimental Libertador - Núcleo Maracay, Pontificia
+ Universidad Católica del Valparaiso, PROME CICATA - Instituto Politécnico
+ Nacional,  Universidad Autónoma de Zacatecas,
+\backslash
+
+\backslash
+Colombia, Uruguay,  Venezuela, Chile, México, México
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill  nsoler@pedagogica.edu.co; cristinaochoviet@gmail.com;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+ 
+\backslash
+hfill Fredygonzalez1950@gmail.com; arturo.mena@ucv.cl 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunos de los asuntos que los programas de posgrados en Educación Matemática
+ en Latinoamérica enfrentan en la actualidad son: educar a los educadores
+ matemáticos para que lean y aporten a la trasformación de las realidades
+ de cada país; proponer e incentivar política pública para mantener y desarrolla
+r este tipo de programas; incorporar prácticas de investigación e innovación
+ en los procesos de formación; distinguir los campos profesional y científico
+ para orientar propuestas de formación en términos de innovación y/o investigaci
+ón.
+ Esta mesa redonda busca discutir estos y otros asuntos pertinentes a la
+ formación avanzada del profesional de la educación matemática.
+ 
+\end_layout
+
+\begin_layout Section
+MODELACIÓN MATEMÁTICA Y LA FORMACIÓN MATEMÁTICA EN ALGUNAS CARRERAS PROFESIONALE
+S
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Jhony A.
+ Villa-Ochoa (coordinador), Milton Rosa, Arnaldo Mendible,
+\backslash
+
+\backslash
+ Ruth Rodríguez, Jaime Arrieta.
+  
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad de Antioquia, Universidade Federal de Ouro Preto, Universidad
+ Nacional Experimental Politécnica de la Fuerza Armada, 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Instituto Tecnológico y de Estudios Superiores de Monterrey, Universidad
+ Autónoma de Guerrero,
+\backslash
+
+\backslash
+Colombia, Brasil, Venezuela, México, México,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill  jhony.villa@udea.edu.co; milton@cead.ufop.br; arnmen2005@yahoo.com;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+ 
+\backslash
+hfill ruthrdz@itesm.mx; jaime.arrieta@gmail.com 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Actualmente la modelación en Educación Matemática se viene consolidando
+ como un dominio de investigación que se preocupa por la formación matemática
+ de los estudiantes en los distintos niveles de escolaridad.
+ En esta mesa temática se discutirá acerca de las posibilidades que la modelació
+n matemática ofrece y podría ofrecer en la formación matemática de futuros
+ profesionales.
+ Con esta intención, se presentarán algunas miradas y experiencias de investigac
+ión que permitan aproximarse a preguntas como: ¿Cómo la modelación matemática
+ se articula a las necesidades de formación de los futuros profesionales?
+ ¿Cuáles son los principales desafíos que se requiere atender para poder
+ integrar la modelación en el currículo para este tipo de profesionales?
+ En consonancia con estos cuestionamientos, otras consideraciones serían:
+ ¿Qué tipo de contextos/fenómenos/situaciones requieren ser discutidas y
+ son susceptibles de ser modeladas? ¿Cuáles sería los alcances y limitaciones
+ de la modelación matemática en la formación de este tipo de profesionales?
+ ¿Cuáles perspectivas y/o enfoques teóricos de la modelación se muestran
+ como “resonantes”, en “armonía”, con estas necesidades de formación?
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+onecolumn
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+chapter{Grupos De Trabajo Y Discusión } 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand
+\backslash
+thesection{GD
+\backslash
+ 
+\backslash
+nplpadding{3}
+\backslash
+numprint{
+\backslash
+arabic{section}}} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{section}{0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+chaptertoc
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+twocolumn
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+balance
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+TENDENCIAS LA ESTADÍSTICA EDUCATIVA EN LATINOAMÉRICA
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+José Armando Albert*, María Inés Rodríguez**, Blanca Ruiz*.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Tecnológico de Monterrey, Universidad Nacional de Río Cuarto, 
+\backslash
+
+\backslash
+ México*,  Argentina**,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill   albert@itesm.mx; mrodriguezbriguet@gmail.com; bruiz@itesm.mx 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la anterior RELME 27, a través de un grupo de discusión, se dio inicio
+ a la Red Latinoamericana de Investigación en Educación Estadística (RELIEE).
+ Desde entonces la red se ha abocado a la tarea de organizarse y dar a conocer
+ los grupos de investigación de los distintos países latinoamericanos interesado
+s en colaborar.
+ En esta ocasión el grupo de discusión propuesto tiene la intención de darle
+ continuidad a estos esfuerzos, difundir las tendencias más importantes
+ hoy día sobre investigación en educación estadística y discutir cuál será
+ el énfasis de la actividad de nuestra red en los próximos años.
+ 
+\end_layout
+
+\begin_layout Section
+¿CÓMO INTEGRAR CONOCIMIENTOS ETNOMATEMÁTICOS DE PUEBLOS ORIGINARIOS AL CURRÍCULO
+ ESCOLAR?
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Ana Patricia Vásquez Hernández, Eithel Eduardo Trigueros Rodríguez.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad Nacional de Costa Rica, 
+\backslash
+
+\backslash
+ Costa Rica,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill  patrimate76@gmail.com; eitheltr@gmail.com 
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este grupo de discusión pretende, a partir de la experiencia de especialistas
+ de América Latina, determinar cuál es la metodología óptima para potenciar
+ un enfoque de educación matemática desde una perspectiva intercultural,
+ para territorios indígenas.
+ De manera que al construir unidades didácticas contextualizadas para estos
+ territorios, sea factible el desarrollo del currículo escolar, pero que
+ a la vez, sea fortalecida la identidad cultural de sus participantes.
+ Con los resultados de este grupo de discusión, se iniciaría un diálogo
+ respetuoso con comunidades educativas autóctonas, para trabajar a favor
+ de la supresión del discurso estandarizado de educación matemática.
+\end_layout
+
+\begin_layout Section
+¿MODELACIÓN MATEMÁTICA O MODELACIÓN ESCOLAR? ¿Representación de la realidad
+ o escenarios habituales? 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Francisco Cordero, David Zaldívar, Ruth Rodríguez, Miguel Solís, 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Hipólito Hernández, Magali Guevara.
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+CINVESTAV, ITESM, UNACH, UAGro, 
+\backslash
+
+\backslash
+ México,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill  fcordero@cinvestav.mx; jzaldivar@cinvestav.mx; ruthrdz@itesm.mx; 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill solise@unach.mx; hipolito.hernandez@unach.mx; mguevara83@gmail.com
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El Grupo de Investigación Latinoamericano Modelación y Tecnología (GMyT)
+ continúa, en su séptima reunión, con el desarrollo de su programa de modelación
+ en el ámbito educativo de la matemática en diversos entornos: la escuela,
+ el trabajo y el cotidiano y a través de aproximaciones teóricas diferentes.
+ En esta ocasión desarrollará dos preguntas que reflejarán el estatus ontológico
+ y epistemológico del rol de la modelación en la problemática de la enseñanza
+ y aprendizaje de la matemática: 1)¿Cuál es el constructo de modelación
+ que la matemática educativa debe desarrollar: la modelación matemática
+ o la modelación escolar? y 2) ¿Cuál debería ser el núcleo del constructo:
+ la representación de la realidad o las condiciones de los escenarios habituales
+?
+\end_layout
+
+\begin_layout Section
+DOMINIO AFECTIVO Y APRENDIZAJE DE LA MATEMÁTICA 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Oswaldo Martínez Padrón, María Analía Contarino, 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Mónica Adriana Real, Jorge Ávila Contreras.
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Universidad Pedagógica Experimental Libertador, Instituto de Formación Docente
+ Nº 1, 
+\backslash
+
+\backslash
+ Universidad Católica Silva Henríquez,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Chile, Venezuela,  Argentina, Chile,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill  ommadail@gmail.com; pspmanaliac@hotmail.com; 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill monireal@gmail.com; javila@ucsh.cl
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aquí se aspira discutir aspectos didáctico-matemáticos, a la luz de la complejid
+ad constitutiva de los procesos humanos.
+ Focalizará su atención en lo afectivo, considerando tanto las falencias
+ que presentan los estudiantes para el aprendizaje de la Matemática, como
+ las dificultades con las que se tropiezan sus docentes al momento de enseñar
+ los contenidos correspondientes a esa asignatura.
+ Por tanto, se centrará en la dimensión afectiva que concurre y discurre
+ a propósito de esos procesos, destacando aspectos que tienen que ver con
+ creencias, concepciones, motivaciones, emociones, intereses y actitudes
+ hacia la matemática o hacia procesos ligados a ella.
+\end_layout
+
+\begin_layout Section
+FORMACIÓN Y DESARROLLO PROFESIONAL DEL PROFESOR DE MATEMÁTICA 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\begin_layout Plain Layout
+
+Javier Lezama*, Elizabeth Mariscal*, Hugo Parra** .
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Mónica Adriana Real, Jorge Ávila Contreras.
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Instituto Politécnico Nacional, Universidad de Zulia,  
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+México*, Venezuela**,
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill  jlezamaipn@gmail.com; elimariscal@gmail.com, hps1710@gmail.com 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A partir del reconocimiento de que un amplio sector de la comunidad de CLAME,
+ se reconoce como partícipe activo del Campo de Estudios sobre el Profesor
+ de Matemáticas, tanto en el aspecto de investigación, como en la formación
+ inicial y desarrollo profesional.
+ En este grupo se busca ampliar y continuar la reflexión sobre el profesor
+ de matemáticas, pero centrando la atención en las investigaciones.
+ Se busca reconocer y compendiar temas y metodologías de investigación que
+ sobre el profesor de matemáticas se están desarrollando por la comunidad
+ de Relme.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+onecolumn
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+chapter{Reportes De Investigación } 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand
+\backslash
+thesection{RI
+\backslash
+ 
+\backslash
+nplpadding{3}
+\backslash
+numprint{
+\backslash
+arabic{section}}} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{section}{0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+chaptertoc
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+twocolumn
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+balance
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+preview true
+filename "reportes1.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+backmatter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

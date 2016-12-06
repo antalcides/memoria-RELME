@@ -1,0 +1,3319 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+\usepackage{blindtext}
+\usepackage{multicol}
+\usepackage[utf8x]{inputenc}
+\usepackage{balance}
+\pagestyle{headings}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{setspace}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\newcommand{\lyxmathsym}[1]{\ifmmode\begingroup\def\b@ld{bold}
+  \text{\ifx\math@version\b@ld\bfseries\fi#1}\endgroup\else#1\fi}
+
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\newenvironment{lyxlist}[1]
+{\begin{list}{}
+{\settowidth{\labelwidth}{#1}
+ \setlength{\leftmargin}{\labelwidth}
+ \addtolength{\leftmargin}{\labelsep}
+ \renewcommand{\makelabel}[1]{##1\hfil}}}
+{\end{list}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\input{preamble}
+\input{codigo}
+\usepackage{fancyvrb}
+\usepackage{cancel}
+\usepackage[unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=true,bookmarksopen=true,bookmarksopenlevel=1,
+ breaklinks=false,pdfborder={0 0 0},backref=false,colorlinks=false]
+ {hyperref}
+\hypersetup{
+ pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false}
+ \newsavebox{\LstBox}
+ %\graphicspath{ {./img/} }
+ \makeatletter
+\def\input@path{{./}{./build/}}
+\makeatother
+ \graphicspath{{./}{./img/}{./build/}}
+ \renewcommand{\baselinestretch}{1.5}
+\raggedbottom %para que no distibuya los espacios verticales en una hoja
+\usepackage[spanish]{babel}
+ 
+\addto\captionsspanish{
+\def\tablename{Tabla}
+\def\listtablename{\'Indice de tablas}
+}
+%\titleformat{\section}{\large\bfseries}{CO\thesection}{1em}{}
+%\renewcommand{\thesection}{CO\ \arabic{section}} 
+\renewcommand\thesection{CO\ \nplpadding{3}\numprint{\arabic{section}}}
+\makeatother
+\end_preamble
+\options twocolumn,balance,spanish,svgnames,x11names,x11names,HTML
+\use_default_options false
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding utf8x
+\fontencoding default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "pdfpagelayout=OneColumn,pdfnewwindow=true,pdfstartview=XYZ,plainpages=false"
+\papersize default
+\use_geometry false
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 2
+\papersides 1
+\paperpagestyle headings
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{headings}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+nocite{*}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fontsize{7}{8}
+\backslash
+selectfont
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+setlength{
+\backslash
+baselineskip}{5pt}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagecolor{white} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+onecolumn
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+chapter{Pósters(Carteles) } 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand
+\backslash
+thesection{PO
+\backslash
+ 
+\backslash
+nplpadding{3}
+\backslash
+numprint{
+\backslash
+arabic{section}}} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{section}{0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+chaptertoc
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+twocolumn
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+balance
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+PO001 INVESTIGACIÓN DE LA FORMACIÓN DE PROFESORES EN LA LEBEM EN EL PERIODO
+ 2005-2007, CON ENFASIS EN EL DISEÑO Y PLANEACIÓN.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+DISEÑO Y GESTIÓN EN LA ENSEÑANZA-APRENDIZAJE DE LA FORMACIÓN DOCENTE EN
+ LA LICENCIATURA EN EDUCACIÓN BÁSICA CON ÉNFASIS EN MATEMÁTICAS (LEBEM)
+ EN EL PERIODO 2005 -2007
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Jenny Paola Rodríguez Gámez, Luis Gabriel González Cantor.
+\end_layout
+
+\begin_layout Standard
+Universidad Distrital Francisco José de Caldas,
+\end_layout
+
+\begin_layout Standard
+Colombia,
+\end_layout
+
+\begin_layout Standard
+paolitastar200@hotmail.com; brothersgc@hotmail.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El documento presenta una descripción de las fases desarrolladas en el proyecto
+ de investigación “Desarrollo de las prácticas en la LEBEM en el periodo
+ 2005-2012” del grupo de investigación CRISALIDA, adscrito a la Universidad
+ Distrital; Así mismo presenta unas filtros de análisis realizados en el
+ desarrollo de la investigación de tipo documental, sobre el análisis de
+ la formación docente de los estudiantes para profesores de matemática de
+ la universidad en donde se desarrollan las prácticas educativas, sistematizando
+ y clasificando la información de las unidades didáctica por medio de criterios
+ fijados en el proyecto.
+\end_layout
+
+\begin_layout Section
+PRÉ-VESTIBULAR NA UNIOESTE CAMPUS DE FOZ DO IGUAÇU: UM RESGATE HISTÓRICO
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Renata Camacho Bezerra, José Ricardo Souza.
+\end_layout
+
+\begin_layout Standard
+Universidade Estadual do Oeste do Paraná-UNIOESTE - Campus de Foz do Iguaçu/PR,
+ Br.
+ 
+\end_layout
+
+\begin_layout Standard
+Brasil,
+\end_layout
+
+\begin_layout Standard
+renata.bezerra@unioeste.br; jose.souza2@unioeste.br 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este artigo relata o trabalho desenvolvido por discentes e docentes dos
+ cursos de Enfermagem, Engenharia Elétrica, Engenharia Mecânica, Letras,
+ Matemática e Pedagogia, vinculados ao projeto de extensão “Curso Pré-Vestibular
+” que acontece desde 2005 numa parceria entre a Universidade Estadual do
+ Oeste do Paraná – UNIOESTE Campus de Foz do Iguaçu, a Fundação Parque Tecnológi
+co de Itaipu – FPTI e o Instituto de Tecnologia Aplicada e Inovação – ITAI
+ e tem como objetivo principal preparar alunos carentes, oriundos da rede
+ pública de ensino, que tenham boas notas e que pretendem prestar o vestibular
+ na universidade pública.
+\end_layout
+
+\begin_layout Section
+MODELADO NUMERICO CON CURVAS BÉZIER 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Rogelio Ramos Carranza, Armando Aguilar Márquez, Frida María León Rodríguez,
+ Omar García León, Juan Rafael Garibay Bermúdez.
+\end_layout
+
+\begin_layout Standard
+Universidad Nacional autónoma de México,
+\end_layout
+
+\begin_layout Standard
+México,
+\end_layout
+
+\begin_layout Standard
+egorrc@gmail.com; armandoa@unam.mx;
+\end_layout
+
+\begin_layout Standard
+fridam@unam.mx; egor1131@unam.mx;
+\end_layout
+
+\begin_layout Standard
+juragabe@unam.mx.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En esta investigación se plantea reunir los documentos que conforman el
+ modelado de curvas mediante el algoritmo de Bézier.
+ Una vez conjuntados los documentos necesarios se propondrán para su estudio
+ y aplicación utilizando una aproximación mediante la teoría Vygotskyana.
+ 
+\end_layout
+
+\begin_layout Standard
+Se denomina curvas de Bézier a un método desarrollado en 1960, para el trazado
+ de dibujos técnicos, en el diseño aeronáutico y en el de automóviles.
+ Su denominación es en honor a Pierre Bézier, quien ideó un método de descripció
+n matemática de las curvas.
+ Proporcionando un modelo numérico para describir un modelo geométrico.
+ Las curvas fueron desarrolladas por Paul de Casteljau.
+\end_layout
+
+\begin_layout Section
+UN JUEGO DE DOMINÓ PARA LA ENSEÑANZA DE LOS CONCEPTOS DE COMBINATORIA Y
+ PROBABILIDAD
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+José Marcos Lopes, Jaime Edmundo Apaza Rodriguez.
+\end_layout
+
+\begin_layout Standard
+Universidade Estadual Paulista “Júlio de Mesquita Filho” – UNESP,
+\end_layout
+
+\begin_layout Standard
+Brasil,
+\end_layout
+
+\begin_layout Standard
+jmlopes@mat.feis.unesp.br; jaime@mat.feis.unesp.br 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este trabajo presentamos un juego de dominó (original) asociado al triangulo
+ de Pascal, el cual puede ser utilizado para la enseñanza de los conceptos
+ fundamentales referentes al cálculo de probabilidades y combinatoria.
+ Este juego utiliza las 28 piezas de un dominó comun.
+ La disposición de las piezas debe ser realizada en un tablero de forma
+ triangular y sujeta a determinadas reglas.
+ Ese formato debera corresponder a las siete primeras filas del triangulo
+ de Pascal.
+ Con base en este juego, formulamos algunos problemas que pueden ayudar
+ a subsidiar el trabajo del professor que se dedica a enseñar estos conceptos.
+\end_layout
+
+\begin_layout Section
+CONSTRUCCION DE OBJETOS TRIGONOMETRICOS POR MEDIO DE UNA VISUALIZACION GEOMETRIC
+ACONTENIDA EN UN REGISTRO DE REPRESENTACION SEMIOTICA DE DUVAL
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Oscar Jesús San Martín Sicre sicreo@outlook.es Universidad 261 Pedagógica
+ Nacional-Instituto de Formación Docente, Zonora, México 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se presenta un poster o cartel que contiene una visualización geométrica
+ contenida en un registro de representación semiótica de Duval que ha posibilita
+do un tratamiento novedoso de algunos contenidos trigonométricos.
+ Esta visualización permite construir y representar por medios geométricos
+ diversos objetos trigonométricos tales como: las definiciones de las funciones
+ trigonométricas, las identidades trigonométricas y las ecuaciones trigonométric
+as.
+ Se describe la figura que sirve de base para la elaboración del cartel.
+ Esta visualización provee además una base geométrica para trabajar estos
+ mismos resultados utilizando softwares de geometría dinámica tales como
+ Cabrí Geometre, Geometers Sketch Pad o Geogebra.
+ 
+\end_layout
+
+\begin_layout Section
+EXPERIENCIA METODOLÓGICA SOBRE RESOLUCIÓN DE PROBLEMAS INGENIERILES QUE
+ SE RESUELVEN A TRAVÉS DE LA INTERPOLACIÓN Y LA REGRESIÓN.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Edfram Rodríguez Pereira, Pedro Castañeda Porras, Sergio Abraham, Pedro
+ Fernández de Córdoba, Patricia Mayo, Arelys Quintero Silverio.
+ 
+\end_layout
+
+\begin_layout Standard
+Universidade do Estado do Amazonas, Universidad de pinar del Río, Universidad
+ Politécnica de Valencia,
+\end_layout
+
+\begin_layout Standard
+Brasil, Cuba, España,
+\end_layout
+
+\begin_layout Standard
+pcasta@mat.upr.edu.cu; sabraham@mat.upv.es;
+\end_layout
+
+\begin_layout Standard
+pfernandez@mat.upv.es; pmayo@mat.upv.es; edfram_2008@hotmail.com ;arelys@mat.upr.edu.cu.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este trabajo trataremos algunas experiencias sobre cómo enseñar en las
+ carreras ingenieriles los contenidos relacionados con la Interpelación
+ Polinomica y la Regresión.
+ Dicha experiencia está enmarcada en un proyecto de investigación que llevamos
+ a cabo entre las Universidades Politécnica de Valencia, España y la de
+ Pinar del Río, Cuba.
+ Queremos resaltar una metodología para resolver algunos problemas de carácter
+ ingenieril que se resuelven a través de la interpolación y la regresión,
+ sobre todo hacer hincapié en el uso de un asistente matemático y así los
+ estudiantes pueden conocer más profundamente los algoritmos.
+\end_layout
+
+\begin_layout Section
+PROPUESTA METODOLÓGICA PARA EL DESARROLLO DEL ALGEBRA LINEAL EN CARRERAS
+ DE PERFIL INFORMATICO CENTRADA EN EL METODO DE PROYECTO
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Oscar A.
+ González Chong, Rogerio dos Reis Gonçalves , Miguel Tadayuki Koga.
+\end_layout
+
+\begin_layout Standard
+Universidade Estadual de Mato Grosso, 
+\end_layout
+
+\begin_layout Standard
+Brasil,
+\end_layout
+
+\begin_layout Standard
+oscarchong@unemat-net.br; rogerio@ unemat-net.br;
+\end_layout
+
+\begin_layout Standard
+miguelkoga@unemat-net.br 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El trabajo es una propuesta metodológica para modificar la disciplina de
+ Algebra Lineal en carreras de perfil informático, que muestre la vinculación
+ de esta disciplina con la actividad profesional.
+ Nuestra propuesta está centrada en el método de proyecto, que sugiere variacion
+es en las formas de enseñanza, en cuanto al aumento del número de actividades
+ prácticas y laboratorios, donde los estudiantes utilizarán los conceptos
+ de esta disciplina en disímiles aplicaciones, resolverán ejercicios básicos
+ de la informática, robótica y telecomunicaciones, y desarrollarán habilidades
+ en el uso de un asistente matemático que será el medio donde desarrollarán
+ su proyecto final, el cual presentarán en seminarios.
+ 
+\end_layout
+
+\begin_layout Section
+ECUA-PARQUÉS UNA ALTERNATIVA INNOVADORA PARA LA ENSEÑANZA Y EL APRENDIZAJE
+ DE LAS ECUACIONES LINEALES
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sandra Viviana Mora Gómez, William Andrés Cárdenas, Lyda Constanza Mora
+ Mendieta.
+\end_layout
+
+\begin_layout Standard
+Universidad Pedagógica Nacional,
+\end_layout
+
+\begin_layout Standard
+dma_sgomez913@pedagogica.edu.co; dma_wcardenas989@pedagogica.edu.co;
+\end_layout
+
+\begin_layout Standard
+lmendieta@pedagogica.edu.co
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El “Ecua-parqués” es un material didáctico manipulativo, que se creó basándose
+ en la idea de usar un tablero de parqués tradicional para resolver algunas
+ ecuaciones lineales, que modificado, permite solucionar cualquier ecuación
+ lineal de la forma 
+\begin_inset Formula $x+a=b$
+\end_inset
+
+ planteada con ayuda de un par de dados, en donde 
+\begin_inset Formula $a,\text{\,\ensuremath{b}}$
+\end_inset
+
+ y 
+\begin_inset Formula $x$
+\end_inset
+
+ son números enteros, 
+\begin_inset Formula $-6\leq a\leq6$
+\end_inset
+
+ y 
+\begin_inset Formula $-12\leq b\leq12$
+\end_inset
+
+ , mostrando de forma directa la propiedad uniforme de la igualdad con la
+ adición entre números enteros y la existencia del opuesto aditivo, promoviendo
+ en los estudiantes la abstracción, mediante la experimentación a través
+ del juego y la competencia entre pares.
+\end_layout
+
+\begin_layout Section
+LAS CÓNICAS DE LA GEOMETRÍA DEL TAXISTA 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Daniela Bonilla Barraza, Marcela Parraguez González, Leonardo Solanilla
+ Chavarro.
+\end_layout
+
+\begin_layout Standard
+Universidad de La Serena (Chile).
+ Pontificia Universidad Católica de Valparaíso (Chile).
+ Universidad del Tolima (Colombia).
+ danielabonillab@gmail.com; marcela.parraguez@ucv.cl;
+\end_layout
+
+\begin_layout Standard
+leonsolc@ut.edu.co.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La presente investigación, muestra elementos de una propuesta didáctica
+ que busca la comprensión de las cónicas en estudiantes entre 16 y 18 años,
+ bajo un enfoque cognitivo, donde se utiliza los modos de pensamiento de
+ Anna Sierpinska como marco teórico.
+ Postulamos como hipótesis de investigación, que para lograr una comprensión
+ de las cónicas es necesario que el aprendiz de estos tópicos transite entre
+ los distintos modos de comprenderla: SG (figuras que las representan),
+ AA (pares ordenados que satisfacen una ecuación) y AE (lugar geométrico),
+ para ello, utilizamos como sistema de referencia el plano discreto de la
+ geometría del taxista.
+ 
+\end_layout
+
+\begin_layout Section
+“PROYECTO AULA: ACTIVACION FISICA CON MATEMATICAS” 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Guillermo Carrasco García.
+\end_layout
+
+\begin_layout Standard
+Centro de Estudios Científicos y Tecnológicos 9 del I.P.N.,
+\end_layout
+
+\begin_layout Standard
+México,
+\end_layout
+
+\begin_layout Standard
+utejdb@ipn.mx
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Proyecto Aula es una propuesta metodológica utilizada en los CECyTs del
+ IPN, que incorpora las Asignaturas del semestre para la solución de un
+ problema, a partir de un proyecto, aplicando a través del proceso enseñanza-apr
+endizaje, estrategias didácticas que permitan al estudiante adquirir conocimient
+os, habilidades y actitudes.
+ Este trabajo muestra los resultados de la actividad realizada por los estudiant
+es de Geometría y Trigonometría, que consistió en planear y ejecutar una
+ “Rutina de activación física con base en la realización de figuras geométricas”
+, como parte del Proyecto “Importancia de la actividad física en el ámbito
+ escolar para una vida sana”.
+\end_layout
+
+\begin_layout Section
+PROYECTO FUNDER ETNOMATEMATICA: CONSTRUCCIÓN DE UNIDADES DIDÁCTICAS CONTEXTUALIZ
+ADAS
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ana Patricia Vásquez Hernández, Eithel Trigueros Rodríguez.
+\end_layout
+
+\begin_layout Standard
+Universidad Nacional de Costa Rica,
+\end_layout
+
+\begin_layout Standard
+Costa Rica,
+\end_layout
+
+\begin_layout Standard
+patrimate76@gmail.com; eitheltr@gmail.com 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El presente poster muestra la descripción de un proyecto de etnomatemática
+ con fondos para el desarrollo de las regiones, con vigencia 2014-2015,
+ coordinado por el Campus Sarapiquí de la Universidad Nacional de Costa
+ Rica.
+ Su objetivo es desarrollar capacidades académicas para la confección colectiva
+ de obras didácticas de matemática contextualizadas y validadas por territorios
+ indígenas, para el fortalecimiento de la identidad cultural y el respeto
+ por el derecho indígena a un sistema de educativo intercultural.
+ 
+\end_layout
+
+\begin_layout Section
+NIVELES DE RAZONAMIENTO ALGEBRAICO EN LA ACTIVIDAD MATEMÁTICA DE MAESTROS
+ EN FORMACIÓN: ANÁLISIS DE TAREAS ESTRUCTURALES
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $^{1}$
+\end_inset
+
+Lilia Aké, 
+\begin_inset Formula $^{2}$
+\end_inset
+
+Walter F.
+ Castro, 
+\begin_inset Formula $^{1}$
+\end_inset
+
+Juan D.
+ Godino.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $^{1}$
+\end_inset
+
+Universidad de Granada, 
+\begin_inset Formula $^{2}$
+\end_inset
+
+Universidad de Antioquia
+\end_layout
+
+\begin_layout Standard
+España
+\begin_inset Formula $^{1}$
+\end_inset
+
+, Colombia
+\begin_inset Formula $^{2}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+lake86@gmail.com; wfcastro82@gmail.com;
+\end_layout
+
+\begin_layout Standard
+jgodino@ugr.es
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Diversas investigaciones y propuestas curriculares recomiendan la introducción
+ de contenidos algebraicos desde los primeros niveles educativos con el
+ fin de enriquecer la matemática escolar y facilitar la transición hacia
+ la matemática de la secundaria.
+ La introducción presupone una visión ampliada de la naturaleza del álgebra
+ escolar y una pluralidad de significados.
+ En este trabajo presentamos un modelo de caracterización de la actividad
+ algebraica en la que se diferencian tres niveles de razonamiento algebraico,
+ abordando particularmente tareas de tipo estructural, que puede utilizarse
+ para proporcionar a los maestros en formación la posibilidad de promover
+ el pensamiento algebraico en la educación primaria.
+\end_layout
+
+\begin_layout Section
+UNA REPRESENTACION ELECTRONICA COMO INNOVACION DIDACTICA PARA LA ENSEÑANZA
+ DE VECTORES EN EL PLANO 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+José Armando Murillo Contreras.
+\end_layout
+
+\begin_layout Standard
+Universidad Pedagógica Experimental Libertador,
+\end_layout
+
+\begin_layout Standard
+Caracas-Venezuela,
+\end_layout
+
+\begin_layout Standard
+Josem2523@hotmail.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En esta oportunidad hablaremos acerca de una idea de innovación didáctica
+ para la enseñanza de la matemática.
+ En este caso se expondrá una innovación didáctica para la enseñanza de
+ los vectores en el plano.
+ Para ello utilizaremos la electrónica para lograr una representación electrónic
+a en la cual, con esa representación trataremos de que se visualice de manera
+ entretenida y original los vectores para que los alumnos logren un aprendizaje
+ significativo y así lograr llamar la atención de dichos alumnos 
+\end_layout
+
+\begin_layout Section
+ARTICULACIÓN DE LA TRANSFORMADA DE LAPLACE CON LA RESOLUCIÓN DE PROBLEMAS
+ DE CIRCUITOS ELÉCTRICOS QUE CONDUECEN A ECUACIONES DIFERENCIALES.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Francilene Dos Santos Cruz, Pedro Castañeda Porras, Pedro Fernández de Córdoba,
+ Juan.
+ L.
+ Martínes-González Santander.
+\end_layout
+
+\begin_layout Standard
+Universidad de Pinar del Río, Universidad Politécnica de Valencia, Universidad
+ Católica de Valencia,
+\end_layout
+
+\begin_layout Standard
+Universidade do estado Amazonas, Brasil.
+ pcasta@mat.upr.edu.cu, franci_78sl@hotmail.com, pfernandez@mat.upv.es, martinez.gonzal
+ez@ucv.es
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+  En la experiencia que contaremos va dirigida a los estudiantes de la carrera
+ de ingeniería en Telecomunicaciones y Electrónica de la Universidad de
+ Pinar del Río en conjunto con un proyecto de colaboración docente con la
+ Universidad Politécnica de Valencia.
+ Se pretende articular las asignaturas de la disciplina matemática con la
+ de circuitos eléctricos, aplicar, la Transformada de Laplace a la resolución
+ de problemas de circuitos que conducen a ecuaciones diferenciales, que
+ históricamente determinaron el inicio del uso sistemático de la transformada
+ de Laplace.
+ Los circuitos que vamos a considerar son aquellos constituidos por los
+ resistores, condensadores y los inductores.
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+uppercase{ 
+\end_layout
+
+\end_inset
+
+Fracciones y la relación parte-todo.
+ Una experiencia didáctica
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sonia Bibiana Benítez, Lidia María Benítez.
+\end_layout
+
+\begin_layout Standard
+Facultad de Cs.
+ Naturales e I.M.Lillo.
+ - Universidad Nacional de Tucumán,
+\end_layout
+
+\begin_layout Standard
+Argentina,
+\end_layout
+
+\begin_layout Standard
+Soniabenitez2001@hotmail.com; lidiabenitez@hotmail.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El objetivo de este trabajo es presentar la secuencia didáctica llevada
+ a cabo en escuelas, en el marco del Plan Matemática Para Todos, con la
+ intención de generar un efecto multiplicador que abarque a todas las escuelas
+ públicas y privadas del país.
+ Dicho Plan es a nivel Nacional de capacitación a docentes de escuelas públicas
+ primarias, que tiende a desarrollar en los alumnos competencias necesarias
+ para un trabajo autónomo en el área.
+ Desde el Ministerio de Educación de la Nación y desde nuestra propia práctica
+ se asumió la responsabilidad de que la escuela sea el lugar en el que todos
+ aprendan y se garantice el acceso a la herencia cultural de cada uno de
+ nuestros niños.
+ 
+\end_layout
+
+\begin_layout Section
+O PAPEL LÚDICO DOS JOGOS NO ENSINO DA MATEMÁTICA
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Jessica de Abreu Barbosa.
+\end_layout
+
+\begin_layout Standard
+Universidade de Brasília – UnB,
+\end_layout
+
+\begin_layout Standard
+Brasil ,
+\end_layout
+
+\begin_layout Standard
+jessica.xml@hotmail.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os jogos matemáticos são de enorme importância para a educação matemática.
+ Devido às dificuldades encontradas pelos alunos no aprendizado da matemática,
+ o desenvolvimento de atividades alternativas como um apoio às aulas formais
+ é fundamental.
+ Por ter um caráter lúdico, o jogo demonstra um papel relevante no processo
+ de ensino-aprendizagem.
+ Os jogos possuem efeitos cognitivos e socializantes de grande impacto aos
+ estudantes; observam-se melhorias e aquisição de habilidades, tais como:
+ raciocínio lógico, resolução de problemas, concentração, trabalho em equipe,
+ criatividade, reflexão e investigação.
+ Existem diversos tipos de jogos matemáticos: jogos que envolvem geometria,
+ jogos de tabuleiro, jogos de estratégia, jogos espaciais, tangrans, quebra-cabe
+ças, entre outros.
+ 
+\end_layout
+
+\begin_layout Section
+LABORATORIO DE CÁLCULO CON LA APLICACIÓN DESMOS
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Rubén Darío Santiago Acosta, Ma de Lourdes Quezada Batalla.
+\end_layout
+
+\begin_layout Standard
+Tecnológíco de Monterrey - Campus Estado de México,
+\end_layout
+
+\begin_layout Standard
+México,
+\end_layout
+
+\begin_layout Standard
+ruben.dario@itesm.mx; lquezada@itesm.mx, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este trabajo presentamos un laboratorio de Cálculo elaborado con el software
+ libre DESMOS, cuyas principales característica son: versatilidad, facilidad
+ y portabilidad ya que se puede usar en diferentes dispositivos electrónicos
+ (laptps, tabletas, smartphones).
+ El laboratorio se usa actualmente en diferentes cursos de matemáticas en
+ el Tecnológico de Monterrey, Campus Estado de México.
+ El laboratorio contiene prácticas sobre derivación e integración de funciones
+ de una y varias variables.
+ Cada tema termina con una práctica interactiva de evaluación donde se utilizan
+ las herramientas Weebly y JotForm.
+ Al final presentamos resultados de una encuesta de ambiente del aula sobre
+ la utilidad del laboratorio.
+ 
+\end_layout
+
+\begin_layout Section
+DIFICULTADES ASOCIADAS AL CONCEPTO CONJUNTO GENERADOR EN NIVEL SUPERIOR
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esteban Mendoza Sandoval, Flor Monserrat Rodríguez Vásquez.
+\end_layout
+
+\begin_layout Standard
+Universidad Autónoma de Guerrero,
+\end_layout
+
+\begin_layout Standard
+México,
+\end_layout
+
+\begin_layout Standard
+emendoza@uagro.mx; flor.rodriguez@uagro.mx 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dada la naturaleza abstracta del álgebra lineal, nos interesa proponer una
+ vía alternativa en la enseñanza del concepto conjunto generador, acuñando
+ a la teoría APOE como sustento teórico.
+ Por tanto en este trabajo, como primera parte de una investigación en desarroll
+o, mostramos algunas dificultades asociadas a dicho concepto en el nivel
+ medio superior, pues es fundamental para la propuesta alternativa que reconozca
+mos tales dificultades como parte de la descomposición genética que se debe
+ realizar en la contribución del desarrollo del pensamiento matemático avanzado.
+ 
+\end_layout
+
+\begin_layout Section
+POSTER: PROYECTO de MUSEO MATEMÁTICO: EL OMNIPOLIEDRO.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Zenón Eulogio Morales Martínez.
+\end_layout
+
+\begin_layout Standard
+Pontificia Universidad Católica del Perú – PUCP, Instituto de Investigación
+ en Enseñanza de las Matemáticas – IREM-PUCP, Institución Educativa Particular
+ Agroestudio,
+\end_layout
+
+\begin_layout Standard
+Perú ,
+\end_layout
+
+\begin_layout Standard
+morales.ze@pucp.edu.pe 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este poster se presentan las imágenes del proyecto del Museo Matemático
+ Agroestudio MMAE (Perú).
+ En el año 2013, el proyecto del MMAE, presentó el Omnipoliedro en el Congreso
+ Iberoamericano de Educación Matemática en Montevideo, Uruguay.
+ Para este año se han propuesto continuar con la elaboración de otras muestras
+ para este museo matemático.
+ Se logró aumentar el interés por los objetos matemáticos, debido a la manipulac
+ión de las muestras elaboradas.
+ Promovamos el mensaje en catalán que se muestra en el Museo de Catalunya
+ (España): “Les matemátiques entre per les mans” que nos dice: “Las matemáticas
+ entra por las manos”.
+ 
+\end_layout
+
+\begin_layout Section
+LA GEOMETRIA ESPACIAL Y LOS RECURSOS DIDÁCTICOS 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Agda Jéssica de Freitas Galletti, Ana Maria Redolfi Gandulfo.
+\end_layout
+
+\begin_layout Standard
+Universidad de Brasília,
+\end_layout
+
+\begin_layout Standard
+Brasil,
+\end_layout
+
+\begin_layout Standard
+aj.mat@hotmail.com; gandulfo@uol.com.br 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este poster tiene la finalidad de mostrar propuestas metodológicas innovadoras
+ de enseñanza y de aprendizaje de la geometría por medio de modelos didácticos
+ y también enfatizar la importancia de los recursos didácticos como instrumentos
+ para la visualización y la comprensión de la geometría espacial.
+ Abordamos los elementos, las representaciones y las relaciones de algunos
+ poliedros, así como sus propiedades, clasificaciones e identificamos las
+ diferentes figuras espaciales en la naturaleza, el arte y la arquitectura.
+ También tratamos los temas simetría y dualidad, destacando los rellenados
+ del espacio, sus clasificaciones y formaciones.
+ 
+\end_layout
+
+\begin_layout Section
+EL USO DE LAS REDES SOCIALES EN LA EDUCACION SUPERIOR 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+José Dionicio Zacarias Flores, Yazmin Jiménez Jiménez, Gladys Denisse Salgado
+ Suárez BUAP,
+\end_layout
+
+\begin_layout Standard
+Puebla - México,
+\end_layout
+
+\begin_layout Standard
+jzacarias@fcfm.buap.mx; yazjim2_26@hotmail.com;
+\end_layout
+
+\begin_layout Standard
+gladys008@hotmail.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Las redes sociales muestran un fuerte crecimiento e impacto en toda la sociedad,
+ convirtiéndose en la nueva forma de interactuar de las personas (Romero,
+ 2011), de donde surgen las preguntas: ¿Pueden ser útiles en la enseñanza
+ y aprendizaje de la matemática a nivel superior?, si es así ¿de qué forma?
+ Se presenta una revisión del estado del arte en el uso de las redes sociales
+ con la finalidad de conocer si pueden o no dárseles un uso en el sector
+ educativo a nivel superior, buscando la posibilidad de integrarlas, como
+ estrategias de enseñanza, y no como canal de comunicación.
+\end_layout
+
+\begin_layout Section
+NARRATIVAS DE LOS DERECHOS HUMANOS EN EDUCACIÓN MATEMÁTICA: EL CASO DE LOS
+ ESTUDIANTES DE GRADO SEXTO 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Juan Manuel Salas Martínez, Fernando Guerrero Recalde.
+\end_layout
+
+\begin_layout Standard
+Universidad Distrital Francisco José de Caldas,
+\end_layout
+
+\begin_layout Standard
+Colombia,
+\end_layout
+
+\begin_layout Standard
+juanmanuelsalasmartinez@hotmail.com; nfguerreror@gmail.com 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se pretende desarrollar una secuencia de actividades donde a partir de la
+ modelación matemática y las narrativas, los estudiantes de grado sexto
+ del colegio La Belleza los Libertadores IED, reflexionen sobre la realidad
+ social y analicen los efectos de algunos aspectos sobre la conservación
+ de la naturaleza, empleando las narrativas y la modelación matemática de
+ situaciones relacionadas con la conservación de la naturaleza, para ejercer
+ el derecho a la vida y el deber de protegerla, con la introducción de una
+ secuencia didáctica, la investigación es de tipo cualitativo y se desarrollará
+ a partir de la investigación acción, Elliot (2005).
+\end_layout
+
+\begin_layout Section
+SECUENCIA DIDÁCTICA DE MODELACIÓN-GRAFICACIÓN EN LA RESIGNIFICACIÓN Y CONSTRUCCI
+ÓN DE LA FUNCIÓN CUADRÁTICA
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Fredy de la Cruz Urbina, Hipólito Hernández Pérez.
+\end_layout
+
+\begin_layout Standard
+Universidad Autónoma de Chiapas,
+\end_layout
+
+\begin_layout Standard
+México,
+\end_layout
+
+\begin_layout Standard
+frecu@hotmail.com; polito_hernandez@hotmail.com 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Construir el diseño y modelo algebraico que representa a un fenómeno o situación
+, se ha vuelto complejo para el alumno.
+ Por ello abordamos el estudio de la función cuadrática en el nivel medio
+ superior, desde una mirada Socioepistemológica, para averiguar que prácticas
+ sociales permiten la resignificación y construcción de la concepción de
+ “función cuadrática” a partir de la modelación-graficación y con el uso
+ de la Ingeniería Didáctica diseñar secuencias didácticas basadas en el
+ movimiento con sensores, llenado y vaciado de recipientes; creemos que
+ estas actividades experimentales ayudarán a construir y resignificar lo
+ cuadrático en la estructura mental del alumno.
+ 
+\end_layout
+
+\begin_layout Section
+LA VISUALIZACIÓN EN EL PROCESO DE ENSEÑANZA-APRENDIZAJE DE LA GEOMETRÍA.
+ UN EJEMPLO
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Élgar Gualdrón, Ángel Gutiérrez.
+\end_layout
+
+\begin_layout Standard
+Grupo de Investigación EDUMATEST - Universidad de Pamplona, Universidad
+ de Valencia,
+\end_layout
+
+\begin_layout Standard
+Colombia, España,
+\end_layout
+
+\begin_layout Standard
+elgargualdron@yahoo.es; angel.gutierrez@uv.es
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se muestra los resultados de una investigación cualitativa que desarrollamos
+ al interior de la línea de investigación en “Pensamiento Geométrico” en
+ el grupo de investigación EDUMATEST de la Universidad de Pamplona (Colombia),
+ sobre la mejora del aprendizaje geométrico, concretamente en semejanza
+ de figuras planas.
+ El objetivo central del trabajo es analizar y caracterizar el proceso de
+ aprendizaje de la semejanza de figuras planas, en la enseñanza secundaria,
+ usando el modelo de razonamiento de Van Hiele y la visualización.
+ En este cartel daremos cuenta del uso que hacen los estudiantes de imágenes
+ mentales y habilidades de visualización en la resolución de tareas matemáticas
+ relacionadas con la semejanza.
+ 
+\end_layout
+
+\begin_layout Section
+CINCO PROBLEMAS CLAVES PARA EL DESARROLLO DEL PROCESO DE ENSEÑANZA APRENDIZAJE
+ DE LOS ESPACIOS VECTORIALES
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ángela Mercedes Martín Sánchez, Olga Lidia Pérez González, Laura Casas Fuentes,
+ Lisandra Docampo López, Lenniet Coello, Isabel Yordi González; Cila Mola
+ Reyes.
+\end_layout
+
+\begin_layout Standard
+Universidad Autónoma de Santo Domingo, Universidad de Camagüey,
+\end_layout
+
+\begin_layout Standard
+República Dominicana, Cuba
+\end_layout
+
+\begin_layout Standard
+m.angela@gmail.com; olguitapg@gmail.com;
+\end_layout
+
+\begin_layout Standard
+laura.casas@reduc.edu.cu ; lisandra.docampo@reduc.edu.cu;
+\end_layout
+
+\begin_layout Standard
+lenniet.coello@reduc.edu.cu; isabel.yordi@reduc.edu.cu; 
+\end_layout
+
+\begin_layout Standard
+cila.mola@reduc.edu.cu
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Campo de investigación: pensamiento algebraico, Nivel Superior, Investigación
+ empírico/teórico
+\end_layout
+
+\begin_layout Standard
+Se proponen 5 problemas claves que actúan como hilo conductor, utilizando
+ la combinación lineal de vectores como la célula que genera cada uno de
+ dichos problemas (Hernández, 1989).
+ Estos 5 problemas muestran el aspecto común entre los procedimientos que
+ se estudian en los espacios vectoriales, evidenciando la relación entre
+ ellos y permitiendo orientar al estudiante en la ejecución de las tareas.
+ 
+\end_layout
+
+\begin_layout Section
+LA TRANSFERENCIA DE REGISTROS SEMIÓTICOS COMO ESTRATEGIA PARA LA NIVELACIÓN
+ DE LOS ESTUDIANTES EN LOS CURSOS PROPEDÉUTICOS
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Wendy Heredia Soriano, Juan Manzueta, Francisco Vegazo; Ramón Blanco Sánchez,
+ Olga Lidia Pérez González, Alexia Nardín, Carlos Basulto Morales, Adolfo
+ Álvarez, Ibis Ramos.
+\end_layout
+
+\begin_layout Standard
+Universidad Autónoma de Santo Domingo, Universidad de Camagüey,
+\end_layout
+
+\begin_layout Standard
+República Dominicana, Cuba,
+\end_layout
+
+\begin_layout Standard
+ramón.blanco@reduc.edu.cu,olguitapg@gmail.com; alexia.nardin@reduc.edu.cu;
+\end_layout
+
+\begin_layout Standard
+carlos.basulto@reduc.edu.cu; adolfo.alvarez@reduc.edu.cu; 
+\end_layout
+
+\begin_layout Standard
+ibis.ramos@reduc.edu.cu
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El objetivo es reportar los resultados parciales de un proyecto de investigación
+ que parte de la problemática relacionada con el tratamiento didáctico que
+ se le da en los cursos propedéuticos a la nivelación de los estudiantes
+ desde el punto de vista de la formación conceptual.
+ El objetivo es poner ejemplos de cómo abordar esta nivelación desde la
+ perspectiva de la transferencia de los registros semióticos de los conceptos
+ matemáticos.
+ Se expone la experiencia llevada a la práctica y los resultados obtenidos
+ que sirven a su vez de orientaciones metodológicas para que otros maestros
+ la pongan en práctica.
+\end_layout
+
+\begin_layout Section
+MODELACIÓN DE PARABOLOIDES COMO REPRESENTACIONES ARQUITECTONICAS
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lucero Antolínez Quijano, Yetza Ximena Díaz Pinzón.
+\end_layout
+
+\begin_layout Standard
+Universidad Pedagógica Nacional, Universidad de Boyacá ,
+\end_layout
+
+\begin_layout Standard
+Colombia,
+\end_layout
+
+\begin_layout Standard
+luceroaq@gmail.com;yetzad@gmail.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Las herramientas informáticas posibilitan modelar curvas y superficies desde
+ sus ecuaciones paramétricas.
+ Al aplicar elementos matemáticos, se pueden optimizar algunas condiciones
+ estructurales para generar espacios arquitectónicos versátiles y novedosos,
+ haciendo un análisis referencial de la teoría y las construcciones existentes.
+ Esto promueve el diseño y construcción de estructuras con su respectiva
+ caracterización matemática y sugerirlas como soluciones arquitectónicas
+ innovadoras.
+ Particularmente, los paraboloides hiperbólicos son una alternativa para
+ construir cubiertas que proveen gran luminosidad y hacen visiblemente atractivo
+s aquellos espacios que demandan áreas importantes de uso común, sumando
+ la caracterización anticlastica como elemento esencial para lograr la rigidez
+ de las cubiertas.
+ 
+\end_layout
+
+\begin_layout Section
+JUEGO INTERACTIVO DE APOYO PARA NIÑOS CATALOGADOS CON TDAH.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Alicia Rocendo Ramírez.
+ 
+\end_layout
+
+\begin_layout Standard
+ton.ali24.07@gmail.com 
+\end_layout
+
+\begin_layout Standard
+Asesores: MCC.
+ Hilda Icela Garzón Barrientos, DRA.
+ Guadalupe Cabañas-Sánchez
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El presente estudio se enfoca en el desarrollo de aplicaciones interactivas
+ utilizando Scratch en el proceso de enseñanza de niños con hiperactividad,
+ en el interés de centrar su atención, que es la fuente principal de sus
+ problemas en el salón de clases.
+ Algunas investigaciones han documentado que los estudiantes que se distraen
+ fácilmente, pueden concentrarse mejor si las tareas se realizan en un computado
+r, en razón de que la tecnología ofrece a docentes opciones para adaptar
+ la instrucción a necesidades específicas de los alumnos (e.gr.
+ Correa et al, 2012).
+ Para los niños el principal estimulo es la motivación y la atracción de
+ la aplicación, ya que esta incluye sonido, instrucciones en audio, imágenes
+ atractivas para ellos, y que requiere de un corto tiempo para ejecutar
+ la aplicación.
+\end_layout
+
+\begin_layout Standard
+Referencias bibliográficas Armstrong, T.
+ (2008).
+ Síndrome de Déficit de Atención con o sin Hiperactividad ADD/ADHD.
+ Estrategias en el aula.
+ España: PAIDÓS.
+ Correa, S., Reséndiz, E., Llanos, R., Salazar, M.
+ & Sánchez, J.
+ (2012).
+ Diseño, desarrollo y evaluación de objetos de aprendizaje en matemáticas
+ básicas.
+ En Flores, R.
+ (Ed.).
+ (2012).
+ Acta Latinoamericana de Matemática Educativa, Vol.
+ 25.
+ México, DF: Colegio Mexicano de Matemática Educativa A.
+ C.
+ y Comité Latinoamericano de Matemática Educativa A.
+ C.
+ Lázaro, N.
+ (2012).
+ Estrategia metodológica para potenciar el uso del software elementos matemático
+s en la secundaria básica.
+ En Flores, R.
+ (Ed.).
+ (2012).
+ Acta Latinoamericana de Matemática Educativa, Vol.
+ 25.
+ México, DF: Colegio Mexicano de Matemática Educativa A.
+ C.
+ y Comité Latinoamericano de Matemática Educativa A.
+ C.
+ PO029 
+\end_layout
+
+\begin_layout Section
+LA TRANSFERENCIA DE REGISTROS SEMIÓTICOS EN LA FORMACIÓN DEL CONCEPTO DERIVADA.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Neel Báez Ureña, Olga Lidia Pérez González, Alexia Martín Anarela, Adolfo
+ Álvarez, Arnaldo Espíndola, Cila Mola, Ibis Ramos, Ramón Blanco Sánchez.
+\end_layout
+
+\begin_layout Standard
+Universidad Autónoma de Santo Domingo, Universidad de Camagüey,
+\end_layout
+
+\begin_layout Standard
+República Dominicana, Cuba,
+\end_layout
+
+\begin_layout Standard
+neelbaez@gmail.com; ramón.blanco@reduc.edu.cu;
+\end_layout
+
+\begin_layout Standard
+olguitapg@gmail.com; alexia.nardin@reduc.edu.cu;
+\end_layout
+
+\begin_layout Standard
+adolfo.alvarez@reduc.edu.cu; arnaldo.espindola@reduc.edu.cu; 
+\end_layout
+
+\begin_layout Standard
+cila.mola@reduc.edu.cu; ibis.ramos@reduc.edu.cu 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El objetivo es reportar los resultados parciales de un proyecto de investigación
+ que parte de la problemática de los estudiantes con los conceptos del Cálculo
+ Diferencial.
+ Se ha podido argumentar que dado el carácter no ostensivo de los objetos
+ matemáticos y la insuficiente cantidad de tareas, realizadas en clases,
+ sobre la transferencia de registros semióticos, se limita el trabajo conceptual
+, de los estudiantes, con este contenido.
+ El objetivo del proyecto es exponer la experiencia del trabajo con la transfere
+ncia de registros semióticos para la formación del concepto derivada.
+ Se muestran los resultados obtenidos con su aplicación.
+\end_layout
+
+\begin_layout Section
+LA TRANSFERENCIA DE REGISTROS SEMIÓTICOS COMO ESTRATEGIA PARA LA NIVELACIÓN
+ DE LOS ESTUDIANTES EN LOS CURSOS PROPEDÉUTICOS
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Wendy Heredia Soriano, Juan Manzueta, Francisco Vegazo, Ramón Blanco Sánchez,
+ Olga Lidia Pérez González, Alexia Nardín, Carlos Basulto Morales, Adolfo
+ Álvarez, Ibis Ramos.
+\end_layout
+
+\begin_layout Standard
+Universidad Autónoma de Santo Domingo,
+\end_layout
+
+\begin_layout Standard
+Universidad de Camagüey,
+\end_layout
+
+\begin_layout Standard
+República Dominicana, Cuba,
+\end_layout
+
+\begin_layout Standard
+neelbaez@gmail.com; ramón.blanco@reduc.edu.cu;
+\end_layout
+
+\begin_layout Standard
+olguitapg@gmail.com; alexia.nardin@reduc.edu.cu;
+\end_layout
+
+\begin_layout Standard
+carlos.basulto@reduc.edu.cu; adolfo.alvarez@reduc.edu.cu; 
+\end_layout
+
+\begin_layout Standard
+ibis.ramos@reduc.edu.cu
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El objetivo es reportar los resultados parciales de un proyecto de investigación
+ que parte de la problemática relacionada con el tratamiento didáctico que
+ se le da en los cursos propedéuticos a la nivelación de los estudiantes
+ desde el punto de vista de la formación conceptual.
+ El objetivo es poner ejemplos de cómo abordar esta nivelación desde la
+ perspectiva de la transferencia de los registros semióticos de los conceptos
+ matemáticos.
+ Se expone la experiencia llevada a la práctica y los resultados obtenidos
+ que sirven a su vez de orientaciones metodológicas para que otros maestros
+ la pongan en práctica.
+\end_layout
+
+\begin_layout Section
+PROCESO ESTRATEGICO PARA RESOLVER 20 IDENTIDADES TRIGONOMETRICAS SENCILLAS
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Elizabeth Rincón Santana, José Manuel Ruíz Socarras, Ramón Blanco Sánchez.
+\end_layout
+
+\begin_layout Standard
+Universidad Autónoma de Santo Domingo, Universidad de Camagüey,
+\end_layout
+
+\begin_layout Standard
+República Dominicana, Cuba,
+\end_layout
+
+\begin_layout Standard
+te10elirisa@gmail.com; jose.ruiz@reduc.edu.cu;
+\end_layout
+
+\begin_layout Standard
+ramón.blanco@reduc.edu.cu
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se presenta un póster o cartel para la resolución de identidades trigonométricas
+ sencillas, con el objetivo de favorecer el pensamiento deductivo de los
+ estudiantes y proporcionarles estrategias básicas que ayuden a simplificar
+ expresiones trigonométricas.
+ El diseño es una guía que forma parte del conjunto de actividades que tributan
+ al proyecto de doctorado de la autora principal del trabajo, el cual está
+ orientado a investigar sobre las estrategias docentes para la enseñanza
+ aprendizaje de la Geometría y Trigonometría plana, sustentado en la estructura
+ sistémica de la Matemática y su lógica de desarrollo intrínseca.
+\end_layout
+
+\begin_layout Section
+CONCEPCIONES DE LOS PROFESORES AL USAR MATERIAL CONCRETO Y HERRAMIENTAS
+ TECNOLÓGICAS PARA EXPLICAR EL TEOREMA DE PITÁGORAS.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Jesús Grajeda Rosas, Eliza Minnelli Olguín Trejo, Claudia Rodríguez Muñoz.
+\end_layout
+
+\begin_layout Standard
+Departamento de Matemática Educativa, CINVESTAV-IPN,
+\end_layout
+
+\begin_layout Standard
+México iq_jesusgr@hotmail.com; minnelli_angel@yahoo.com.mx;
+\end_layout
+
+\begin_layout Standard
+claurom65@yahoo.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Presentamos un estudio sobre la valoración que los docentes, inscritos en
+ un laboratorio, hicieron sobre las ventajas y desventajas que el uso de las
+ herramientas tecnológicas tienen en la educación, frente al material concreto.
+ El Laboratorio fue impartido en la XVI Escuela de Invierno de Matemática
+ Educativa en México a un grupo de profesores de nivel medio en torno al
+ uso de material concreto, en este caso papel, y herramientas tecnológicas,
+ tal es el caso del software GeoGebra, poniendo como objeto matemático al
+ Teorema de Pitágoras.
+ 
+\end_layout
+
+\begin_layout Section
+VISUALIZACIÓN DE LA MODELACIÓN MATEMÁTICA EN ALUMNOS DEL BACHILLERATO
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+David Alfonso Romero, Liliana Suárez Téllez, José Luis Torres Guerrero.
+\end_layout
+
+\begin_layout Standard
+Instituto Politécnico Nacional, 
+\end_layout
+
+\begin_layout Standard
+México,
+\end_layout
+
+\begin_layout Standard
+darbunk24@gmail.com; lilianasuarezt@gmail.com;
+\end_layout
+
+\begin_layout Standard
+jeluistg@yahoo.com.mx
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los alumnos de NMS se enfrentan a problemáticas para la comprensión de las
+ Matemáticas fuera del ámbito escolar, preguntándose el uso de las mismas
+ en lugares distintos al aula de clases, por ello inculcarlos en la resolución
+ de experimentos de la materia, donde se da un enfoque práctico mediante
+ el trabajo en equipo y uso de la tecnología es como se busca que los alumnos
+ del bachillerato interpreten los conocimientos adquiridos en las cursos
+ de Matemáticas en la vida diaria, dando solución y uso de estrategias para
+ concretar un conocimiento de la modelación de las Matemáticas.
+\end_layout
+
+\begin_layout Section
+ENSEÑANZA DE SUMA Y RESTA DE NÚMEROS NATURALES A NIÑOS CON SÍNDROME DE DOWN
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Liliana Hernández Martínez.
+\end_layout
+
+\begin_layout Standard
+Universidad Pedagógica y Tecnológica de Colombia, 
+\end_layout
+
+\begin_layout Standard
+Colombia,
+\end_layout
+
+\begin_layout Standard
+lili_girla@hotmail.com; lili.girla.hernandez@gmail.com 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este proyecto de investigación cualitativa tiene como objetivo diseñar,
+ aplicar y evaluar una estrategia para estudiantes con Síndrome de Down
+ (SD) de la Escuela Normal Superior Santiago de Tunja (Boyacá), que permita
+ un aprendizaje significativo de los conceptos de suma y resta, facilitando
+ la construcción del conocimiento matemático.
+ El marco referencial comprende la inclusión educativa, las reformas curriculare
+s que trae consigo y las características del SD, entre otros.
+ Éste se desarrollará según el método investigación-acción y en sus etapas
+ se utilizarán la observación y la entrevista como recolectores de información,
+ determinando así las características que puede tener dicha estrategia,
+ adecuada a las capacidades, necesidades e intereses de los estudiantes.
+\end_layout
+
+\begin_layout Section
+SIGNIFICADO DE REFERENCIA DE LA EXPRESIÓN NUMÉRICA DE LA FORMA “
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+” 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Bencomo Delisa, Franzone Johanna,
+\end_layout
+
+\begin_layout Standard
+Universidad Nacional Experimental de Guayana,
+\end_layout
+
+\begin_layout Standard
+Venezuela,
+\end_layout
+
+\begin_layout Standard
+dbencomo@uneg.edu.ve; jfranzone0113@gmail.com 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este cartel nos proponemos mostrar la reconstrucción del significado
+ de la expresión numérica de la forma “a/b”.
+ Esta reconstrucción se realizó a partir del reconocimiento de los campos
+ de problemas del contexto de uso informal, de la identificación de los
+ elementos de significados que emergen de esos sistemas de prácticas de
+ contexto informal, de la construcción de las configuraciones empíricas
+ a partir de las relaciones entre los elementos de significado, del reconocimien
+to de los contextos de uso formales asociado, equivalentes y/o relacionados
+ con las configuraciones empíricas, y de las configuraciones teóricas que
+ emergen de esos contextos formales.
+ 
+\end_layout
+
+\begin_layout Section
+EJEMPLOS PARA LA EVALUACIÓN POR COMPETENCIAS EN EL PROCESO DE ENSEÑANZA
+ APRENDIZAJE DEL ALGEBRA EN EL NIVEL MEDIO
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Yanile Altagracia Valenzuela Calderón, Olga Lidia Pérez González, Manuel
+ Guardado Hernández, Nancy Montes de Oca.
+\end_layout
+
+\begin_layout Standard
+Universidad Autónoma de Santo Domingo, Universidad de Camagüey,
+\end_layout
+
+\begin_layout Standard
+República Dominicana, Cuba,
+\end_layout
+
+\begin_layout Standard
+yanilevalenzuela@gmail.com; olguitapg@gmail.com; 
+\end_layout
+
+\begin_layout Standard
+manuel.guardado@reduc.edu.cu; nancy.montes@reduc.edu.cu
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El objetivo del trabajo es hacer un reporte de los resultados parciales
+ de un proyecto de investigación que parte de la problemática existente
+ en relación a las insuficiencias en el tratamiento de la evaluación en
+ el proceso de enseñanza aprendizaje (PEA) del Álgebra en el nivel medio.
+ Se exponen ejemplos que favorecen el desarrollo de la evaluación por competenci
+as en el PEA del Álgebra.
+ 
+\end_layout
+
+\begin_layout Section
+MODELACIÓN MATEMÁTICA COMO HERRAMIENTA EDUCATIVA DESDE LA MIRADA DE ESTUDIANTES
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Jhosep Jonathan Huerta Martínez, Verónica Camacho Salinas, Liliana Suárez
+ Téllez, Claudia Flores Estrada, Adriana Gómez Reyes.
+\end_layout
+
+\begin_layout Standard
+Instituto Politécnico Nacional,
+\end_layout
+
+\begin_layout Standard
+México,
+\end_layout
+
+\begin_layout Standard
+jjhm3796@gmail.com; veronica00307@gmail.com;
+\end_layout
+
+\begin_layout Standard
+lsuarez@ipn.mx; cfloreses@ipn.mx;
+\end_layout
+
+\begin_layout Standard
+orodelsilencio@yahoo.com.mx 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La enseñanza de las matemáticas pretende que los alumnos sean capaces de
+ emplear y hacer uso de los conocimientos para resolver problemas en su
+ vida cotidiana y otras áreas.
+ Debido a esto la matemática educativa a lo largo de su desarrollo ha buscado
+ generar estrategias y herramientas que den pauta a cambios en el proceso
+ de enseñanza-aprendizaje.
+ El eje del presente trabajo es la búsqueda y análisis, por parte de dos
+ estudiantes de bachillerato, de tres afirmaciones sobre la modelación matemátic
+a como una herramienta que permite al alumno y al docente cambios positivos
+ en el proceso de enseñanza-aprendizaje.
+\end_layout
+
+\begin_layout Section
+CURSO E-LEARNING COMO APOYO EN LA ENSEÑANZA DE UNA DISTRIBUCIÓN BINOMIAL
+ EN LA ASIGNATURA DE ESTADÍSTICA
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Miguel de Nazareth Pineda Becerril, Armando Aguilar Márquez, Juan Carlos
+ Axotla García, Frida María León Rodríguez, Omar García León.
+\end_layout
+
+\begin_layout Standard
+mnazarethp@fesc.cuautitlan2.unam.mx; armandoa@servidor.unam.mx;
+\end_layout
+
+\begin_layout Standard
+jc_axotla@fesc.unam.mx; fridam@servidor.unam.mx
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para facilitar el estudio del tema de Distribución Binomial en las asignaturas
+ de estadística que se imparten en la Facultad de Estudios Superiores Cuautitlán
+, se desarrolló este tema con diferentes actividades bajo la plataforma
+ de Dokeos, Dentro de este trabajo se propone que, aunado a la enseñanza
+ de los profesores en el aula, los alumnos aborden este tema mediante un
+ curso E-learning, el cual contiene applets, teoría, chat, videos, etc.
+ En este curso E-learning se cuanta con diferentes herramientas para que
+ el alumno obtenga una mejor comprensión del tema de distribución binomial
+ 
+\end_layout
+
+\begin_layout Section
+LOS CURSOS PROPEDÚTICOS, LA NIVELACIÓN CONCEPTUAL Y LA APROPIACIÓN Y APLICACIÓN
+ DE CONCEPTOS: ¿LO LOGRAMOS? 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Danitza Soledad Mirabal, Wendy Heredia Soriano, Francisco Vegazo; Ramón
+ Blanco Sánchez, Olga Lidia Pérez González, Alexia Nardín, Carlos Basulto
+ Morales, Adolfo Álvarez, Ibis Ramos.
+\end_layout
+
+\begin_layout Standard
+Universidad Autónoma de Santo Domingo, Universidad de Camagüey,
+\end_layout
+
+\begin_layout Standard
+República Dominicana, Cuba,
+\end_layout
+
+\begin_layout Standard
+dsm_536@hotmail.com; ehssoriano@gmail.com; 
+\end_layout
+
+\begin_layout Standard
+ramón.blanco@reduc.edu.cu; olguitapg@gmail.com;
+\end_layout
+
+\begin_layout Standard
+alexia.nardin@reduc.edu.cu; carlos.basulto@reduc.edu.cu; 
+\end_layout
+
+\begin_layout Standard
+adolfo.alvarez@reduc.edu.cu; ibis.ramos@reduc.edu.cu
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El objetivo es reportar los resultados parciales de un proyecto de investigación
+ que parte de la problemática relacionada con el tratamiento didáctico que
+ se le da en los cursos propedéuticos a la nivelación de los estudiantes
+ desde el punto de vista de la formación conceptual.
+ El objetivo es exponer los resultados de un estudio empírico sobre las
+ concepciones y creencias que tienen los profesores de cómo abordar esta
+ nivelación desde la perspectiva de la transferencia de los registros semióticos
+ de los conceptos matemáticos.
+ 
+\end_layout
+
+\begin_layout Section
+EL ANÁLISIS DE LAS COMPETENCIAS COMO UNA OPORTUNIDAD DE DESARROLLO PROFESIONAL
+ EN ESTUDIANTES DE PREPARATORIA.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Carlos Oropeza Ugalde, José Isaac Sánchez Guerra, Carlos Oropeza Legorreta.
+ 
+\end_layout
+
+\begin_layout Standard
+CBT Gabriel V.
+ Alcocer - Facultad de Estudios Superiores Cuautitlán, UNAM,
+\end_layout
+
+\begin_layout Standard
+México, 
+\end_layout
+
+\begin_layout Standard
+lambo.r.gini@hotmail.com; joejade@hotmail.com;
+\end_layout
+
+\begin_layout Standard
+coropeza96@hotmail.com.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Las inteligencias permiten el desarrollo de capacidades, habilidades y aprendiza
+jes en el mundo del trabajo.
+ En ellos, los modelos organizacionales han incorporado nuevas formas de
+ concebir las competencias laborales, influidas por los aportes de la psicología
+, la antropología, la sociología, la economía y la medicina, disciplinas
+ que han contribuido a problematizar el tema.
+ ¿Cuál es la relación entre competencias, capacidades e inteligencias?,
+ ¿qué tipo de inteligencias se necesitan para los mercados de trabajo en
+ la economía? ¿hasta dónde las competencias básicas son el referente fundamental
+ para el mundo del trabajo? y ¿qué tipo de inteligencia o inteligencias
+ permiten su desarrollo? 
+\end_layout
+
+\begin_layout Section
+MAPAS CONCEPTUALES EN EL PROCESO DE ENSEÑANZA Y APRENDIZAJE DE LA MATEMÁTICA
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Daysi García Cuéllar, Daniel Proleón Patricio, Edisson Pérez Sotelo.
+\end_layout
+
+\begin_layout Standard
+Pontificia Universidad Católica del Perú - Instituto de Matemática Pura
+ y Aplicada,
+\end_layout
+
+\begin_layout Standard
+garcia.daysi@pucp.pe; dproleon@pucp.pe; 
+\end_layout
+
+\begin_layout Standard
+eperez@imca.edu.pe
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La experiencia educativa muestra la importancia de los mapas conceptuales
+ en el proceso de enseñanza y aprendizaje de la matemática los cuales son
+ considerados como una importante herramienta para el logro de aprendizajes
+ significativos, constructivos y por descubrimiento, desde las posturas
+ de Ausubel, Piaget y Bruner, respectivamente.
+ Esta experiencia fue realizada con las alumnas del segundo año de secundaria.
+ Ellas utilizaron como herramienta el programa Cmaptools que les permitió
+ reconocer algunas característica de los mapas conceptuales como: La jerarquía,
+ palabras enlaces, entre otros.
+\end_layout
+
+\begin_layout Section
+UNA ALTERNATIVA PARA LA RESOLUCIÓN DE PROBLEMAS DE MATEMÁTICA: TRABAJO EN
+ GRUPO
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{datos}
+\end_layout
+
+\end_inset
+
+María Elena Villanueva Pinedo.
+\end_layout
+
+\begin_layout Standard
+Universidad Nacional Agraria La Molina,
+\end_layout
+
+\begin_layout Standard
+Perú ,
+\end_layout
+
+\begin_layout Standard
+villanuepi@lamolina.edu.pe
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{datos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este trabajo surge de la necesidad de iniciar un proceso de innovación de
+ la enseñanza e incorporar metodologías activas como medios para el aprendizaje
+ eficaz.
+ Se realizó una actividad en grupo en el curso de Cálculo Diferencial con
+ estudiantes de carreras relacionadas con el agro que tienen diferentes
+ habilidades y conocimientos.
+ La finalidad fue la de que verifiquen y afiancen sus avances y aprendan
+ unos de otros.
+ Posteriormente, se realizará la evaluación del rendimiento (específicamente,
+ del puntaje obtenido en la pregunta) y de los resultados obtenidos del
+ trabajo en grupo, a través de técnicas estadísticas, con el objetivo de
+ determinar si estas variables son dependientes.
+ En caso haya habido una mejora en el rendimiento después de realizar la
+ actividad, se recomendará plantear este tipo de trabajo en otras partes
+ del curso que requieren de la resolución de problemas.
+ 
+\end_layout
+
+\begin_layout Description
+1.
+ Bologna, E.
+ (2011).
+ Estadística para Psicología y Educación.
+ Córdova: Editorial Brujas.
+\end_layout
+
+\begin_layout Description
+2.
+ Rue, J.
+ (2009).
+ El aprendizaje Autónomo en Educación Superior.
+ Madrid: NARCEA, S.
+ A.
+ de Ediciones.
+\end_layout
+
+\begin_layout Description
+3.
+ Torres, P.
+ (2003).
+ Estrategias de Resolución de Problemas.
+ UPC, Lima.
+ 
+\end_layout
+
+\begin_layout Description
+4.
+ Villanueva, M.
+ (2009).
+ Relación entre las notas de matemática obtenidas en el nivel secundario
+ y en curso de matemática de los estudiantes que recién ingresan a la universida
+d.
+ Actas Enseñanza de las matemáticas IV Coloquio Internacional.
+ Lima: Departamento de Ciencias – PUCP.
+\end_layout
+
+\end_body
+\end_document

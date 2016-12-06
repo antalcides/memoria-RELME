@@ -1,0 +1,1347 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+\usepackage{blindtext}
+\usepackage{multicol}
+\usepackage[utf8x]{inputenc}
+\usepackage{balance}
+\pagestyle{headings}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage[headings]{fullpage}
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\newcommand{\lyxmathsym}[1]{\ifmmode\begingroup\def\b@ld{bold}
+  \text{\ifx\math@version\b@ld\bfseries\fi#1}\endgroup\else#1\fi}
+
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\newenvironment{lyxlist}[1]
+{\begin{list}{}
+{\settowidth{\labelwidth}{#1}
+ \setlength{\leftmargin}{\labelwidth}
+ \addtolength{\leftmargin}{\labelsep}
+ \renewcommand{\makelabel}[1]{##1\hfil}}}
+{\end{list}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\input{preamble}
+\input{codigo}
+\usepackage{fancyvrb}
+\usepackage{cancel}
+\usepackage[unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=true,bookmarksopen=true,bookmarksopenlevel=1,
+ breaklinks=false,pdfborder={0 0 0},backref=false,colorlinks=false]
+ {hyperref}
+\hypersetup{
+ pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false}
+ \newsavebox{\LstBox}
+ %\graphicspath{ {./img/} }
+ \makeatletter
+\def\input@path{{./}{./build/}}
+\makeatother
+ \graphicspath{{./}{./img/}{./build/}}
+ \renewcommand{\baselinestretch}{1.5}
+\raggedbottom %para que no distibuya los espacios verticales en una hoja
+\usepackage[spanish]{babel}
+ 
+\addto\captionsspanish{
+\def\tablename{Tabla}
+\def\listtablename{\'Indice de tablas}
+}
+%\titleformat{\section}{\large\bfseries}{CO\thesection}{1em}{}
+%\renewcommand{\thesection}{CO\ \arabic{section}} 
+\renewcommand\thesection{CO\ \nplpadding{3}\numprint{\arabic{section}}}
+\makeatother
+\let\origdoublepage\cleardoublepage
+\newcommand{\clearemptydoublepage}{%
+  \clearpage
+  {\pagestyle{empty}\origdoublepage}%
+}
+\end_preamble
+\options twocolumn,balance,spanish,svgnames,x11names,x11names,HTML
+\use_default_options false
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding utf8x
+\fontencoding default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "pdfpagelayout=OneColumn,pdfnewwindow=true,pdfstartview=XYZ,plainpages=false"
+\papersize default
+\use_geometry false
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 2
+\papersides 2
+\paperpagestyle headings
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+frontmatter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename RELME28-portada.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagecolor{ptcbackground}
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+vfill
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+begin{multicols}{1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+onecolumn
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+color{white} 
+\backslash
+bfseries 
+\backslash
+setlength
+\backslash
+parindent{0pt}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{mdframed}[backgroundcolor=ptctitle,hidealllines=true]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox[t]{
+\backslash
+dimexpr
+\backslash
+textwidth-2
+\backslash
+fboxsep
+\backslash
+relax}{  
+\backslash
+color{white}
+\backslash
+bfseries
+\backslash
+sffamily  COMITÉ LATINOAMERICANO DE MATEMÁTICA EDUCATIVA }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{mdframed}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+colorbox{ptctitle}{
+\backslash
+color{white}
+\backslash
+bfseries
+\backslash
+sffamily Comisión Directiva Presidenta:}
+\end_layout
+
+\end_inset
+
+ Claudia Lara Galo (Guatemala) 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+colorbox{ptctitle}{
+\backslash
+color{white}
+\backslash
+bfseries
+\backslash
+sffamily Secretaria:}
+\end_layout
+
+\end_inset
+
+ Cecilia Crespo Crespo (Argentina)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+colorbox{ptctitle}{
+\backslash
+color{white}
+\backslash
+bfseries
+\backslash
+sffamily Tesorera:}
+\end_layout
+
+\end_inset
+
+ Elizabeth Mariscal Vallarta (México)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{mdframed}[backgroundcolor=ptctitle,hidealllines=true, rightmargin=0.5
+\backslash
+textwidth ]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox[t]{
+\backslash
+dimexpr
+\backslash
+textwidth-2
+\backslash
+fboxsep
+\backslash
+relax}{ 
+\backslash
+color{white}
+\backslash
+bfseries
+\backslash
+sffamily  Vocales: }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{mdframed}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+colorbox{ptctitle}{
+\backslash
+color{white}
+\backslash
+bfseries
+\backslash
+sffamily Caribe:}
+\end_layout
+
+\end_inset
+
+ Ángela Martin (República Dominicana)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+colorbox{ptctitle}{
+\backslash
+color{white}
+\backslash
+bfseries
+\backslash
+sffamily Centroamérica: }
+\end_layout
+
+\end_inset
+
+ Edison De Faria (Costa Rica)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+colorbox{ptctitle}{
+\backslash
+color{white}
+\backslash
+bfseries
+\backslash
+sffamily Norteamérica: }
+\end_layout
+
+\end_inset
+
+ Marcela Ferrari (México)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+colorbox{ptctitle}{
+\backslash
+color{white}
+\backslash
+bfseries
+\backslash
+sffamily Sudamérica: }
+\end_layout
+
+\end_inset
+
+ Patricia Lestón (Argentina)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{mdframed}[backgroundcolor=ptctitle,hidealllines=true]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox[t]{
+\backslash
+dimexpr
+\backslash
+textwidth-2
+\backslash
+fboxsep
+\backslash
+relax}{   
+\backslash
+color{white}
+\backslash
+bfseries
+\backslash
+sffamily  COMITÉ NACIONAL ORGANIZADOR}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{mdframed}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+colorbox{ptctitle}{
+\backslash
+color{white}
+\backslash
+bfseries
+\backslash
+sffamily Manager : }
+\end_layout
+
+\end_inset
+
+ Blanca Peralta
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{mdframed}[backgroundcolor=ptctitle,hidealllines=true, rightmargin=0.5
+\backslash
+textwidth]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox[t]{
+\backslash
+dimexpr
+\backslash
+textwidth-2
+\backslash
+fboxsep
+\backslash
+relax}{   
+\backslash
+color{white}
+\backslash
+bfseries
+\backslash
+sffamily  Coordinadores: }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{mdframed}
+\end_layout
+
+\end_inset
+
+ Jorge Rodríguez C.
+\end_layout
+
+\begin_layout Standard
+Alejandro Urieles G.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{mdframed}[backgroundcolor=ptctitle,hidealllines=true, rightmargin=0.5
+\backslash
+textwidth]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox[t]{
+\backslash
+dimexpr
+\backslash
+textwidth-2
+\backslash
+fboxsep
+\backslash
+relax}{  
+\backslash
+color{white}
+\backslash
+bfseries
+\backslash
+sffamily  Miembros: }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{mdframed}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols}{2}
+\end_layout
+
+\end_inset
+
+ Sonia Balbuena 
+\end_layout
+
+\begin_layout Standard
+María José Ortega
+\end_layout
+
+\begin_layout Standard
+Ramiro Peña Jorge
+\end_layout
+
+\begin_layout Standard
+Robinson Julio Romero
+\end_layout
+
+\begin_layout Standard
+Lesly Salas 
+\end_layout
+
+\begin_layout Standard
+Diana Vargas
+\end_layout
+
+\begin_layout Standard
+Gabriel Vergara
+\end_layout
+
+\begin_layout Standard
+Ludwing Villa 
+\end_layout
+
+\begin_layout Standard
+Antalcides Olivo
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+end{multicols}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vfill
+\backslash
+newpage
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+color{white}
+\backslash
+bfseries
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{mdframed}[backgroundcolor=ptctitle,hidealllines=true]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox[t]{
+\backslash
+dimexpr
+\backslash
+textwidth-2
+\backslash
+fboxsep
+\backslash
+relax}{  
+\backslash
+color{white}
+\backslash
+bfseries
+\backslash
+sffamily  Estimados amigos y colegas }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{mdframed}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es para nosotros un verdadero honor, ser los anfitriones de la
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+ {
+\backslash
+bf VIGÉSIMA OCTAVA REUNIÓN LATINOAMERICANA DE MATEMÁTICA EDUCATIVA, RELME
+ 28,}
+\end_layout
+
+\end_inset
+
+ a realizarse en Barranquilla, Colombia, del 28 de julio al 1 de agosto
+ de 2014.
+ Colombia fue sede de la Relme 12 en el año 1998, en la ciudad de Bogotá.
+ Hoy, de nuevo somos la sede de tan importante reunión y quisimos que, al
+ igual que aquel entonces, tener una asistencia masiva de profesores, estudiante
+s, doctores, investigadores y en general de personas preocupadas por las
+ matemáticas educativas de América y el mundo.
+ Esperamos que puedan encontrar espacios en donde no solo establezcamos
+ alianzas o compartamos preocupaciones; deseamos que tengan la posibilidad
+ de tejer afectos, esperanzas, esfuerzos e ideas en pro de una mejor educación
+ para los pueblos de América.
+\end_layout
+
+\begin_layout Standard
+Con la alegría que caracteriza a los barranquilleros, les damos la bienvenida
+ a nuestra ciudad para hacer de este sueño una realidad 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{mdframed}[backgroundcolor=ptctitle,hidealllines=true]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox[t]{
+\backslash
+dimexpr
+\backslash
+textwidth-2
+\backslash
+fboxsep
+\backslash
+relax}{  
+\backslash
+color{white}
+\backslash
+bfseries
+\backslash
+sffamily  Comité Nacional Organizador RELME 28 }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{mdframed}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hemos logrado entusiasmar a colegas de diversos países que podrán participar
+ de las cerca de 800 actividades programadas: Más de 90 invitadas y alrededor
+ de 680 aceptadas por el comité evaluador.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols}{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Conferencias plenarias: 2 
+\end_layout
+
+\begin_layout Standard
+Conferencias especiales: 47 
+\end_layout
+
+\begin_layout Standard
+Cursos cortos: 44 
+\end_layout
+
+\begin_layout Standard
+Mesas redondas: 4
+\end_layout
+
+\begin_layout Standard
+Grupos de trabajo y discusión: 6 
+\end_layout
+
+\begin_layout Standard
+Reportes de investigación: 348 
+\end_layout
+
+\begin_layout Standard
+Comunicaciones breves: 230 
+\end_layout
+
+\begin_layout Standard
+Talleres: 48 
+\end_layout
+
+\begin_layout Standard
+Posters: 42
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el caso de las conferencias plenarias, conferencias especiales y los
+ cursos cortos, nosotros, el comité organizador, invitamos a destacados
+ especialistas brindando un espacio a quienes han desarrollado con tesón,
+ ilusión y alegría, trabajos en distintas áreas.
+ Para el resto de propuestas, siguiendo la tradición de RELME, el comité
+ académico envió a dos árbitros cada uno de los trabajos.
+ En el caso que no hubiera acuerdo entre las opiniones de éstos, la propuesta
+ era enviada a un tercero quien decidía sobre la aceptación o no de la misma.
+\end_layout
+
+\begin_layout Standard
+Tenemos la inmensa oportunidad de contar con la presencia, palabra y entusiasmo
+ de profesores de todos los niveles educativos, de diversas formaciones
+ académicas y que provienen de los más bellos parajes de nuestro continente,
+ así nos acompañan: Argentina, Brasil, Chile, Colombia, Costa Rica, Cuba,
+ Dinamarca, España, Estados Unidos, Guatemala, México, Panamá, Perú, Portugal,
+ Puerto Rico, República Dominicana, Uruguay y Venezuela.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+ }
+\backslash
+newpage
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+maketitle
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+let
+\backslash
+myclearpage
+\backslash
+clearpage
+\backslash
+tableofcontents{}
+\backslash
+let
+\backslash
+myclearpage
+\backslash
+relax
+\backslash
+newpage{}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagecolor{ptcbackground}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{headings}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+nocite{*}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fontsize{7}{8}
+\backslash
+selectfont
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+setlength{
+\backslash
+baselineskip}{5pt}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagecolor{white} 
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+mainmatter 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagecolor{white}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+mainmatter
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+headings
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+chapter{Conferencias Especiales} 
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+chaptertoc
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+balance
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{mdframed}[backgroundcolor=ptctitle,hidealllines=true]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox[t]{
+\backslash
+dimexpr
+\backslash
+textwidth-2
+\backslash
+fboxsep
+\backslash
+relax}{  
+\backslash
+color{white}
+\backslash
+bfseries
+\backslash
+sffamily
+\backslash
+large  Conferencias Plenarias }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{mdframed}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{mdframed}[rightmargin=0.5
+\backslash
+textwidth,innerleftmargin=0.5
+\backslash
+textwidth,backgroundcolor=ptctitle,hidealllines=true]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox[t]{0.5
+\backslash
+textwidth}{  
+\backslash
+color{white}
+\backslash
+bfseries
+\backslash
+sffamily  Lunes 28 de 11:00 a 12:30 }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{mdframed}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+salon{CO001}
+\end_layout
+
+\end_inset
+
+ Investigación en Educación Matemática y los retos de la inclusión en América
+ Latina.
+ Paola Valero (Dinamarca)
+\end_layout
+
+\begin_layout Standard
+Jueves 01 de 16:30 a 17:30
+\end_layout
+
+\begin_layout Standard
+Salón CO002 - Filosofía, Matemáticas y Educación: una mirada histórico-cultural
+ Educación Matemática.
+ Gilberto Obando (Colombia) 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\backslash
+let
+\backslash
+myclearpage
+\backslash
+relax
+\backslash
+newpage{}
+\backslash
+thispagestyle{empty} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\backslash
+thispagestyle{empty}
+\backslash
+mbox{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename RELME28portada.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+backmatter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

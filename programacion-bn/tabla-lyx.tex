@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage{booktabs}
+
+%%% add following to LyX Preamble...
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{colortbl}
+
+\newcommand{\highlightcolor}{red}  %set default color of the box
+\setlength\arrayrulewidth{3pt}     %set default rule width of the box
+\newcommand{\mystrut}[2]{\vrule height #1 depth #2 width 0pt}
+\newcommand{\coloredhline}{\arrayrulecolor{\highlightcolor}\hline}
+%%% ...until here
+
+\begin{document}
+\centering
+
+%%% as ERT in LyX
+\begin{tabular}{@{\hskip\tabcolsep\hskip\arrayrulewidth}l rlrl }
+Table 1&\multicolumn{2}{c}{Model 1} &\multicolumn{2}{c@{}}{Model 2}\\
+\midrule \midrule
+\coloredhline
+\multicolumn{1}{|l}{Variable Variable Variable 1 (Variable) Variable} &17.122 &* &3.481 &\multicolumn{1}{l|}{*}\\
+\coloredhline
+Variable Variable Variable 2 (Variable) Variable & 76.48 &* &0.441 &* \\
+\cline{2-5}
+\mystrut{12pt}{0pt}Variable Variable Variable 3 (Variable) Variable &\multicolumn{1}{|l}{117.132} &* &9.216 &\multicolumn{1}{l|}{*} \\
+\cline{2-5}
+\arrayrulecolor{black}\bottomrule
+\end{tabular}
+
+\bigskip
+
+%%% as ERT in LyX: configure color and rulewidth of box
+\renewcommand{\highlightcolor}{blue}
+\setlength\arrayrulewidth{5pt}
+\begin{tabular}{@{\hskip\tabcolsep\hskip\arrayrulewidth}p{5cm} rlrl }
+Table 2&\multicolumn{2}{c}{Model 1} &\multicolumn{2}{c@{}}{Model 2}\\
+\midrule \midrule \addlinespace[0pt]
+\coloredhline
+\multicolumn{1}{|p{5cm}}{\mystrut{10pt}{0pt}Variable Variable Variable 1 (Variable) Variable} &17.122 &* &3.481 &\multicolumn{1}{l|}{*}\\
+\rowcolor{lightgray}
+\multicolumn{1}{|p{5cm}}{Variable Variable Variable 2 (Variable) Variable} & 76.48 &* &0.441 &\multicolumn{1}{l|}{*}\\
+\coloredhline
+\arrayrulecolor{black}\addlinespace[0pt]\midrule
+\textbf{Variable Variable Variable 3 (Variable) Variable} & 117.132 & * & 9.216 &* \\
+\bottomrule
+\end{tabular}
+\end{document}

@@ -1,0 +1,23 @@
+\documentclass[12pt]{amsproc}% http://ctan.org/pkg/amsproc
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{tikz} 
+\newcommand*\numb[1]{%
+\begin{tikzpicture}
+\node [rectangle,rounded corners,top color=black!80!gray!20, bottom color=black!  80,text=white]{ \huge #1};
+\end{tikzpicture}
+}%
+\usepackage{titlesec}
+\titleformat{\section}[block]{\bfseries\large}{\raisebox{-5.4pt}{\numb{\arabic{section}}}}{0.4em}{}
+
+\begin{document}
+
+\section{Fonctions homlomorphes}\label{sec:prelim}
+ Première section
+
+\section{Another section}
+Voir Section~\ref{sec:prelim}.
+
+\end{document} 

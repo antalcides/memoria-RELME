@@ -1,0 +1,92 @@
+\batchmode
+%\makeatletter
+%\def\input@path{{/home/antalcides/Dropbox/latex/	RELME28//}{/home/uniatlantico-profesores/texmf/latex/marco-style/}}
+%\makeatother
+\documentclass[twocolumn,balance,english,spanish,svgnames,x11names,x11names,HTML]{book}
+\usepackage{blindtext}
+\usepackage{multicol}
+\usepackage[utf8x]{inputenc}
+\usepackage{balance}
+\pagestyle{headings}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\newcommand{\lyxmathsym}[1]{\ifmmode\begingroup\def\b@ld{bold}
+  \text{\ifx\math@version\b@ld\bfseries\fi#1}\endgroup\else#1\fi}
+
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\newenvironment{lyxlist}[1]
+{\begin{list}{}
+{\settowidth{\labelwidth}{#1}
+ \setlength{\leftmargin}{\labelwidth}
+ \addtolength{\leftmargin}{\labelsep}
+ \renewcommand{\makelabel}[1]{##1\hfil}}}
+{\end{list}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\input{preamble}
+\input{codigo}
+\usepackage{fancyvrb}
+\usepackage{cancel}
+\usepackage[unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=true,bookmarksopen=true,bookmarksopenlevel=1,
+ breaklinks=false,pdfborder={0 0 0},backref=false,colorlinks=false]
+ {hyperref}
+\hypersetup{
+ pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false}
+ \newsavebox{\LstBox}
+ %\graphicspath{ {./img/} }
+ \makeatletter
+\def\input@path{{./}{./build/}}
+\makeatother
+ \graphicspath{{./}{./img/}{./build/}}
+ \renewcommand{\baselinestretch}{1.5}
+\raggedbottom %para que no distibuya los espacios verticales en una hoja
+\usepackage[spanish]{babel}
+ 
+\addto\captionsspanish{
+\def\tablename{Tabla}
+\def\listtablename{\'Indice de tablas}
+}
+\makeatother
+\definecolor{lyxcolor}{rgb}{0.9765625,0.9375,0.8984375}
+\begin{document}
+\frontmatter \pagestyle{empty} \pagecolor{ptcbackground} 
+\vfill
+%\begin{multicols}{1}
+\onecolumn
+{\color{white}
+\begin{center}
+\vspace*{5cm}
+  
+\Huge{Fundamentos De Matemáticas}
+
+\vspace*{5cm}
+
+
+\Large{UNIVERSIDAD DEL ATLÁNTICO \\ FACULTAD DE CIENCIAS BÁSICAS \\
+DEPARTAMENTO DE MATEMÁTICAS Y ESTADÍSTICA \\ Esp. ANTALCIDES OLIVO}
+\end{center}}
+%\end{multicols}
+\vfill
+%\maketitle
+\let\myclearpage\clearpage\tableofcontents{}\let\myclearpage\relax\newpage{}
+\mainmatter \pagestyle{headings}\nocite{*} 
+\twocolumn
+\chapter{Coferencias}
+\Blindtext
+%\input{logica.tex}
+
+\backmatter
+
+\end{document}
